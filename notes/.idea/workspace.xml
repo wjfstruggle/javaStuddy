@@ -2,41 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="614febb9-bd73-4c46-832f-16ea40de4668" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java反射.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java异常处理.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java核心类.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql笔记.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abnormal/cdc/dome/Main13.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abnormal/cdc/dome/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/cdc/dome/Main10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/cdc/dome/Main11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/cdc/dome/Main12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/cdc/dome/Main7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/cdc/dome/Main8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/cdc/dome/Main9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generic/cdc/dome/ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/obj/cdc/dome/AbstractClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/obj/cdc/dome/BuyShop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/obj/cdc/dome/Income.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/obj/cdc/dome/SalaryIncome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/obj/cdc/dome/StateCouncilSpecialAllowance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reflex/cdc/dome/GetField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/cdc/sqldemo/JDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/泛型.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/cdc/sqldemo/JDBCAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/notes.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/notes/obj/cdc/dome/Animate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/notes/obj/cdc/dome/Income.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notes/obj/cdc/dome/Income.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/notes/obj/cdc/dome/Main7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notes/obj/cdc/dome/Main7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/notes/obj/cdc/dome/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notes/obj/cdc/dome/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/notes/obj/cdc/dome/Pig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/notes/obj/cdc/dome/SalaryIncome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notes/obj/cdc/dome/SalaryIncome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/notes/obj/cdc/dome/StateCouncilSpecialAllowance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notes/obj/cdc/dome/StateCouncilSpecialAllowance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/cdc/dome/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/cdc/dome/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obj/cdc/dome/Main7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/obj/cdc/dome/Main7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/面向对象编程.md" beforeDir="false" afterPath="$PROJECT_DIR$/面向对象编程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/notes/sql/cdc/sqldemo/JDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notes/sql/cdc/sqldemo/JDBC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sql/cdc/sqldemo/JDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/cdc/sqldemo/JDBC.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,20 +33,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sql/cdc/sqldemo/JDBC.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sql/cdc/sqldemo/JDBCAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+            <state relative-caret-position="378">
+              <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notes.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sql/cdc/sqldemo/JDBC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysql笔记.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="511">
+                <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -140,7 +132,9 @@
         <option value="$PROJECT_DIR$/src/reflex/cdc/dome/GetField.java" />
         <option value="$PROJECT_DIR$/泛型.md" />
         <option value="$PROJECT_DIR$/src/generic/cdc/dome/ArrayList.java" />
+        <option value="$PROJECT_DIR$/mysql笔记.md" />
         <option value="$PROJECT_DIR$/src/sql/cdc/sqldemo/JDBC.java" />
+        <option value="$PROJECT_DIR$/src/sql/cdc/sqldemo/JDBCAction.java" />
       </list>
     </option>
   </component>
@@ -178,6 +172,27 @@
               <item name="notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="notes" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="cdc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="cdc" type="462c0819:PsiDirectoryNode" />
+              <item name="sqldemo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="notes" type="b2602c69:ProjectViewProjectNode" />
@@ -233,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JDBC">
+  <component name="RunManager" selected="Application.JDBCAction">
     <configuration name="GetField" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="reflex.cdc.dome.GetField" />
       <module name="notes" />
@@ -260,12 +275,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="core.cdc.dome.Main11" />
+    <configuration name="JDBCAction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sql.cdc.sqldemo.JDBCAction" />
       <module name="notes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="core.cdc.dome.*" />
+          <option name="PATTERN" value="sql.cdc.sqldemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -301,11 +316,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JDBCAction" />
         <item itemvalue="Application.JDBC" />
         <item itemvalue="Application.GetField" />
         <item itemvalue="Application.Main13" />
         <item itemvalue="Application.Main12" />
-        <item itemvalue="Application.Main11" />
       </list>
     </recent_temporary>
   </component>
@@ -324,15 +339,15 @@
       <workItem from="1565656649645" duration="12473000" />
       <workItem from="1565676204630" duration="11932000" />
       <workItem from="1565743486125" duration="27024000" />
-      <workItem from="1565830351368" duration="9530000" />
+      <workItem from="1565830351368" duration="20720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71125000" />
+    <option name="totallyTimeSpent" value="82315000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
@@ -340,7 +355,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="设计器" order="3" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18431635" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.11863271" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.28470254" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -351,7 +366,7 @@
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.2082153" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.17705382" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -761,25 +776,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+    <entry file="file://$PROJECT_DIR$/mysql笔记.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="511">
+            <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sql/cdc/sqldemo/JDBC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        <state relative-caret-position="144">
+          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql笔记.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/notes.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sql/cdc/sqldemo/JDBCAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
