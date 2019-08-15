@@ -17,4 +17,7 @@ public class Main {
 class Person {
   public String name;
   public int age;
+  public int getAge() {
+    return this.age;
+  }
 }
