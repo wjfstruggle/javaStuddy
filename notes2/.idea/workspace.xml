@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9dc8eff8-e42e-4b4c-bdc7-d3c16410f50f" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/../notes/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../notes/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../notes/src/main/java/com/cdc/project/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../notes/集合.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/REDME.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cdc/ArrayMethods/ArrayMethodUse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/lib/mysql-connector-java-8.0.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/notes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/notes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/abnormal/cdc/dome/Main13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/abnormal/cdc/dome/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/com/hit/demo/ArrayString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/com/hit/demo/ArrayT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/com/hit/demo/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/com/hit/demo/MaoPaoT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/com/hit/demo/MoreArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/com/hit/demo/SwitchCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/core/cdc/dome/Adder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/core/cdc/dome/Main10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/core/cdc/dome/Main11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/core/cdc/dome/Main12$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/core/cdc/dome/Main12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/core/cdc/dome/Main7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/core/cdc/dome/Main8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/core/cdc/dome/Main9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/core/cdc/dome/WeekDay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/generic/cdc/dome/ArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/AbstractClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/BuyShop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Cat1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Dish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Dook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Income.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Loser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Main1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Main3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Main4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Main5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Main6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Main7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Money.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Person1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/SalaryIncome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/SclarMoney.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/StateCouncilSpecialAllowance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/obj/cdc/dome/Win.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/reflex/cdc/dome/GetField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/reflex/cdc/dome/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/reflex/cdc/dome/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/sql/cdc/sqldemo/JDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/out/production/notes/sql/cdc/sqldemo/JDBCAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/src/sql/cdc/sqldemo/JDBC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/src/sql/cdc/sqldemo/JDBCAction.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/REDME.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="48">
+                <caret line="2" selection-start-line="2" selection-end-line="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/cdc/ArrayMethods/ArrayMethodUse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#617#625#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/REDME.md" />
+        <option value="$PROJECT_DIR$/src/com/cdc/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/cdc/ArrayMethods/ArrayMethodUse.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-105" />
+    <option name="y" value="40" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="notes2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notes2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notes2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notes2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notes2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notes2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notes2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notes2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cdc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notes2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notes2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cdc" type="462c0819:PsiDirectoryNode" />
+              <item name="ArrayMethods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notes2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部库" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/sqldata/commons-lang3-3.9.jar!/" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ArrayMethodUse">
+    <configuration name="ArrayMethodUse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cdc.ArrayMethods.ArrayMethodUse" />
+      <module name="notes2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cdc.ArrayMethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.cdc.Main" />
+      <module name="notes2" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.ArrayMethodUse" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ArrayMethodUse" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9dc8eff8-e42e-4b4c-bdc7-d3c16410f50f" name="默认更改列表" comment="" />
+      <created>1566198431459</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566198431459</updated>
+      <workItem from="1566198435180" duration="1860000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1860000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="设计器" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14209116" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="调试" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15580736" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="调色板" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/cdc/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/REDME.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cdc/ArrayMethods/ArrayMethodUse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#617#625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
