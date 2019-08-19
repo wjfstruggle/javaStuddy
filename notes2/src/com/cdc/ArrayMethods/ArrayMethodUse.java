@@ -1,10 +1,12 @@
 package com.cdc.ArrayMethods;
 
-import com.sun.deploy.util.ArrayUtil;
 import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @program: notes2
@@ -34,5 +36,26 @@ public class ArrayMethodUse {
     int[] fArray = { 6, 7, 8, 9, 10 };
     int[] gArray = ArrayUtils.addAll(eArray, fArray);
     System.out.println(Arrays.toString(gArray));
+    // 根据分割符拼接数组元素（去掉最后一个分隔符）
+    String j = StringUtils.join(new String[] {"a","b","c","d"}, "*");
+    System.out.println(j);// a*b*c*d
+    // ArrayList转数组
+    String[] hArray = { "a", "b", "c", "d", "e" };
+    ArrayList<String> iArray = new ArrayList<String>(Arrays.asList(hArray));
+    String[] jArray = new String[iArray.size()];
+    iArray.toArray(hArray);
+    for (String s: hArray) {
+      System.out.println(s);
+    }
+    // 数组转set
+    Set<String> kArray = new HashSet<>(Arrays.asList(hArray));
+    System.out.println(kArray);
+    // 翻转数组
+    ArrayUtils.reverse(hArray);
+    System.out.println(Arrays.toString(hArray)); // [e, d, c, b, a]
+    // 删除数组
+//    String[] lArray = ArrayUtils.removeElement(hArray, "a");
+    String[] lArray = ArrayUtils.removeElements(hArray, "a","b"); // 删除多个
+    System.out.println(Arrays.toString(lArray));
   }
 }
