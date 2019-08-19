@@ -10,10 +10,14 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://D:/sqldata/commons-lang3-3.9.jar!/" />
+          <root url="jar://D:/java-jar/commons-dbutils-1.7.jar!/" />
+          <root url="jar://D:/java-jar/commons-lang3-3.9.jar!/" />
+          <root url="jar://D:/java-jar/mysql-connector-java-8.0.17.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/src" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>
