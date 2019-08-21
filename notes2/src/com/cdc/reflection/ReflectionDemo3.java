@@ -15,7 +15,6 @@ public class ReflectionDemo3 {
     Method eat_mthod = personClass.getMethod("eat");
     Person person = new Person();
     eat_mthod.invoke(person); // eat 吃饭 执行方法
-
     Method eat_mthod2 = personClass.getMethod("eat",String.class);
     eat_mthod2.invoke(person, "菜"); // eat 吃饭菜
 
