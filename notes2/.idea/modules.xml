@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../springboot/dome.iml" filepath="$PROJECT_DIR$/../springboot/dome.iml" />
       <module fileurl="file://$PROJECT_DIR$/notes2.iml" filepath="$PROJECT_DIR$/notes2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springboot/springboot.iml" filepath="$PROJECT_DIR$/../springboot/springboot.iml" />
     </modules>
   </component>
 </project>

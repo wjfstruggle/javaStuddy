@@ -12,6 +12,7 @@ import java.util.Properties;
  * @author: wujf
  * @create: 2019-08-23 16:52
  **/
+
 public class JDBCUtils {
   public static String url;
   public static String user;
@@ -45,7 +46,8 @@ public class JDBCUtils {
     return DriverManager.getConnection(url, user, password);
   }
   // 处理异常方法
-  public static void close(ResultSet resultSet,Statement statement, Connection conn) {
+
+  public static void close(ResultSet resultSet, Statement statement, Connection conn) {
     if (resultSet != null) {
       try {
         resultSet.close();
