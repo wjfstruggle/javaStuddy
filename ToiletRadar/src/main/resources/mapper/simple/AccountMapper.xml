@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.springboot.mapper.simple.AccountMapper">
+  <resultMap id="BaseResultMap" type="cn.springboot.model.simple.Account">
+    <id column="pk_id" jdbcType="BIGINT" property="pkId" />
+    <result column="wx_photo" jdbcType="VARCHAR" property="wxPhoto" />
+    <result column="wx_name" jdbcType="VARCHAR" property="wxName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="identity" jdbcType="VARCHAR" property="identity" />
+    <result column="delete_status" jdbcType="BIT" property="deleteStatus" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    pk_id, wx_photo, wx_name, password, identity, delete_status, create_time,
+    modify_time
+  </sql>
+  <select id="selectByExample" parameterType="cn.springboot.model.simple.AccountExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from account
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from account
+    where pk_id = #{pkId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from account
+    where pk_id = #{pkId,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="cn.springboot.model.simple.AccountExample">
+    delete from account
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="cn.springboot.model.simple.Account">
+    insert into account (pk_id, wx_photo, wx_name, 
+       password, identity,
+      delete_status, create_time, modify_time
+      )
+    values (#{pkId,jdbcType=BIGINT}, #{wxPhoto,jdbcType=VARCHAR}, #{wxName,jdbcType=VARCHAR}, 
+      #{password,jdbcType=VARCHAR}, #{identity,jdbcType=VARCHAR},
+      #{deleteStatus,jdbcType=BIT}, #{createTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.springboot.model.simple.Account">
+    insert into account
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        pk_id,
+      </if>
+      <if test="wxPhoto != null">
+        wx_photo,
+      </if>
+      <if test="wxName != null">
+        wx_name,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="identity != null">
+        identity,
+      </if>
+      <if test="deleteStatus != null">
+        delete_status,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="modifyTime != null">
+        modify_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        #{pkId,jdbcType=BIGINT},
+      </if>
+      <if test="wxPhoto != null">
+        #{wxPhoto,jdbcType=VARCHAR},
+      </if>
+      <if test="wxName != null">
+        #{wxName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="identity != null">
+        #{identity,jdbcType=VARCHAR},
+      </if>
+      <if test="deleteStatus != null">
+        #{deleteStatus,jdbcType=BIT},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null">
+        #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="cn.springboot.model.simple.AccountExample" resultType="java.lang.Long">
+    select count(*) from account
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update account
+    <set>
+      <if test="record.pkId != null">
+        pk_id = #{record.pkId,jdbcType=BIGINT},
+      </if>
+      <if test="record.wxPhoto != null">
+        wx_photo = #{record.wxPhoto,jdbcType=VARCHAR},
+      </if>
+      <if test="record.wxName != null">
+        wx_name = #{record.wxName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.password != null">
+        password = #{record.password,jdbcType=VARCHAR},
+      </if>
+      <if test="record.identity != null">
+        identity = #{record.identity,jdbcType=VARCHAR},
+      </if>
+      <if test="record.deleteStatus != null">
+        delete_status = #{record.deleteStatus,jdbcType=BIT},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.modifyTime != null">
+        modify_time = #{record.modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update account
+    set pk_id = #{record.pkId,jdbcType=BIGINT},
+      wx_photo = #{record.wxPhoto,jdbcType=VARCHAR},
+      wx_name = #{record.wxName,jdbcType=VARCHAR},
+      password = #{record.password,jdbcType=VARCHAR},
+      identity = #{record.identity,jdbcType=VARCHAR},
+      delete_status = #{record.deleteStatus,jdbcType=BIT},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      modify_time = #{record.modifyTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.springboot.model.simple.Account">
+    update account
+    <set>
+      <if test="wxPhoto != null">
+        wx_photo = #{wxPhoto,jdbcType=VARCHAR},
+      </if>
+      <if test="wxName != null">
+        wx_name = #{wxName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="identity != null">
+        identity = #{identity,jdbcType=VARCHAR},
+      </if>
+      <if test="deleteStatus != null">
+        delete_status = #{deleteStatus,jdbcType=BIT},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null">
+        modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where pk_id = #{pkId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.springboot.model.simple.Account">
+    update account
+    set wx_photo = #{wxPhoto,jdbcType=VARCHAR},
+      wx_name = #{wxName,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      identity = #{identity,jdbcType=VARCHAR},
+      delete_status = #{deleteStatus,jdbcType=BIT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+    where pk_id = #{pkId,jdbcType=BIGINT}
+  </update>
+
+  <select id="findAccountByPage" parameterType="string" resultMap="BaseResultMap">
+    select * from account
+    <where>
+      <if test="keywords != null and keywords != ''"> like '%${keywords}%'</if>
+    </where>
+    order by create_time desc
+  </select>
+
+  <!-- 根据identity唯一标识查找用户 -->
+  <select id="findAccountByIdentity" parameterType="string" resultMap="BaseResultMap">
+        select * from account where identity = #{indentity}
+  </select>
+</mapper>
