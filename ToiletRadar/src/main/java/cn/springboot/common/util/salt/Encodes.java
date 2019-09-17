@@ -9,13 +9,13 @@ import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.tomcat.util.codec.binary.Base64;
 
-/** 
+/**
+ * @author sh
  * @Description 封装各种格式的编码解码工具类<br>
  * 1.Commons-Codec的 hex/base64 编码 <br>
  * 2.自制的base62 编码 <br>
  * 3.Commons-Lang的xml/html escape <br>
  * 4.JDK提供的URLEncoder
- * @author sh
  * @date Apr 12, 2019 9:37:43 AM
  */
 public class Encodes {

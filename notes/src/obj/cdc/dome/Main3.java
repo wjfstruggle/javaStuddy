@@ -7,34 +7,34 @@ package obj.cdc.dome;
  * @create: 2019-08-13 14:27
  **/
 public class Main3 {
-  public static void main(String[] args) {
-    Dog dog = new Dog();
-    System.out.println(dog.getName()+dog.getAge());
-  }
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        System.out.println(dog.getName() + dog.getAge());
+    }
 }
 
 class Dog {
-  private String name;
-  private int age;
+    private String name;
+    private int age;
 
-  public Dog(String name, int age) {
-    this.name = name;
-    this.age = age;
-  }
+    public Dog(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-  public Dog(String name) {
-    this(name, 18); //调用另一个构造方法Dog(String, int)
-  }
+    public Dog(String name) {
+        this(name, 18); //调用另一个构造方法Dog(String, int)
+    }
 
-  public Dog() {
-    this("秋田犬"); // 调用另一个构造方法Dog(String)
-  }
+    public Dog() {
+        this("秋田犬"); // 调用另一个构造方法Dog(String)
+    }
 
-  public String getName() {
-    return this.name;
-  }
+    public String getName() {
+        return this.name;
+    }
 
-  public int getAge() {
-    return this.age;
-  }
+    public int getAge() {
+        return this.age;
+    }
 }

@@ -23,9 +23,9 @@ import cn.springboot.mapper.simple.NewsMapper;
 import cn.springboot.model.simple.News;
 import cn.springboot.service.simple.NewsService;
 
-/** 
- * @Description 新闻接口实现类
+/**
  * @author sh
+ * @Description 新闻接口实现类
  * @date Mar 16, sh 5:19:24 PM
  */
 @Service("newsService")

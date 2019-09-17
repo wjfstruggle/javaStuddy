@@ -50,35 +50,40 @@
         <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 <div class="col-md-12">
-                            <div class="ibox-heading">
-                                <div class="ibox-title">
-                                    <h5>新增POS机</h5>
-                                </div>
-                            </div>
-                            <div class="ibox-content m-b-sm border-bottom">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <form class="form-horizontal" id="house_form">
+                    <div class="ibox-heading">
+                        <div class="ibox-title">
+                            <h5>新增POS机</h5>
+                        </div>
+                    </div>
+                    <div class="ibox-content m-b-sm border-bottom">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form class="form-horizontal" id="house_form">
 
-                                            <div class="form-group">
-                                                <label class="col-md-4 col-lg-3 control-label" readonly="readonly">pos机终端编号 <span class="text-danger">*</span> </label>
-                                                <div class="col-md-8 col-lg-9"><input type="text" class="form-control" value="" placeholder="" ></div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label class="col-md-4 col-lg-3 control-label" readonly="readonly">备注 </label>
-                                                <div class="col-md-8 col-lg-9"><textarea class="form-control" placeholder="" rows="5" ></textarea></div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <div class="col-sm-8 col-sm-offset-4 col-lg-offset-3">
-                                                    <button class="btn btn-primary" type="submit" id="myButton2"><i class="fa fa-check"></i> 填写完成，提交！</button>
-                                                </div>
-                                            </div>
-                                        </form>
+                                    <div class="form-group">
+                                        <label class="col-md-4 col-lg-3 control-label" readonly="readonly">pos机终端编号
+                                            <span class="text-danger">*</span> </label>
+                                        <div class="col-md-8 col-lg-9"><input type="text" class="form-control" value=""
+                                                                              placeholder=""></div>
                                     </div>
-                                </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-4 col-lg-3 control-label" readonly="readonly">备注 </label>
+                                        <div class="col-md-8 col-lg-9"><textarea class="form-control" placeholder=""
+                                                                                 rows="5"></textarea></div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-8 col-sm-offset-4 col-lg-offset-3">
+                                            <button class="btn btn-primary" type="submit" id="myButton2"><i
+                                                        class="fa fa-check"></i> 填写完成，提交！
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
+                        </div>
+                    </div>
 
 
                 </div>
@@ -93,10 +98,10 @@
                             <table class="table table-centerbody table-striped table-condensed" id="editable-sample">
                                 <thead>
                                 <tr>
-                                    <th>POS机终端号 </th>
-                                    <th>服役时间 </th>
-                                    <th>备注 </th>
-                                    <th>操作 </th>
+                                    <th>POS机终端号</th>
+                                    <th>服役时间</th>
+                                    <th>备注</th>
+                                    <th>操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -104,20 +109,24 @@
                                     <td>64564653672</td>
                                     <td>起始时间：2015-07-20 16:01:01<br>结束时间：2015-07-20 16:01:08</td>
                                     <td>经纪人：明明 公司：测试经纪公司 门店：多媒体门店</td>
-                                    <td class="text-right"><a class="btn-primary  btn btn-sm delete" data-userid="1"><i class="fa fa-trash"></i>  删除</a></td>
+                                    <td class="text-right"><a class="btn-primary  btn btn-sm delete" data-userid="1"><i
+                                                    class="fa fa-trash"></i> 删除</a></td>
                                 </tr>
                                 <tr>
                                     <td>64564653672</td>
                                     <td>起始时间：2015-07-20 16:01:01<br>结束时间：2015-07-20 16:01:08</td>
                                     <td>经纪人：明明 公司：测试经纪公司 门店：多媒体门店</td>
-                                    <td class="text-right"><a class="btn-primary  btn btn-sm delete" data-userid="1"><i class="fa fa-trash"></i>  删除</a></td>
+                                    <td class="text-right"><a class="btn-primary  btn btn-sm delete" data-userid="1"><i
+                                                    class="fa fa-trash"></i> 删除</a></td>
                                 </tr>
 
                                 <tr>
                                     <td>64564653672</td>
                                     <td>起始时间：2015-07-20 16:01:01<br>结束时间：2015-07-20 16:01:08</td>
                                     <td>经纪人：明明 公司：测试经纪公司 门店：多媒体门店</td>
-                                    <td class="text-right"><a class="btn-default btn btn-sm " data-userid="1" disabled="disabled"><i class="fa fa-trash"></i>  已删除</a></td>
+                                    <td class="text-right"><a class="btn-default btn btn-sm " data-userid="1"
+                                                              disabled="disabled"><i class="fa fa-trash"></i> 已删除</a>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -153,8 +162,8 @@
 <!---顶部弹出提示--->
 
 <script>
-    $(document).on('click','#editable-sample a.delete', function () {
-        var userid=$(this).data("userid");
+    $(document).on('click', '#editable-sample a.delete', function () {
+        var userid = $(this).data("userid");
         swal({
             title: "您确定要删除吗?",
             text: "",
@@ -168,7 +177,7 @@
             //swal("删除成功!", "","success");
 
             //失败
-            swal("删除失败!", "","error");
+            swal("删除失败!", "", "error");
         });
     });
 </script>

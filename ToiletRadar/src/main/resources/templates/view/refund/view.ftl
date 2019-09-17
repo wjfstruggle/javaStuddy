@@ -73,7 +73,7 @@
                                 </tr>
                                 <tr>
                                     <td class="text-right text-nowrap"><b>经纪人信息：</b></td>
-                                    <td>经纪人：明明  公司：测试经纪公司  门店：多媒体门店</td>
+                                    <td>经纪人：明明 公司：测试经纪公司 门店：多媒体门店</td>
                                 </tr>
                                 <tr>
                                     <td class="text-right text-nowrap"><b>置业顾问信息：</b></td>
@@ -85,7 +85,7 @@
                                 </tr>
                                 <tr>
                                     <td class="text-right text-nowrap"><b>收款状态：</b></td>
-                                    <td>应收：20000.0  已收：20000.0</td>
+                                    <td>应收：20000.0 已收：20000.0</td>
                                 </tr>
                                 <tr>
                                     <td class="text-right text-nowrap"><b>预约时间：</b></td>
@@ -168,13 +168,14 @@
                         </div>
                         <div class="ibox-content p-t-md">
                             <div class="table-responsive ">
-                                <table class="table table-centerbody table-striped table-condensed text-nowrap" id="editable-sample">
+                                <table class="table table-centerbody table-striped table-condensed text-nowrap"
+                                       id="editable-sample">
                                     <thead>
                                     <tr>
-                                        <th>操作时间 </th>
-                                        <th>动作 </th>
-                                        <th>操作人员 </th>
-                                        <th>备注 </th>
+                                        <th>操作时间</th>
+                                        <th>动作</th>
+                                        <th>操作人员</th>
+                                        <th>备注</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -227,8 +228,8 @@
 <script src="${ctx}/static/js/plugins/validate/jquery.validate.min.js"></script>  <!---表单验证--->
 <script src="${ctx}/static/js/plugins/validate/validate-cn.js"></script> <!---validate 自定义方法--->
 <script src="${ctx}/static/js/plugins/datapicker/bootstrap-datepicker.js"></script>
-<script src="${ctx}/static/js/plugins/fileinput/fileinput.min.js" ></script><!---文件上传--->
-<script src="${ctx}/static/js/plugins/fileinput/fileinput_locale_zh.js" ></script><!---文件上传中文配置--->
+<script src="${ctx}/static/js/plugins/fileinput/fileinput.min.js"></script><!---文件上传--->
+<script src="${ctx}/static/js/plugins/fileinput/fileinput_locale_zh.js"></script><!---文件上传中文配置--->
 <script src="${ctx}/static/js/plugins/loading/jquery.loading.js"></script>
 
 <script>
@@ -249,35 +250,36 @@
                 addform(form);
             }
         });
+
         function addform(form) {
             $.ajax(
-                    {
-                        url: "?",
-                        type: "post",
-                        data: $(form).serialize(),
-                        success: function (data) {
-                            toastr.success('', '配置修改成功！');
-                        },
-                        error:function(error){
-                            setTimeout(function(){
-                                $('#myButton').button('reset');
-                                $("#rslide").rslide("hide")
-                            },3000);
-                            toastr.error('错误代码：登陆超时，请重新登陆！', '配置修改失败！');
-                        }
+                {
+                    url: "?",
+                    type: "post",
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        toastr.success('', '配置修改成功！');
+                    },
+                    error: function (error) {
+                        setTimeout(function () {
+                            $('#myButton').button('reset');
+                            $("#rslide").rslide("hide")
+                        }, 3000);
+                        toastr.error('错误代码：登陆超时，请重新登陆！', '配置修改失败！');
                     }
+                }
             );
         }
 
 
         $("#addFile").fileinput({
             uploadUrl: '#',    //服务端上传地址
-            showCaption:false,     //是否显示按钮前的INPUT
-            dropZoneEnabled:true,  //是否启动拖拽
+            showCaption: false,     //是否显示按钮前的INPUT
+            dropZoneEnabled: true,  //是否启动拖拽
             uploadAsync: true,  //true异步上传
             //autoReplace: false,  // 替换预览文件maxFileCount达到极限，
             validateInitialCount: true, //是否包括已有的文件数，新加文件个数和现有文件相加的判断
-            overwriteInitial:false,  //是否要覆盖已有的缩略图列表。
+            overwriteInitial: false,  //是否要覆盖已有的缩略图列表。
             //minFileCount: 0,  //最小文件数，为0可选
             //maxFileCount: 0,    //最大文件数，为0无限
             maxFileSize: 2048,   //文件大小限制
@@ -288,11 +290,11 @@
             msgFilesTooLess: '必须上传 <b>{n}</b>个{files}，您可以选择新的文件进行替换. ',
             initialPreview: [],//编辑页面初始化数据
             initialPreviewConfig: [],//通过此方法可以删除服务端上传的图片
-            uploadExtraData: function(previewId, index) {
-                if (previewId!=undefined && index!=undefined){
-                    alert(previewId+","+index)
+            uploadExtraData: function (previewId, index) {
+                if (previewId != undefined && index != undefined) {
+                    alert(previewId + "," + index)
                 }
-                return{
+                return {
                     userid: "10000",
                     username: "zifan",
                     key: index

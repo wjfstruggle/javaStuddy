@@ -1,8 +1,8 @@
 package cn.springboot.config.db.pk;
 
-/** 
- * @Description 数据表名
+/**
  * @author sh
+ * @Description 数据表名
  * @date Apr 12, 2019 2:12:02 PM
  */
 public enum TableEnum {
@@ -14,6 +14,7 @@ public enum TableEnum {
     T_SYS_USER,
     T_SYS_USER_ROLE,
     T_NEWS,
-    Demo,;
+    Demo,
+    ;
 
 }

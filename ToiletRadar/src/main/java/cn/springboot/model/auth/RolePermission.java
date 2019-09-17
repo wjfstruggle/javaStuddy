@@ -2,9 +2,9 @@ package cn.springboot.model.auth;
 
 import cn.springboot.model.BaseEntity;
 
-/** 
- * @Description 角色与菜单关系对象
+/**
  * @author sh
+ * @Description 角色与菜单关系对象
  * @date Apr 12, 2019 9:11:20 AM
  */
 public class RolePermission implements BaseEntity<String> {
@@ -13,10 +13,14 @@ public class RolePermission implements BaseEntity<String> {
 
     private String id;
 
-    /** 角色ID **/
+    /**
+     * 角色ID
+     **/
     private String roleId;
 
-    /** 菜单ID **/
+    /**
+     * 菜单ID
+     **/
     private String permissionId;
 
     public String getId() {

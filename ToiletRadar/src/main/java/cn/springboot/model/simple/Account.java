@@ -15,7 +15,7 @@ public class Account {
 
     private String password;
 
-    @ApiModelProperty(name = "identity",value = "微信返回唯一标识")
+    @ApiModelProperty(name = "identity", value = "微信返回唯一标识")
     private String identity;
 
     private Boolean deleteStatus;

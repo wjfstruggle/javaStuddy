@@ -6,9 +6,9 @@ import com.github.pagehelper.PageInfo;
 
 import cn.springboot.model.simple.News;
 
-/** 
- * @Description 新闻接口类
+/**
  * @author sh
+ * @Description 新闻接口类
  * @date Mar 16, 2019 5:19:14 PM
  */
 public interface NewsService {

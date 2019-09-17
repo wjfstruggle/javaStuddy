@@ -58,7 +58,7 @@
                     </div>
                     <div class="col-md-4 form-group m-t-xs m-b-none">
                         <button type="button" class="btn btn-sm btn-primary dropdown-toggle"><i
-                                class="fa fa-search"></i> 立即搜索
+                                    class="fa fa-search"></i> 立即搜索
                         </button>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                                                 <a class="btn-white  btn btn-sm view"><i class="fa fa-eye"></i> 查看</a>
                                                 <a class="btn-white  btn btn-sm rset" data-userid="1"
                                                    data-toggle="modal" data-target="#myModa-reset"><i
-                                                        class="fa fa-pencil"></i> 手机号变更</a>
+                                                            class="fa fa-pencil"></i> 手机号变更</a>
                                             </div>
                                         </td>
                                         <td class="hide">
@@ -108,7 +108,7 @@
 
                                     <tr>
                                         <td><a class="btn btn-primary btn-circle btn-xs view" type="button"><i
-                                                class="fa fa-plus"></i></a> 小智
+                                                        class="fa fa-plus"></i></a> 小智
                                         </td>
                                         <td>喝酒</td>
                                         <td>15899999999</td>
@@ -121,7 +121,7 @@
                                                 <a class="btn-white  btn btn-sm view"><i class="fa fa-eye"></i> 查看</a>
                                                 <a class="btn-white  btn btn-sm rset" data-userid="1"
                                                    data-toggle="modal" data-target="#myModa-reset"><i
-                                                        class="fa fa-pencil"></i> 手机号变更</a>
+                                                            class="fa fa-pencil"></i> 手机号变更</a>
                                             </div>
                                         </td>
                                         <td class="hide">
@@ -183,7 +183,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span
-                        class="sr-only">Close</span></button>
+                            class="sr-only">Close</span></button>
                 <h4 class="modal-title">手机号变更</h4>
             </div>
             <div class="modal-body">
@@ -262,15 +262,15 @@
 
         function setform(form) {
             $.ajax(
-                    {
-                        url: "?",
-                        type: "post",
-                        data: $(form).serialize(),
-                        success: function (data) {
-                            toastr.success('密码已发送到用户手机！', '密码重置成功！');
-                            $("#myModa-reset").modal("hide");
-                        }
+                {
+                    url: "?",
+                    type: "post",
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        toastr.success('密码已发送到用户手机！', '密码重置成功！');
+                        $("#myModa-reset").modal("hide");
                     }
+                }
             );
             return false;
         }

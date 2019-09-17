@@ -10,15 +10,15 @@ import java.util.Arrays;
  **/
 public class MaoPaoT {
     public static void main(String[] args) {
-        int[] ns = {23,32,13,34,3,45,31,9,18,5};
+        int[] ns = {23, 32, 13, 34, 3, 45, 31, 9, 18, 5};
         System.out.print(Arrays.toString(ns));
         for (int i = 0; i < ns.length; i++) {
-            for (int j = 0; j < ns.length - i -1; j++) {
+            for (int j = 0; j < ns.length - i - 1; j++) {
                 // 降序
-                if(ns[j] < ns[j+1]) {
+                if (ns[j] < ns[j + 1]) {
                     // 交换 ns[j] 和 ns[j+1]
-                    int temp = ns[j+1];
-                    ns[j+1] = ns[j];
+                    int temp = ns[j + 1];
+                    ns[j + 1] = ns[j];
                     ns[j] = temp;
                 }
             }

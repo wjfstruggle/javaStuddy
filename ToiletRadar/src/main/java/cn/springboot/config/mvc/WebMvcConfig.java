@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
-    
+
     private static final Logger log = LoggerFactory.getLogger(WebMvcConfig.class);
 
     @Override

@@ -20,7 +20,7 @@ import java.util.Map;
  * @date 2019/7/31 16:37
  * @Description
  */
-@Api(value = "垃圾通Controller",tags = {"垃圾通操作接口"})
+@Api(value = "垃圾通Controller", tags = {"垃圾通操作接口"})
 @Controller
 public class WasteBinController {
 
@@ -28,11 +28,11 @@ public class WasteBinController {
     private WasteBinService wasteBinService;
 
     @ApiOperation(value = "添加用户")
-    @RequestMapping(value = "/wasteBin/add",method = RequestMethod.POST)
+    @RequestMapping(value = "/wasteBin/add", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String,String> add(@ApiParam(name = "用户对象",value = "传入json格式")@RequestBody WasteBin wasteBin) {
+    public Map<String, String> add(@ApiParam(name = "用户对象", value = "传入json格式") @RequestBody WasteBin wasteBin) {
         boolean flag = wasteBinService.addWasteBin(wasteBin);
-        Map<String ,String > result = new HashMap<>();
+        Map<String, String> result = new HashMap<>();
         if (flag) {
             result.put("status", "1");
             result.put("msg", "发布成功");
@@ -44,11 +44,11 @@ public class WasteBinController {
     }
 
     @ApiOperation(value = "根据ID删除用户")
-    @RequestMapping(value = "/wasteBin/{id}",method = RequestMethod.DELETE)
+    @RequestMapping(value = "/wasteBin/{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public Map<String,String> delete(@PathVariable Long id) {
+    public Map<String, String> delete(@PathVariable Long id) {
         boolean flag = wasteBinService.deleteWasteBinById(id);
-        Map<String ,String > result = new HashMap<>();
+        Map<String, String> result = new HashMap<>();
         if (flag) {
             result.put("status", "1");
             result.put("msg", "删除成功");
@@ -60,12 +60,12 @@ public class WasteBinController {
     }
 
     @ApiOperation(value = "根据ID修改用户")
-    @RequestMapping(value = "/wasteBin/{id}",method = RequestMethod.PUT)
+    @RequestMapping(value = "/wasteBin/{id}", method = RequestMethod.PUT)
     @ResponseBody
-    public Map<String,String> edit(@ApiParam(name = "id",value = "用户id",required = true) @PathVariable Long id, @RequestBody WasteBin wasteBin) {
+    public Map<String, String> edit(@ApiParam(name = "id", value = "用户id", required = true) @PathVariable Long id, @RequestBody WasteBin wasteBin) {
         wasteBin.setPkId(id);
         boolean flag = wasteBinService.editWasteBin(wasteBin);
-        Map<String ,String > result = new HashMap<>();
+        Map<String, String> result = new HashMap<>();
         if (flag) {
             result.put("status", "1");
             result.put("msg", "修改成功");
@@ -77,13 +77,13 @@ public class WasteBinController {
     }
 
     @ApiOperation(value = "根据ID查询用户")
-    @RequestMapping(value = "/wasteBin/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/wasteBin/{id}", method = RequestMethod.GET)
     @ResponseBody
     public WasteBin selectById(@PathVariable Long id) {
         WasteBin wasteBin = wasteBinService.findWasteBinById(id);
         if (wasteBin != null) {
             return wasteBin;
-        }else {
+        } else {
             return null;
         }
     }
@@ -92,7 +92,7 @@ public class WasteBinController {
     @RequestMapping(value = "/wasteBin/list", method = RequestMethod.GET)
     @ResponseBody
     public PageInfo<WasteBin> list() {
-        PageInfo<WasteBin> page = wasteBinService.findWasteBinByPage(null,null);
+        PageInfo<WasteBin> page = wasteBinService.findWasteBinByPage(null, null);
         return page;
     }
 }

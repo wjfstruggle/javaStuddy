@@ -83,7 +83,8 @@
                     <div class="ibox">
                         <div class="ibox-content">
                             <div class="table-responsive ">
-                                <table class="table table-centerbody table-mail table-striped table-condensed text-nowrap table-hover"  id="editable-sample">
+                                <table class="table table-centerbody table-mail table-striped table-condensed text-nowrap table-hover"
+                                       id="editable-sample">
                                     <thead>
                                     <tr>
                                         <th>经纪人</th>
@@ -104,7 +105,8 @@
                                         <td>2015-09-29 14:17:38</td>
                                         <td>客服同意</td>
                                         <td class="text-right text-nowrap">
-                                            <a href="${ctx}/view/custintent/view" class="btn btn-white btn-sm through"><i class="fa fa-eye"></i>  查看</a>
+                                            <a href="${ctx}/view/custintent/view"
+                                               class="btn btn-white btn-sm through"><i class="fa fa-eye"></i> 查看</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -115,7 +117,8 @@
                                         <td>2015-09-29 14:17:38</td>
                                         <td>客服同意</td>
                                         <td class="text-right text-nowrap">
-                                            <a href="${ctx}/view/custintent/view" class="btn btn-white btn-sm through"><i class="fa fa-eye"></i>  查看</a>
+                                            <a href="${ctx}/view/custintent/view"
+                                               class="btn btn-white btn-sm through"><i class="fa fa-eye"></i> 查看</a>
                                         </td>
                                     </tr>
                                     </tbody>
@@ -123,9 +126,24 @@
                             </div>
                             <div class="pages border-top">
                                 <div class="row">
-                                    <div class="col-md-4"><div class="m-t-md">当前显示 1 到 10 条，共 57 条</div></div>
+                                    <div class="col-md-4">
+                                        <div class="m-t-md">当前显示 1 到 10 条，共 57 条</div>
+                                    </div>
                                     <div class="col-md-8 footable-visible">
-                                        <ul class="pagination pull-right">                                             <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li>                                             <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a></li>                                             <li class="footable-page active"><a data-page="0" href="#">2</a></li>                                             <li class="footable-page"><a data-page="1" href="#">3</a></li>                                             <li class="footable-page"><a data-page="1" href="#">4</a></li>                                             <li class="footable-page"><a data-page="1" href="#">5</a></li>                                             <li class="footable-page"><a data-page="1" href="#">6</a></li>                                             <li class="footable-page-arrow"><a data-page="next" href="#next">...</a></li>                                             <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>                                         </ul>
+                                        <ul class="pagination pull-right">
+                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a>
+                                            </li>
+                                            <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a>
+                                            </li>
+                                            <li class="footable-page active"><a data-page="0" href="#">2</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">3</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">4</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">5</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">6</a></li>
+                                            <li class="footable-page-arrow"><a data-page="next" href="#next">...</a>
+                                            </li>
+                                            <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

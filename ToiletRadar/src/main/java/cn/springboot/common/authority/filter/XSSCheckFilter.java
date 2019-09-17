@@ -17,13 +17,13 @@ import javax.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/** 
- * @Description xss参数防注入
+/**
  * @author sh
+ * @Description xss参数防注入
  * @date Mar 24, 2019 7:42:45 PM
  */
 @SuppressWarnings("all")
-@WebFilter(urlPatterns = "/*", filterName = "XSSCheck", initParams = { @WebInitParam(name = "securityconfig", value = "/*") })
+@WebFilter(urlPatterns = "/*", filterName = "XSSCheck", initParams = {@WebInitParam(name = "securityconfig", value = "/*")})
 public class XSSCheckFilter implements Filter {
 
     private static Logger log = LoggerFactory.getLogger(XSSCheckFilter.class);
@@ -88,7 +88,7 @@ public class XSSCheckFilter implements Filter {
         }
         if (!isSafe) {
             request.setAttribute("err", "您输入的参数有非法字符，请输入正确的参数！");
-            request.setAttribute("pageUrl",request.getRequestURI());
+            request.setAttribute("pageUrl", request.getRequestURI());
             request.getRequestDispatcher(errorPath).forward(request, response);
             return;
         }

@@ -7,7 +7,7 @@ package generic.cdc.dome;
  * @create: 2019-08-14 19:46
  **/
 public class ArrayList<T> {
-  public static void main(String[] args) {
-    ArrayList<String> strList = new ArrayList<String>();
-  }
+    public static void main(String[] args) {
+        ArrayList<String> strList = new ArrayList<String>();
+    }
 }

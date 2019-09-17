@@ -1,13 +1,13 @@
 //加载左侧导航
-$("#leftnav").load('/leftnav',function(response,status,xhr){
-    if(status=='success'){
+$("#leftnav").load('/leftnav', function (response, status, xhr) {
+    if (status == 'success') {
         //加载完成执行导航组件
         $('#side-menu').metisMenu();
     }
 });
 //加载顶部导航
-$("#topnav").load('/topnav',function(response,status,xhr){
-    if(status=='success'){
+$("#topnav").load('/topnav', function (response, status, xhr) {
+    if (status == 'success') {
         //加载完成执行按钮点击事件
         $('.navbar-minimalize').click(function () {
             $("body").toggleClass("mini-navbar");
@@ -55,7 +55,7 @@ $(document).ready(function () {
     });
 
     // Initialize slimscroll for right sidebar
-   $('.sidebar-container').slimScroll({
+    $('.sidebar-container').slimScroll({
         height: '100%',
         railOpacity: 0.4,
         wheelStep: 10
@@ -81,7 +81,7 @@ $(document).ready(function () {
         return false;
     });
 
-    
+
     // Tooltips demo
     $('.tooltip-demo').tooltip({
         selector: "[data-toggle=tooltip]",
@@ -97,8 +97,8 @@ $(document).ready(function () {
         var heightWithoutNavbar = $("body > #wrapper");
         $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
 
-        var navbarHeigh = $('nav.navbar-default').height()+61;
-        var wrapperHeigh = $('#page-wrapper').height()+61;
+        var navbarHeigh = $('nav.navbar-default').height() + 61;
+        var wrapperHeigh = $('#page-wrapper').height() + 61;
 
         if (navbarHeigh > wrapperHeigh) {
             $('#page-wrapper').css("min-height", navbarHeigh + "px");
@@ -122,12 +122,12 @@ $(document).ready(function () {
             $('.sidebar-scroll').slimScroll({
                 height: '100%',
                 railVisible: false,
-                color:"#65cea7",
-                opacity:.8,
+                color: "#65cea7",
+                opacity: .8,
                 size: '4px',
                 borderRadius: '0',
                 railBorderRadius: '0',
-                distance:0
+                distance: 0
             });
         }
     });
@@ -237,15 +237,15 @@ function animationHover(element, animation) {
 function SmoothlyMenu() {
     if (!$('body').hasClass('mini-navbar') || $('body').hasClass('body-small')) {
         // Hide menu in order to smoothly turn on when maximize menu
-        $('#side-menu','#side-head').hide();
+        $('#side-menu', '#side-head').hide();
         //$().hide();
         // For smoothly turn on menu
         setTimeout(
             function () {
-                $('#side-menu','#side-head').fadeIn(200);
+                $('#side-menu', '#side-head').fadeIn(200);
             }, 200);
     } else if ($('body').hasClass('fixed-sidebar')) {
-        $('#side-menu','#side-head').hide();
+        $('#side-menu', '#side-head').hide();
         setTimeout(
             function () {
                 $('#side-menu').fadeIn(400)

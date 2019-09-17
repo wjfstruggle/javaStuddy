@@ -55,10 +55,15 @@
                             <div class="form-group">
                                 <div class="col-md-6">
                                     <div class="input-group" aria-expanded="false">
-                                        <input type="text" value="" placeholder="手机号前三位" class="form-control" aria-expanded="false">
+                                        <input type="text" value="" placeholder="手机号前三位" class="form-control"
+                                               aria-expanded="false">
                                         <span class="input-group-addon" style="background:#eee" aria-expanded="false">******</span>
-                                        <input type="text" value="" placeholder="手机号后四位" class="form-control" aria-expanded="false">
-                                        <span class="input-group-btn" aria-expanded="false"><button class="btn btn-primary" id="search_yuyue" aria-expanded="false"><i class="fa fa-search" aria-expanded="false"></i> 查询预约</button></span>
+                                        <input type="text" value="" placeholder="手机号后四位" class="form-control"
+                                               aria-expanded="false">
+                                        <span class="input-group-btn" aria-expanded="false"><button
+                                                    class="btn btn-primary" id="search_yuyue" aria-expanded="false"><i
+                                                        class="fa fa-search"
+                                                        aria-expanded="false"></i> 查询预约</button></span>
                                     </div>
                                 </div>
                             </div>
@@ -71,50 +76,75 @@
                     <div class="ibox">
                         <div class="ibox-content">
                             <div class="table-responsive ">
-                                <table class="table table-centerbody table-striped table-condensed text-nowrap" id="editable-sample">
+                                <table class="table table-centerbody table-striped table-condensed text-nowrap"
+                                       id="editable-sample">
                                     <thead>
-                                        <tr>
-                                            <th>项目</th>
-                                            <th>项目</th>
-                                            <th class="text-right">项目</th>
-                                        </tr>
+                                    <tr>
+                                        <th>项目</th>
+                                        <th>项目</th>
+                                        <th class="text-right">项目</th>
+                                    </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>上海</td>
-                                            <td>上海屋瓴(00966)</td>
-                                            <td class="text-right text-nowrap">
-                                                <div class="btn-group ">
-                                                    <button class="btn btn-white btn-sm edit" data-id="1" data-toggle="modal" data-target="#edit"><i class="fa fa-pencil"></i>  发送</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>南京</td>
-                                            <td>上海屋瓴(00966)</td>
-                                            <td class="text-right text-nowrap">
-                                                <div class="btn-group ">
-                                                    <button class="btn btn-white btn-sm edit" data-id="1" data-toggle="modal" data-target="#edit"><i class="fa fa-pencil"></i>  发送</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>深圳</td>
-                                            <td>上海屋瓴(00966)</td>
-                                            <td class="text-right text-nowrap">
-                                                <div class="btn-group ">
-                                                    <button class="btn btn-white btn-sm edit" data-id="1" data-toggle="modal" data-target="#edit"><i class="fa fa-pencil"></i>  发送</button>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                    <tr>
+                                        <td>上海</td>
+                                        <td>上海屋瓴(00966)</td>
+                                        <td class="text-right text-nowrap">
+                                            <div class="btn-group ">
+                                                <button class="btn btn-white btn-sm edit" data-id="1"
+                                                        data-toggle="modal" data-target="#edit"><i
+                                                            class="fa fa-pencil"></i> 发送
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>南京</td>
+                                        <td>上海屋瓴(00966)</td>
+                                        <td class="text-right text-nowrap">
+                                            <div class="btn-group ">
+                                                <button class="btn btn-white btn-sm edit" data-id="1"
+                                                        data-toggle="modal" data-target="#edit"><i
+                                                            class="fa fa-pencil"></i> 发送
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>深圳</td>
+                                        <td>上海屋瓴(00966)</td>
+                                        <td class="text-right text-nowrap">
+                                            <div class="btn-group ">
+                                                <button class="btn btn-white btn-sm edit" data-id="1"
+                                                        data-toggle="modal" data-target="#edit"><i
+                                                            class="fa fa-pencil"></i> 发送
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="pages border-top">
                                 <div class="row">
-                                    <div class="col-md-4"><div class="m-t-md">当前显示 1 到 10 条，共 57 条</div></div>
+                                    <div class="col-md-4">
+                                        <div class="m-t-md">当前显示 1 到 10 条，共 57 条</div>
+                                    </div>
                                     <div class="col-md-8 footable-visible">
-                                        <ul class="pagination pull-right">                                             <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li>                                             <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a></li>                                             <li class="footable-page active"><a data-page="0" href="#">2</a></li>                                             <li class="footable-page"><a data-page="1" href="#">3</a></li>                                             <li class="footable-page"><a data-page="1" href="#">4</a></li>                                             <li class="footable-page"><a data-page="1" href="#">5</a></li>                                             <li class="footable-page"><a data-page="1" href="#">6</a></li>                                             <li class="footable-page-arrow"><a data-page="next" href="#next">...</a></li>                                             <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>                                         </ul>
+                                        <ul class="pagination pull-right">
+                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a>
+                                            </li>
+                                            <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a>
+                                            </li>
+                                            <li class="footable-page active"><a data-page="0" href="#">2</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">3</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">4</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">5</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">6</a></li>
+                                            <li class="footable-page-arrow"><a data-page="next" href="#next">...</a>
+                                            </li>
+                                            <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -150,8 +180,8 @@
 <!---顶部弹出提示--->
 
 <script>
-    $(document).on('click','#editable-sample a.delete', function () {
-        var userid=$(this).data("userid");
+    $(document).on('click', '#editable-sample a.delete', function () {
+        var userid = $(this).data("userid");
         swal({
             title: "您确定要删除吗?",
             text: "",
@@ -165,7 +195,7 @@
             //swal("删除成功!", "","success");
 
             //失败
-            swal("删除失败!", "","error");
+            swal("删除失败!", "", "error");
         });
     });
 </script>

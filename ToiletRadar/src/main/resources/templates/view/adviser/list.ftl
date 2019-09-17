@@ -58,9 +58,10 @@
             <div class="ibox-content m-b-sm border-bottom">
                 <div class="row">
                     <div class="col-md-5">
-                        <div class="input-group" >
+                        <div class="input-group">
                             <input type="text" class="input-sm form-control" name="end" value="" placeholder="输入姓名/手机号">
-                            <span class="input-group-btn"><button type="button" class="btn btn-sm btn-primary "> 搜索</button></span>
+                            <span class="input-group-btn"><button type="button"
+                                                                  class="btn btn-sm btn-primary "> 搜索</button></span>
                         </div>
                     </div>
                 </div>
@@ -88,7 +89,9 @@
                                         <td>13975701932</td>
                                         <td>2015-10-14</td>
                                         <td class="text-right text-nowrap">
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1"><i class="fa fa-trash"></i>  删除</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"><i
+                                                        class="fa fa-trash"></i> 删除
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -96,7 +99,9 @@
                                         <td>13975701932</td>
                                         <td>2015-10-14</td>
                                         <td class="text-right text-nowrap">
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1"><i class="fa fa-trash"></i>  删除</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"><i
+                                                        class="fa fa-trash"></i> 删除
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -104,7 +109,9 @@
                                         <td>13975701932</td>
                                         <td>2015-10-14</td>
                                         <td class="text-right text-nowrap">
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1"><i class="fa fa-trash"></i>  删除</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"><i
+                                                        class="fa fa-trash"></i> 删除
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -112,7 +119,9 @@
                                         <td>13975701932</td>
                                         <td>2015-10-14</td>
                                         <td class="text-right text-nowrap">
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1"><i class="fa fa-trash"></i>  删除</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"><i
+                                                        class="fa fa-trash"></i> 删除
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -120,7 +129,9 @@
                                         <td>13975701932</td>
                                         <td>2015-10-14</td>
                                         <td class="text-right text-nowrap">
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1"><i class="fa fa-trash"></i>  删除</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"><i
+                                                        class="fa fa-trash"></i> 删除
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -128,7 +139,9 @@
                                         <td>13975701932</td>
                                         <td>2015-10-14</td>
                                         <td class="text-right text-nowrap">
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1"><i class="fa fa-trash"></i>  删除</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"><i
+                                                        class="fa fa-trash"></i> 删除
+                                            </button>
                                         </td>
                                     </tr>
                                     </tbody>
@@ -136,9 +149,24 @@
                             </div>
                             <div class="pages border-top">
                                 <div class="row">
-                                    <div class="col-md-4"><div class="m-t-md">当前显示 1 到 10 条，共 57 条</div></div>
+                                    <div class="col-md-4">
+                                        <div class="m-t-md">当前显示 1 到 10 条，共 57 条</div>
+                                    </div>
                                     <div class="col-md-8 footable-visible">
-                                        <ul class="pagination pull-right">                                             <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li>                                             <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a></li>                                             <li class="footable-page active"><a data-page="0" href="#">2</a></li>                                             <li class="footable-page"><a data-page="1" href="#">3</a></li>                                             <li class="footable-page"><a data-page="1" href="#">4</a></li>                                             <li class="footable-page"><a data-page="1" href="#">5</a></li>                                             <li class="footable-page"><a data-page="1" href="#">6</a></li>                                             <li class="footable-page-arrow"><a data-page="next" href="#next">...</a></li>                                             <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>                                         </ul>
+                                        <ul class="pagination pull-right">
+                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a>
+                                            </li>
+                                            <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a>
+                                            </li>
+                                            <li class="footable-page active"><a data-page="0" href="#">2</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">3</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">4</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">5</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">6</a></li>
+                                            <li class="footable-page-arrow"><a data-page="next" href="#next">...</a>
+                                            </li>
+                                            <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -188,8 +216,8 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">时间类型</label>
                         <div class="col-sm-8">
-                            <select name="jiaos" class="form-control input-s-sm inline"  data-toggle-name="#jiaosbox">
-                                <option value="" >请选择</option>
+                            <select name="jiaos" class="form-control input-s-sm inline" data-toggle-name="#jiaosbox">
+                                <option value="">请选择</option>
                                 <option value="1" data-box-name="lianjia">即时</option>
                                 <option value="2" data-box-name="fangdd">自定义</option>
                             </select>
@@ -200,7 +228,7 @@
                         <div class="col-sm-8">
                             <div class="input-group date">
                                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                <input type="text" value="" placeholder="请选择开盘时间"  class="form-control">
+                                <input type="text" value="" placeholder="请选择开盘时间" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -208,8 +236,8 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">推送范围</label>
                         <div class="col-sm-8">
-                            <select name="tuisong" class="form-control input-s-sm inline"  data-toggle-name="#jiaosbox">
-                                <option value="" >请选择</option>
+                            <select name="tuisong" class="form-control input-s-sm inline" data-toggle-name="#jiaosbox">
+                                <option value="">请选择</option>
                                 <option value="1" data-box-name="lianjia">部分</option>
                                 <option value="2" data-box-name="fangdd">全部</option>
                             </select>
@@ -219,7 +247,8 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">部分置业顾问</label>
                         <div class="col-sm-8">
-                            <select  data-placeholder="-- 请选择 --"  name="round" multiple class="chosen-select" tabindex="4" required>
+                            <select data-placeholder="-- 请选择 --" name="round" multiple class="chosen-select"
+                                    tabindex="4" required>
                                 <option value=""></option>
                                 <option value="1">下拉一</option>
                                 <option value="2">下拉二</option>
@@ -243,7 +272,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group m-t-sm" >
+                    <div class="form-group m-t-sm">
                         <div class="col-sm-6 col-sm-push-3">
                             <button class="btn btn-md btn-primary " type="submit"><strong>创建用户</strong></button>
                             <button type="button" class="btn btn-white m-l-sm" data-dismiss="modal">取消</button>
@@ -271,19 +300,24 @@
 <script src="${ctx}/static/js/plugins/chosen/chosen.jquery.js"></script>
 <script src="${ctx}/static/js/plugins/sweetalert/sweetalert.min.js" async></script><!---对话框 alert--->
 <script src="${ctx}/static/js/plugins/validate/jquery.validate.min.js"></script>  <!---表单验证--->
-<script src="${ctx}/static/js/plugins/validate/validate-cn.js" ></script> <!---validate 自定义方法--->
+<script src="${ctx}/static/js/plugins/validate/validate-cn.js"></script> <!---validate 自定义方法--->
 <script src="${ctx}/static/js/plugins/datapicker/bootstrap-datepicker.js"></script>
 
 <!-- Page-Level Scripts -->
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.footable').footable();
     });
 </script>
 <script>
 
     //下拉框组件
-    $(".chosen-select").chosen({no_results_text:'未找到此项',width:"100%",allow_single_deselect:true,disable_search_threshold:10});
+    $(".chosen-select").chosen({
+        no_results_text: '未找到此项',
+        width: "100%",
+        allow_single_deselect: true,
+        disable_search_threshold: 10
+    });
     $(document).ready(function () {
         //添加用户表单验证
         $("#add").validate({
@@ -307,15 +341,15 @@
 
         function addform(form) {
             $.ajax(
-                    {
-                        url: "?",
-                        type: "post",
-                        data: $(form).serialize(),
-                        success: function (data) {
-                            swal("用户添加成功!", "", "success");
-                            //alert($(form).serialize())
-                        }
+                {
+                    url: "?",
+                    type: "post",
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        swal("用户添加成功!", "", "success");
+                        //alert($(form).serialize())
                     }
+                }
             );
             return false;
         }
@@ -364,26 +398,26 @@
 
         function setform(form) {
             $.ajax(
-                    {
-                        url: "?",
-                        type: "post",
-                        data: $(form).serialize(),
-                        success: function (data) {
-                            toastr.success('密码已发送到用户手机！','密码重置成功！');
-                            $("#myModa-reset").modal("hide");
-                        }
+                {
+                    url: "?",
+                    type: "post",
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        toastr.success('密码已发送到用户手机！', '密码重置成功！');
+                        $("#myModa-reset").modal("hide");
                     }
+                }
             );
             return false;
         }
 
         //验证码在模态框出现前加载
         $("#myModa-reset").on('show.bs.modal', function (event) {
-            var button=$(event.relatedTarget );
-            var userid=button.data("userid");
+            var button = $(event.relatedTarget);
+            var userid = button.data("userid");
             $("#userid").val(userid);
-            $('#codeimg').attr("src","http://www.wulingtest.com:8780/jcaptcha")
-            alert("userid = "+ userid);
+            $('#codeimg').attr("src", "http://www.wulingtest.com:8780/jcaptcha")
+            alert("userid = " + userid);
         });
         //关闭模态框清空表单值
         $("#myModa-reset").on('hidden.bs.modal', function (event) {
@@ -391,8 +425,8 @@
         });
         //删除数据
         $('#editable-sample button.delete').on('click', function () {
-            var row=$(this).parents("tr")[0];
-            var userid=$(this).data("userid");
+            var row = $(this).parents("tr")[0];
+            var userid = $(this).data("userid");
             swal({
                 title: "您确定要删除吗?",
                 text: "用户账户删除后将不可恢复!",
@@ -402,16 +436,16 @@
                 confirmButtonText: "确定删除！",
                 closeOnConfirm: false
             }, function () {
-                row.className="animated bounceOut";
-                setTimeout(function(){
-                            //请求成功返回
-                            // row.parentNode.removeChild(row);
-                            //swal("删除成功!", "用户 “香溢紫郡－案场经历” 删除成功！","success");
+                row.className = "animated bounceOut";
+                setTimeout(function () {
+                        //请求成功返回
+                        // row.parentNode.removeChild(row);
+                        //swal("删除成功!", "用户 “香溢紫郡－案场经历” 删除成功！","success");
 
-                            //失败
-                            row.className="animated fadeInLeft";
-                            swal("删除失败!", "用户userid="+userid+" “香溢紫郡－案场经历” 删除失败！","error");
-                        },1000
+                        //失败
+                        row.className = "animated fadeInLeft";
+                        swal("删除失败!", "用户userid=" + userid + " “香溢紫郡－案场经历” 删除失败！", "error");
+                    }, 1000
                 )
             });
         });

@@ -57,11 +57,13 @@
             <div class="ibox">
                 <div class="ibox-heading">
                     <div class="ibox-title">
-                        <h4>荆子凡  预约 转 认购 <small>（合同编号：00966000004151112103907）</small></h4>
+                        <h4>荆子凡 预约 转 认购
+                            <small>（合同编号：00966000004151112103907）</small>
+                        </h4>
                     </div>
                 </div>
                 <div class="ibox-content p-t-md">
-                    <form class="form-horizontal" id="add_form" >
+                    <form class="form-horizontal" id="add_form">
                         <div class="form-group">
                             <label class="col-md-2 control-label">项目名称 </label>
                             <div class="col-md-10">
@@ -71,22 +73,26 @@
 
                         <div class="form-group">
                             <label class="col-md-2 control-label">客户1名称 <span class="text-danger">*</span></label>
-                            <div class="col-md-10"><input type="text" class="form-control" value="" placeholder="" required></div>
+                            <div class="col-md-10"><input type="text" class="form-control" value="" placeholder=""
+                                                          required></div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-md-2 control-label">客户1手机 <span class="text-danger">*</span></label>
-                            <div class="col-md-10"><input type="text" class="form-control" value="" placeholder="" required></div>
+                            <div class="col-md-10"><input type="text" class="form-control" value="" placeholder=""
+                                                          required></div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-md-2 control-label">客户2名称 <span class="text-danger">*</span></label>
-                            <div class="col-md-10"><input type="text" class="form-control" value="" placeholder="" required></div>
+                            <div class="col-md-10"><input type="text" class="form-control" value="" placeholder=""
+                                                          required></div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-md-2 control-label">客户2手机 <span class="text-danger">*</span></label>
-                            <div class="col-md-10"><input type="text" class="form-control" value="" placeholder="" required></div>
+                            <div class="col-md-10"><input type="text" class="form-control" value="" placeholder=""
+                                                          required></div>
                         </div>
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
@@ -169,7 +175,8 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-4 col-sm-offset-2">
-                                <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i> 填写完成，提交！</button>
+                                <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i> 填写完成，提交！
+                                </button>
                                 <button class="btn btn-white" type="reset">取消</button>
                             </div>
                         </div>
@@ -228,23 +235,24 @@
                 addform(form);
             }
         });
+
         function addform(form) {
             $.ajax(
-                    {
-                        url: "?",
-                        type: "post",
-                        data: $(form).serialize(),
-                        success: function (data) {
-                            toastr.success('', '配置修改成功！');
-                        },
-                        error:function(error){
-                            setTimeout(function(){
-                                $('#myButton').button('reset');
-                                $("#rslide").rslide("hide")
-                            },3000);
-                            toastr.error('错误代码：登陆超时，请重新登陆！', '配置修改失败！');
-                        }
+                {
+                    url: "?",
+                    type: "post",
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        toastr.success('', '配置修改成功！');
+                    },
+                    error: function (error) {
+                        setTimeout(function () {
+                            $('#myButton').button('reset');
+                            $("#rslide").rslide("hide")
+                        }, 3000);
+                        toastr.error('错误代码：登陆超时，请重新登陆！', '配置修改失败！');
                     }
+                }
             );
         }
     });

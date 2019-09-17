@@ -3,9 +3,9 @@ package cn.springboot.config.shiro.vo;
 import cn.springboot.model.auth.Role;
 
 public enum RoleEnumUtil {
-    
-    超级管理员("超级管理员","admin_role","超级管理员"),
-    普通用户("普通用户","common_role","普通用户");
+
+    超级管理员("超级管理员", "admin_role", "超级管理员"),
+    普通用户("普通用户", "common_role", "普通用户");
 
     private RoleEnumUtil(String name, String roleCode, String remark) {
         this.name = name;
@@ -16,8 +16,8 @@ public enum RoleEnumUtil {
     private String name;
     private String roleCode;
     private String remark;
-    
-    public Role getRole(){
+
+    public Role getRole() {
         Role role = new Role();
         role.setName(this.name());
         role.setCode(this.roleCode);

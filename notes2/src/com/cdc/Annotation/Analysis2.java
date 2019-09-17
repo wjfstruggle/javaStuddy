@@ -7,7 +7,7 @@ package com.cdc.Annotation;
  * @create: 2019-08-22 10:29
  **/
 public class Analysis2 {
-  public void show2() {
-    System.out.println("show2....");
-  }
+    public void show2() {
+        System.out.println("show2....");
+    }
 }

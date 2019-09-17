@@ -11,9 +11,9 @@ import org.springframework.core.env.Environment;
 
 import com.alibaba.druid.pool.DruidDataSource;
 
-/** 
- * @Description Druid单数据源配置
+/**
  * @author sh
+ * @Description Druid单数据源配置
  * @date Mar 16, 2019 5:18:24 PM
  */
 //@Configuration

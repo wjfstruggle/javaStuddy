@@ -3,7 +3,9 @@ package cn.springboot.mapper.simple;
 import cn.springboot.model.simple.Account;
 import cn.springboot.model.simple.Toilet;
 import cn.springboot.model.simple.ToiletExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface ToiletMapper {
@@ -31,5 +33,5 @@ public interface ToiletMapper {
 
     List<Toilet> findToiletByPage(String keywords);
 
-    int updateCheckStatus(@Param("pkId") Long pkId,@Param("checkStatus") byte checkStatus);
+    int updateCheckStatus(@Param("pkId") Long pkId, @Param("checkStatus") byte checkStatus);
 }

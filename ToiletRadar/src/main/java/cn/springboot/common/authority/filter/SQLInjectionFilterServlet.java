@@ -19,12 +19,12 @@ import org.slf4j.LoggerFactory;
 
 import cn.springboot.common.authority.service.xss.XSSSecurityConstants;
 
-/** 
- * @Description 防止SQL注入
+/**
  * @author sh
+ * @Description 防止SQL注入
  * @date Mar 24, 2019 7:42:29 PM
  */
-@WebFilter(urlPatterns = "/*", filterName = "SQLInjection", initParams = { @WebInitParam(name = "regularExpression", value = "(?:')|(?:--)|(/\\*(?:.|[\\n\\r])*?\\*/)|" + "(\\b(select|update|and|or|delete|insert|trancate|char|into|substr|ascii|declare|exec|count|master|into|drop|execute)\\b)") })
+@WebFilter(urlPatterns = "/*", filterName = "SQLInjection", initParams = {@WebInitParam(name = "regularExpression", value = "(?:')|(?:--)|(/\\*(?:.|[\\n\\r])*?\\*/)|" + "(\\b(select|update|and|or|delete|insert|trancate|char|into|substr|ascii|declare|exec|count|master|into|drop|execute)\\b)")})
 public class SQLInjectionFilterServlet implements Filter {
 
     private static final Logger log = LoggerFactory.getLogger(SQLInjectionFilterServlet.class);
@@ -60,7 +60,7 @@ public class SQLInjectionFilterServlet implements Filter {
                 if (null != value[i] && value[i].matches(regularExpression)) {
                     log.info("#疑似SQL注入攻击！参数名称：{}；录入信息:{}", entry.getKey(), value[i]);
                     request.setAttribute("err", "您输入的参数有非法字符，请输入正确的参数！");
-                    request.setAttribute("pageUrl",req.getRequestURI());
+                    request.setAttribute("pageUrl", req.getRequestURI());
                     request.getRequestDispatcher(request.getServletContext().getContextPath() + XSSSecurityConstants.FILTER_ERROR_PAGE).forward(request, response);
                     return;
                 }

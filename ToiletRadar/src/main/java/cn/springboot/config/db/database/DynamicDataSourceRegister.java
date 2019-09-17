@@ -23,9 +23,9 @@ import org.springframework.core.type.AnnotationMetadata;
 
 import com.alibaba.druid.pool.DruidDataSource;
 
-/** 
- * @Description 动态数据源注册<br/>启动动态数据源请在启动类中（如SpringBootSampleApplication）添加 @Import(DynamicDataSourceRegister.class)
+/**
  * @author sh
+ * @Description 动态数据源注册<br />启动动态数据源请在启动类中（如SpringBootSampleApplication）添加 @Import(DynamicDataSourceRegister.class)
  * @date Mar 17, 2019 9:03:10 AM
  */
 public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar, EnvironmentAware {
@@ -67,11 +67,11 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
         logger.info("Dynamic DataSource Registry");
     }
 
-    /** 
+    /**
+     * @param dsMap
+     * @return
      * @Description 创建DataSource
      * @author sh
-     * @param dsMap
-     * @return  
      */
     public DataSource buildDataSource(Map<String, Object> dsMap, Environment env) {
         DruidDataSource dataSource = new DruidDataSource();
@@ -100,10 +100,11 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
         }
     }
 
-    /** 
-     * <p>加载多数据源配置 </p> 
-     * @param env 
-     * @see org.springframework.context.EnvironmentAware#setEnvironment(org.springframework.core.env.Environment) 
+    /**
+     * <p>加载多数据源配置 </p>
+     *
+     * @param env
+     * @see org.springframework.context.EnvironmentAware#setEnvironment(org.springframework.core.env.Environment)
      */
     @Override
     public void setEnvironment(Environment env) {
@@ -111,10 +112,10 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
         initCustomDataSources(env);
     }
 
-    /** 
+    /**
+     * @param env
      * @Description 初始化主数据源
      * @author sh
-     * @param env  
      */
     private void initDefaultDataSource(Environment env) {
         // 读取主数据源
@@ -129,11 +130,11 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
         dataBinder(defaultDataSource, env);
     }
 
-    /** 
+    /**
+     * @param dataSource
+     * @param env
      * @Description 为DataSource绑定更多数据
      * @author sh
-     * @param dataSource
-     * @param env  
      */
     private void dataBinder(DataSource dataSource, Environment env) {
         RelaxedDataBinder dataBinder = new RelaxedDataBinder(dataSource);
@@ -155,10 +156,10 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
         dataBinder.bind(dataSourcePropertyValues);
     }
 
-    /** 
+    /**
+     * @param env
      * @Description 初始化更多数据源
      * @author sh
-     * @param env  
      */
     private void initCustomDataSources(Environment env) {
         // 读取配置文件获取更多数据源，也可以通过defaultDataSource读取数据库获取更多数据源

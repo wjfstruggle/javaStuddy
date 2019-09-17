@@ -73,7 +73,7 @@
                                 </tr>
                                 <tr>
                                     <td class="text-right text-nowrap"><b>经纪人信息：</b></td>
-                                    <td>经纪人：明明  公司：测试经纪公司  门店：多媒体门店</td>
+                                    <td>经纪人：明明 公司：测试经纪公司 门店：多媒体门店</td>
                                 </tr>
                                 <tr>
                                     <td class="text-right text-nowrap"><b>置业顾问信息：</b></td>
@@ -85,7 +85,7 @@
                                 </tr>
                                 <tr>
                                     <td class="text-right text-nowrap"><b>收款状态：</b></td>
-                                    <td>应收：20000.0  已收：20000.0</td>
+                                    <td>应收：20000.0 已收：20000.0</td>
                                 </tr>
                                 <tr>
                                     <td class="text-right text-nowrap"><b>预约时间：</b></td>
@@ -152,8 +152,12 @@
                         </div>
                         <div class="ibox-content p-t-md">
                             <div class="photos">
-                                <a target="_blank" href="http://24.media.tumblr.com/20a9c501846f50c1271210639987000f/tumblr_n4vje69pJm1st5lhmo1_1280.jpg"> <img alt="image" class="feed-photo" src="${ctx}/static/img/p1.jpg"></a>
-                                <a target="_blank" href="http://24.media.tumblr.com/20a9c501846f50c1271210639987000f/tumblr_n4vje69pJm1st5lhmo1_1280.jpg"> <img alt="image" class="feed-photo" src="${ctx}/static/img/p1.jpg"></a>
+                                <a target="_blank"
+                                   href="http://24.media.tumblr.com/20a9c501846f50c1271210639987000f/tumblr_n4vje69pJm1st5lhmo1_1280.jpg">
+                                    <img alt="image" class="feed-photo" src="${ctx}/static/img/p1.jpg"></a>
+                                <a target="_blank"
+                                   href="http://24.media.tumblr.com/20a9c501846f50c1271210639987000f/tumblr_n4vje69pJm1st5lhmo1_1280.jpg">
+                                    <img alt="image" class="feed-photo" src="${ctx}/static/img/p1.jpg"></a>
                             </div>
                         </div>
                     </div>
@@ -167,30 +171,30 @@
                         <div class="ibox-content p-t-md">
                             <table class="table table-hover table-noborder">
                                 <tbody>
-                                    <tr>
-                                        <td class="text-right text-nowrap" style="width: 145px">生成时间：</td>
-                                        <td>77667899877</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right text-nowrap">佣金归属者：</td>
-                                        <td>62736738189101001</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right text-nowrap">金额：</td>
-                                        <td><a href="#">点击查看</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right text-nowrap">佣金来源：</td>
-                                        <td>13915425536</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right text-nowrap">状态：</td>
-                                        <td>审核通过</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right text-nowrap">兑换元宝时间：</td>
-                                        <td></td>
-                                    </tr>
+                                <tr>
+                                    <td class="text-right text-nowrap" style="width: 145px">生成时间：</td>
+                                    <td>77667899877</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right text-nowrap">佣金归属者：</td>
+                                    <td>62736738189101001</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right text-nowrap">金额：</td>
+                                    <td><a href="#">点击查看</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right text-nowrap">佣金来源：</td>
+                                    <td>13915425536</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right text-nowrap">状态：</td>
+                                    <td>审核通过</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right text-nowrap">兑换元宝时间：</td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -204,13 +208,14 @@
                         </div>
                         <div class="ibox-content p-t-md">
                             <div class="table-responsive ">
-                                <table class="table table-centerbody table-striped table-condensed text-nowrap" id="editable-sample">
+                                <table class="table table-centerbody table-striped table-condensed text-nowrap"
+                                       id="editable-sample">
                                     <thead>
                                     <tr>
-                                        <th>操作时间 </th>
-                                        <th>动作 </th>
-                                        <th>操作人员 </th>
-                                        <th>备注 </th>
+                                        <th>操作时间</th>
+                                        <th>动作</th>
+                                        <th>操作人员</th>
+                                        <th>备注</th>
                                     </tr>
                                     </thead>
                                     <tbody>

@@ -30,11 +30,11 @@ public class DemoController {
     private DemoService demoService;
 
     @ApiOperation(value = "添加Demo")
-    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String,String> add(@RequestBody Demo demo) {
+    public Map<String, String> add(@RequestBody Demo demo) {
         boolean flag = demoService.addDemo(demo);
-        Map<String ,String > result = new HashMap<>();
+        Map<String, String> result = new HashMap<>();
         if (flag) {
             result.put("status", "1");
             result.put("msg", "发布成功");
@@ -46,11 +46,11 @@ public class DemoController {
     }
 
     @ApiOperation(value = "根据ID删除Demo")
-    @RequestMapping(value = "/delete",method = RequestMethod.POST)
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String,String> delete(String id) {
+    public Map<String, String> delete(String id) {
         boolean flag = demoService.deleteDemoById(id);
-        Map<String ,String > result = new HashMap<>();
+        Map<String, String> result = new HashMap<>();
         if (flag) {
             result.put("status", "1");
             result.put("msg", "删除成功");
@@ -62,11 +62,11 @@ public class DemoController {
     }
 
     @ApiOperation(value = "根据ID修改Demo")
-    @RequestMapping(value = "/edit",method = RequestMethod.POST)
+    @RequestMapping(value = "/edit", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String,String> edit(@RequestBody Demo demo) {
+    public Map<String, String> edit(@RequestBody Demo demo) {
         boolean flag = demoService.editDemo(demo);
-        Map<String ,String > result = new HashMap<>();
+        Map<String, String> result = new HashMap<>();
         if (flag) {
             result.put("status", "1");
             result.put("msg", "修改成功");
@@ -78,7 +78,7 @@ public class DemoController {
     }
 
     @ApiOperation(value = "根据ID查询Demo")
-    @RequestMapping(value = "/selectById",method = RequestMethod.GET)
+    @RequestMapping(value = "/selectById", method = RequestMethod.GET)
     @ResponseBody
     public Demo selectById(String id) {
         if (StringUtil.isNotEmpty(id)) {
@@ -95,7 +95,7 @@ public class DemoController {
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     @ResponseBody
     public PageInfo<Demo> list() {
-        PageInfo<Demo> page = demoService.findNewsByPage(null,null);
+        PageInfo<Demo> page = demoService.findNewsByPage(null, null);
         return page;
     }
 }

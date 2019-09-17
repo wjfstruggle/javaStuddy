@@ -7,14 +7,15 @@ package obj.cdc.dome;
  * @create: 2019-08-14 08:58
  **/
 public class SalaryIncome extends Income {
-  public SalaryIncome(double income) {
-    super(income);
-  }
-  @Override
-  public double getIncome() {
-    if (income < 5000) {
-      return 0;
+    public SalaryIncome(double income) {
+        super(income);
     }
-    return (income - 5000) * 0.2;
-  }
+
+    @Override
+    public double getIncome() {
+        if (income < 5000) {
+            return 0;
+        }
+        return (income - 5000) * 0.2;
+    }
 }

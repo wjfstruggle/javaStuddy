@@ -10,22 +10,17 @@ public interface UserService {
     /**
      * 新增用户
      *
-     * @param user
-     *            用户
-     * @param organize
-     *            组织
-     * @param role
-     *            角色
+     * @param user     用户
+     * @param organize 组织
+     * @param role     角色
      */
     public void addUser(User user, Role role);
 
     /**
      * 修改密码
      *
-     * @param userCommand
-     *            临时用户对象
-     * @param usr
-     *            当前用户
+     * @param userCommand 临时用户对象
+     * @param usr         当前用户
      * @author sh
      */
     public void updatePassword(User user);
@@ -33,8 +28,7 @@ public interface UserService {
     /**
      * 根据用户名查询用户
      *
-     * @param username
-     *            用户名
+     * @param username 用户名
      * @return user 用户
      */
     public User findUserByName(String username);
@@ -42,8 +36,7 @@ public interface UserService {
     /**
      * 更新用户登录时间
      *
-     * @param user
-     *            用户
+     * @param user 用户
      */
     public void updateUserLastLoginTime(User user);
 
@@ -57,10 +50,8 @@ public interface UserService {
     /**
      * 根据条件（店铺、名称）查询客服人员
      *
-     * @param shopId
-     *            店铺ID
-     * @param empName
-     *            客服人员名称
+     * @param shopId  店铺ID
+     * @param empName 客服人员名称
      * @return
      */
     public List<User> findEmp(String shopId, String empName);

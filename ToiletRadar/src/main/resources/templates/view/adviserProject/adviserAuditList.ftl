@@ -63,7 +63,8 @@
                             <input type="text" class="input-sm form-control" name="start" value="09/07/2015">
                             <span class="input-group-addon">至</span>
                             <input type="text" class="input-sm form-control" name="end" value="10/07/2015">
-                            <span class="input-group-btn"><button type="button" class="btn btn-sm btn-primary no-margins"> 查询</button> </span>
+                            <span class="input-group-btn"><button type="button"
+                                                                  class="btn btn-sm btn-primary no-margins"> 查询</button> </span>
                         </div>
                     </div>
                 </div>
@@ -71,13 +72,13 @@
             <!--当前位置结束-->
 
 
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ibox">
                         <div class="ibox-heading">
                             <div class="ibox-title p-l-32">
-                                <label class="checkbox-inline p-l-n"><input id="checkAll" type="checkbox" class="i-checks" value=""> 全选 </label>
+                                <label class="checkbox-inline p-l-n"><input id="checkAll" type="checkbox"
+                                                                            class="i-checks" value=""> 全选 </label>
                                 <button type="button" class="btn btn-primary btn-xs m-l">批量通过</button>
                                 <button type="button" class="btn btn-primary btn-xs m-l">批量拒绝</button>
                             </div>
@@ -97,43 +98,67 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td><label class="checkbox-inline p-l-n p-r-md"><input name="subBox" type="checkbox" class="i-checks" value="1" ></label>17092776033</td>
+                                        <td><label class="checkbox-inline p-l-n p-r-md"><input name="subBox"
+                                                                                               type="checkbox"
+                                                                                               class="i-checks"
+                                                                                               value="1"></label>17092776033
+                                        </td>
                                         <td>17092776033</td>
                                         <td>2015-09-21 10:48:55</td>
                                         <td>测试楼盘</td>
                                         <td class="text-right text-nowrap">
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1">  通过</button>
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1" data-toggle="modal" data-target="#modal-form">  拒绝</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"> 通过</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"
+                                                    data-toggle="modal" data-target="#modal-form"> 拒绝
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><label class="checkbox-inline p-l-n p-r-md"><input name="subBox" type="checkbox" class="i-checks" value="2" ></label>17092776033</td>
+                                        <td><label class="checkbox-inline p-l-n p-r-md"><input name="subBox"
+                                                                                               type="checkbox"
+                                                                                               class="i-checks"
+                                                                                               value="2"></label>17092776033
+                                        </td>
                                         <td>17092776033</td>
                                         <td>2015-09-21 10:48:55</td>
                                         <td>测试楼盘</td>
                                         <td class="text-right text-nowrap">
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1">  通过</button>
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1" data-toggle="modal" data-target="#modal-form">  拒绝</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"> 通过</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"
+                                                    data-toggle="modal" data-target="#modal-form"> 拒绝
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><label class="checkbox-inline p-l-n p-r-md"><input name="subBox" type="checkbox" class="i-checks" value="3" ></label>17092776033</td>
+                                        <td><label class="checkbox-inline p-l-n p-r-md"><input name="subBox"
+                                                                                               type="checkbox"
+                                                                                               class="i-checks"
+                                                                                               value="3"></label>17092776033
+                                        </td>
                                         <td>17092776033</td>
                                         <td>2015-09-21 10:48:55</td>
                                         <td>测试楼盘</td>
                                         <td class="text-right text-nowrap">
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1">  通过</button>
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1" data-toggle="modal" data-target="#modal-form">  拒绝</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"> 通过</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"
+                                                    data-toggle="modal" data-target="#modal-form"> 拒绝
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><label class="checkbox-inline p-l-n p-r-md"><input name="subBox" type="checkbox" class="i-checks" value="4" ></label>17092776033</td>
+                                        <td><label class="checkbox-inline p-l-n p-r-md"><input name="subBox"
+                                                                                               type="checkbox"
+                                                                                               class="i-checks"
+                                                                                               value="4"></label>17092776033
+                                        </td>
                                         <td>17092776033</td>
                                         <td>2015-09-21 10:48:55</td>
                                         <td>测试楼盘</td>
                                         <td class="text-right text-nowrap">
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1">  通过</button>
-                                            <button class="btn-white  btn btn-sm delete" data-userid="1" data-toggle="modal" data-target="#modal-form">  拒绝</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"> 通过</button>
+                                            <button class="btn-white  btn btn-sm delete" data-userid="1"
+                                                    data-toggle="modal" data-target="#modal-form"> 拒绝
+                                            </button>
                                         </td>
                                     </tr>
                                     </tbody>
@@ -141,17 +166,22 @@
                             </div>
                             <div class="pages border-top">
                                 <div class="row">
-                                    <div class="col-md-4"><div class="m-t-md">当前显示 1 到 10 条，共 57 条</div></div>
+                                    <div class="col-md-4">
+                                        <div class="m-t-md">当前显示 1 到 10 条，共 57 条</div>
+                                    </div>
                                     <div class="col-md-8 footable-visible">
                                         <ul class="pagination pull-right">
-                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li>
-                                            <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a></li>
+                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a>
+                                            </li>
+                                            <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a>
+                                            </li>
                                             <li class="footable-page active"><a data-page="0" href="#">2</a></li>
                                             <li class="footable-page"><a data-page="1" href="#">3</a></li>
                                             <li class="footable-page"><a data-page="1" href="#">4</a></li>
                                             <li class="footable-page"><a data-page="1" href="#">5</a></li>
                                             <li class="footable-page"><a data-page="1" href="#">6</a></li>
-                                            <li class="footable-page-arrow"><a data-page="next" href="#next">...</a></li>
+                                            <li class="footable-page-arrow"><a data-page="next" href="#next">...</a>
+                                            </li>
                                             <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>
                                         </ul>
                                     </div>
@@ -199,7 +229,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group m-t-sm" >
+                    <div class="form-group m-t-sm">
                         <div class="col-sm-6 col-sm-push-3">
                             <button class="btn btn-md btn-primary " type="submit"><strong>确认</strong></button>
                             <button type="button" class="btn btn-white m-l-sm" data-dismiss="modal">取消</button>

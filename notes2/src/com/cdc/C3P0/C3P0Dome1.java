@@ -15,11 +15,11 @@ import java.sql.SQLException;
  * @create: 2019-08-26 10:53
  **/
 public class C3P0Dome1 {
-  public static void main(String[] args) throws SQLException {
-    // 创建数据库连接池对象
-    DataSource ds = new ComboPooledDataSource();
-    // 获取连接对象
-    Connection conn = ds.getConnection();
-    System.out.println(conn);
-  }
+    public static void main(String[] args) throws SQLException {
+        // 创建数据库连接池对象
+        DataSource ds = new ComboPooledDataSource();
+        // 获取连接对象
+        Connection conn = ds.getConnection();
+        System.out.println(conn);
+    }
 }

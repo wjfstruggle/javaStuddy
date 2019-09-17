@@ -20,14 +20,14 @@ public class DynamicDataSourceContextHolder {
         contextHolder.remove();
     }
 
-    /** 
+    /**
+     * @param dataSourceId
+     * @return
      * @Description 判断指定DataSrouce当前是否存在
      * @author sh
-     * @param dataSourceId
-     * @return  
      */
     public static boolean containsDataSource(String dataSourceId) {
-        if(contextHolder.equals(dataSourceId))
+        if (contextHolder.equals(dataSourceId))
             return true;
         return dataSourceIds.contains(dataSourceId);
     }

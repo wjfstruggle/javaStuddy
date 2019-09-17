@@ -70,22 +70,22 @@ public class WasteBinServiceImpl implements WasteBinService {
         WasteBin wasteBin = wasteBinMapper.selectByPrimaryKey(id);
         if (wasteBin != null) {
             return wasteBin;
-        }else {
+        } else {
             return null;
         }
     }
 
     @Override
     public PageInfo<WasteBin> findWasteBinByPage(Integer pageNum, String keywords) {
-        if(pageNum == null) {
+        if (pageNum == null) {
             pageNum = 1;
         }
-        PageHelper.startPage(pageNum,Constants.PAGE_SIZE);
+        PageHelper.startPage(pageNum, Constants.PAGE_SIZE);
         List<WasteBin> list = wasteBinMapper.findWasteBinByPage(keywords);
         if (list != null) {
             PageInfo<WasteBin> page = new PageInfo<>(list);
             return page;
-        }else {
+        } else {
             return null;
         }
     }

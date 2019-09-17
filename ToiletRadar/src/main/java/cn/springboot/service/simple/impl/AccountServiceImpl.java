@@ -42,7 +42,7 @@ public class AccountServiceImpl implements AccountService {
                 return true;
             else
                 return false;
-        }else
+        } else
             return false;
     }
 
@@ -63,7 +63,7 @@ public class AccountServiceImpl implements AccountService {
                 return true;
             else
                 return false;
-        }else
+        } else
             return false;
     }
 
@@ -78,15 +78,15 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public PageInfo<Account> findAccountByPage(Integer pageNum, String keywords) {
-        if(pageNum == null) {
+        if (pageNum == null) {
             pageNum = 1;
         }
-        PageHelper.startPage(pageNum,Constants.PAGE_SIZE);
+        PageHelper.startPage(pageNum, Constants.PAGE_SIZE);
         List<Account> list = accountMapper.findAccountByPage(keywords);
         if (list != null) {
             PageInfo<Account> page = new PageInfo<>(list);
             return page;
-        }else {
+        } else {
             return null;
         }
 

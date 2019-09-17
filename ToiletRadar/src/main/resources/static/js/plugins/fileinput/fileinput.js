@@ -94,7 +94,7 @@
                 template: obj.previewGenericTemplate,
                 showZoom: obj.fileActionSettings.showZoom,
                 showDrag: obj.fileActionSettings.showDrag,
-                getSize: function(size) {
+                getSize: function (size) {
                     return obj._getSize(size);
                 },
                 parseTemplate: function (cat, data, fname, ftype, pId, ftr, ind, size) {
@@ -771,7 +771,7 @@
         },
         _showUploadError: function (msg, params, event) {
             var self = this, $error = self.$errorContainer, ev = event || 'fileuploaderror', e = params && params.id ?
-            '<li data-file-id="' + params.id + '">' + msg + '</li>' : '<li>' + msg + '</li>';
+                '<li data-file-id="' + params.id + '">' + msg + '</li>' : '<li>' + msg + '</li>';
             if ($error.find('ul').length === 0) {
                 self._addError('<ul>' + e + '</ul>');
             } else {
@@ -2035,7 +2035,7 @@
             } else {
                 i = Math.floor(Math.log(size) / Math.log(1024));
                 sizes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
-                out = (size / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + sizes[i];
+                    out = (size / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + sizes[i];
             }
             return tmplt.replace('{sizeText}', out);
         },
@@ -2352,7 +2352,7 @@
         _validateMinCount: function () {
             var self = this, len = self.isUploadable ? self.getFileStack().length : self.$element.get(0).files.length;
             if (self.validateInitialCount && self.minFileCount > 0 && self._getFileCount(
-                    len - 1) < self.minFileCount) {
+                len - 1) < self.minFileCount) {
                 self._noFilesError({});
                 return false;
             }
@@ -2484,8 +2484,7 @@
                     self.filestack[ind] = blob;
                 }, type, self.resizeQuality);
                 return true;
-            }
-            catch (err) {
+            } catch (err) {
                 return false;
             }
         },
@@ -2547,7 +2546,8 @@
             self._initBrowse($container);
         },
         _renderMain: function () {
-            var self = this, dropCss = (self.isUploadable && self.dropZoneEnabled) ? ' file-drop-zone' : 'file-drop-disabled',
+            var self = this,
+                dropCss = (self.isUploadable && self.dropZoneEnabled) ? ' file-drop-zone' : 'file-drop-disabled',
                 close = !self.showClose ? '' : self._getLayoutTemplate('close'),
                 preview = !self.showPreview ? '' : self._getLayoutTemplate('preview')
                     .replace(/\{class}/g, self.previewClass)
@@ -2604,7 +2604,7 @@
         },
         _renderThumbProgress: function () {
             return '<div class="file-thumb-progress hide">' + this.progressTemplate.replace(/\{percent}/g,
-                    '0') + '</div>';
+                '0') + '</div>';
         },
         _renderFileFooter: function (caption, size, width) {
             var self = this, config = self.fileActionSettings, footer, rem = config.showRemove, drg = config.showDrag,
@@ -2686,7 +2686,8 @@
                 return;
             }
             self.fileInputCleared = false;
-            var tfiles, msg, total, isDragDrop = arguments.length > 1, isAjaxUpload = self.isUploadable, i = 0, f, n, len,
+            var tfiles, msg, total, isDragDrop = arguments.length > 1, isAjaxUpload = self.isUploadable, i = 0, f, n,
+                len,
                 files = isDragDrop ? e.originalEvent.dataTransfer.files : $el.get(0).files, ctr = self.filestack.length,
                 isSingleUpload = isEmpty($el.attr('multiple')), flagSingle = (isSingleUpload && ctr > 0), folders = 0,
                 throwError = function (mesg, file, previewId, index) {
@@ -3018,7 +3019,7 @@
         },
         getphoto: function (msg) {
             var self = this, $el = self.$element;
-            var uploadtype=!!self.ajaxRequests.length;
+            var uploadtype = !!self.ajaxRequests.length;
             !uploadtype && self._showError(msg);
             self.$btnUpload.attr('disabled', false);
             return uploadtype

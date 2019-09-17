@@ -29,7 +29,7 @@
     <div id="page-wrapper" class="gray-bg">
         <!---顶部状态栏 star-->
         <div class="row ">
-           <nav class="navbar navbar-fixed-top" role="navigation" id="topnav"></nav>
+            <nav class="navbar navbar-fixed-top" role="navigation" id="topnav"></nav>
         </div>
         <!---顶部状态栏 end-->
         <!--------当前位置----->
@@ -78,7 +78,8 @@
                     <div class="ibox">
                         <div class="ibox-heading">
                             <div class="ibox-title p-l-slg">
-                                <label class="checkbox-inline p-l-n"><input id="checkAll" type="checkbox" class="i-checks" value=""> 全选 </label>
+                                <label class="checkbox-inline p-l-n"><input id="checkAll" type="checkbox"
+                                                                            class="i-checks" value=""> 全选 </label>
                                 <button type="button" class="btn btn-primary btn-xs m-b-none m-l-md">批量通过</button>
                             </div>
                         </div>
@@ -100,46 +101,74 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks" value="1"  title="" disabled></td>
+                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks"
+                                                                       value="1" title="" disabled></td>
                                         <td>测试－空中花园</td>
                                         <td>你的最爱</td>
-                                        <td>开发商补助(20000.0元/套 )<br>客户刷团购费(10000元/套) </td>
-                                        <td>按固定金额 </td>
+                                        <td>开发商补助(20000.0元/套 )<br>客户刷团购费(10000元/套)</td>
+                                        <td>按固定金额</td>
                                         <td>2015-11-19</td>
                                         <td>2015-11-19</td>
-                                        <td><span class="label label-success">已通过</span> </td>
-                                        <td class="text-right"><a href="${ctx}/view/commission/she" class="btn btn-sm btn-white"><i class="fa fa-eye"></i> 查看</a> </td>
+                                        <td><span class="label label-success">已通过</span></td>
+                                        <td class="text-right"><a href="${ctx}/view/commission/she"
+                                                                  class="btn btn-sm btn-white"><i class="fa fa-eye"></i>
+                                                查看</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks" value="1"  title=""></td>
+                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks"
+                                                                       value="1" title=""></td>
                                         <td>测试－空中花园</td>
                                         <td>你的最爱</td>
                                         <td>开发商补助(20000.0元/套 )</td>
-                                        <td>按固定金额 </td>
+                                        <td>按固定金额</td>
                                         <td>2015-11-19</td>
                                         <td>2015-11-19</td>
-                                        <td><span class="label label-danger">已拒绝</span> <i class="fa fa-exclamation-circle text-warning fa-lg" data-toggle="popover" data-content="如果该产品存在已上线的佣金规则则需将目前线上的下线再手动上线!" data-placement="top"  data-trigger="hover" data-original-title="" title="拒绝原因"></i></td>
-                                        <td class="text-right"><a href="${ctx}/view/commission/she" class="btn btn-sm btn-primary"><i class="fa fa-check-circle"></i> 重新审核</a> </td>
+                                        <td><span class="label label-danger">已拒绝</span> <i
+                                                    class="fa fa-exclamation-circle text-warning fa-lg"
+                                                    data-toggle="popover" data-content="如果该产品存在已上线的佣金规则则需将目前线上的下线再手动上线!"
+                                                    data-placement="top" data-trigger="hover" data-original-title=""
+                                                    title="拒绝原因"></i></td>
+                                        <td class="text-right"><a href="${ctx}/view/commission/she"
+                                                                  class="btn btn-sm btn-primary"><i
+                                                        class="fa fa-check-circle"></i> 重新审核</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks" value="1"  title=""></td>
+                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks"
+                                                                       value="1" title=""></td>
                                         <td>测试－空中花园</td>
                                         <td>你的最爱</td>
-                                        <td>客户刷团购费(10000元/套) </td>
-                                        <td>按固定金额 </td>
+                                        <td>客户刷团购费(10000元/套)</td>
+                                        <td>按固定金额</td>
                                         <td>2015-11-19</td>
                                         <td>2015-11-19</td>
                                         <td><span class="label label-white">待审核</span></td>
-                                        <td class="text-right"><a href="${ctx}/view/commission/she" class="btn btn-sm btn-primary"><i class="fa fa-check-circle"></i> 审核</a> </td>
+                                        <td class="text-right"><a href="${ctx}/view/commission/she"
+                                                                  class="btn btn-sm btn-primary"><i
+                                                        class="fa fa-check-circle"></i> 审核</a></td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="pages border-top">
                                 <div class="row">
-                                    <div class="col-md-4"><div class="m-t-md">当前显示 1 到 20 条，共 57 条</div></div>
+                                    <div class="col-md-4">
+                                        <div class="m-t-md">当前显示 1 到 20 条，共 57 条</div>
+                                    </div>
                                     <div class="col-md-8 footable-visible">
-                                        <ul class="pagination pull-right">                                             <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li>                                             <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a></li>                                             <li class="footable-page active"><a data-page="0" href="#">2</a></li>                                             <li class="footable-page"><a data-page="1" href="#">3</a></li>                                             <li class="footable-page"><a data-page="1" href="#">4</a></li>                                             <li class="footable-page"><a data-page="1" href="#">5</a></li>                                             <li class="footable-page"><a data-page="1" href="#">6</a></li>                                             <li class="footable-page-arrow"><a data-page="next" href="#next">...</a></li>                                             <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>                                         </ul>
+                                        <ul class="pagination pull-right">
+                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a>
+                                            </li>
+                                            <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a>
+                                            </li>
+                                            <li class="footable-page active"><a data-page="0" href="#">2</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">3</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">4</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">5</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">6</a></li>
+                                            <li class="footable-page-arrow"><a data-page="next" href="#next">...</a>
+                                            </li>
+                                            <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

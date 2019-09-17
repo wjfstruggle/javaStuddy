@@ -58,9 +58,13 @@
                         <div class="form-group">
                             <div class="col-md-4 col-md-offset-4">
                                 <div class="input-group input-group-lg" aria-expanded="false">
-                                    <span class="input-group-addon"><i class="fa fa-search" aria-expanded="false"></i></span>
-                                    <input type="text" value="" name="code" placeholder="请输入验证码" class="form-control" aria-expanded="false">
-                                    <span class="input-group-btn" aria-expanded="false"><button class="btn btn-primary" id="search_btn" aria-expanded="false">查询</button></span>
+                                    <span class="input-group-addon"><i class="fa fa-search"
+                                                                       aria-expanded="false"></i></span>
+                                    <input type="text" value="" name="code" placeholder="请输入验证码" class="form-control"
+                                           aria-expanded="false">
+                                    <span class="input-group-btn" aria-expanded="false"><button class="btn btn-primary"
+                                                                                                id="search_btn"
+                                                                                                aria-expanded="false">查询</button></span>
                                 </div>
                                 <div style="margin-left: 50px"></div>
                             </div>
@@ -106,7 +110,7 @@
             rules: {
                 code: {
                     required: true,
-                    rangelength: [6,6]
+                    rangelength: [6, 6]
                 }
             },
             messages: {
@@ -115,7 +119,8 @@
                     rangelength: jQuery.validator.format("验证码应该为六位")
                 }
             },
-            errorPlacement:function(error,element) { error.appendTo(element.parent("div").next('div'));
+            errorPlacement: function (error, element) {
+                error.appendTo(element.parent("div").next('div'));
             },
             //debug: true,
             submitHandler: function (form) {
@@ -134,9 +139,9 @@
                         swal("用户添加成功!", "", "success");
                         //alert($(form).serialize())
                     },
-                    error:function(error,status){
-                        toastr.error('错误代码：'+error.status+'！', '查询失败！');
-                     }
+                    error: function (error, status) {
+                        toastr.error('错误代码：' + error.status + '！', '查询失败！');
+                    }
                 }
             );
             return false;

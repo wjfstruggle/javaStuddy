@@ -27,9 +27,9 @@ import com.github.pagehelper.PageInfo;
 import cn.springboot.model.simple.News;
 import cn.springboot.service.simple.NewsService;
 
-/** 
- * @Description 新闻示例
+/**
  * @author sh
+ * @Description 新闻示例
  * @date Mar 16, 2019 3:58:01 PM
  */
 @Controller
@@ -50,10 +50,10 @@ public class NewsController {
         binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
     }
 
-    /** 
+    /**
+     * @return
      * @Description 进入新增页面
      * @author sh
-     * @return  
      */
     @RequestMapping(value = "/news/add", method = RequestMethod.GET)
     public String add() {
@@ -61,11 +61,11 @@ public class NewsController {
         return "view/news/add";
     }
 
-    /** 
+    /**
+     * @param news
+     * @return
      * @Description ajax保存发布新闻
      * @author sh
-     * @param news
-     * @return  
      */
     @RequestMapping(value = "/news/add", method = RequestMethod.POST)
     @ResponseBody
@@ -82,10 +82,10 @@ public class NewsController {
         return result;
     }
 
-    /** 
+    /**
+     * @return
      * @Description ajax加载新闻对象
      * @author sh
-     * @return  
      */
     @RequestMapping(value = "/news/load/{id}", method = RequestMethod.GET)
     public String load(@PathVariable String id, ModelMap map) {
@@ -96,10 +96,10 @@ public class NewsController {
     }
 
     /**
-     * @Description ajax保存更新重新发布新闻
-     * @author sh
      * @param news
      * @return
+     * @Description ajax保存更新重新发布新闻
+     * @author sh
      */
     @RequestMapping(value = "/news/edit", method = RequestMethod.POST)
     @ResponseBody

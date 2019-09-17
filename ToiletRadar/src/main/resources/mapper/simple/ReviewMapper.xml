@@ -73,9 +73,9 @@
         </where>
     </sql>
     <sql id="Base_Column_List">
-    pk_id, content, score, create_time, modify_time, delete_status, like_count, fr_toilet, 
-    fr_account
-  </sql>
+        pk_id, content, score, create_time, modify_time, delete_status, like_count, fr_toilet,
+        fr_account
+    </sql>
     <select id="selectByExample" parameterType="cn.springboot.model.simple.ReviewExample" resultMap="BaseResultMap">
         select
         <if test="distinct">
@@ -97,15 +97,15 @@
         </if>
     </delete>
     <insert id="insert" parameterType="cn.springboot.model.simple.Review">
-    insert into review (pk_id, content, score, 
-      create_time, modify_time, delete_status, 
-      like_count, fr_toilet, fr_account
-      )
-    values (#{pkId,jdbcType=BIGINT}, #{content,jdbcType=VARCHAR}, #{score,jdbcType=TINYINT}, 
-      #{createTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP}, #{deleteStatus,jdbcType=BIT}, 
-      #{likeCount,jdbcType=INTEGER}, #{frToilet,jdbcType=VARCHAR}, #{frAccount,jdbcType=VARCHAR}
-      )
-  </insert>
+        insert into review (pk_id, content, score,
+        create_time, modify_time, delete_status,
+        like_count, fr_toilet, fr_account
+        )
+        values (#{pkId,jdbcType=BIGINT}, #{content,jdbcType=VARCHAR}, #{score,jdbcType=TINYINT},
+        #{createTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP}, #{deleteStatus,jdbcType=BIT},
+        #{likeCount,jdbcType=INTEGER}, #{frToilet,jdbcType=VARCHAR}, #{frAccount,jdbcType=VARCHAR}
+        )
+    </insert>
     <insert id="insertSelective" parameterType="cn.springboot.model.simple.Review">
         insert into review
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -230,20 +230,21 @@
     </select>
     <!-- 个人给厕所评分-->
     <update id="updateLikeNumber">
-    update review set like_count = ${likeCount} where fr_toilet = ${frToilet} and fr_account = #{frAccount}
-  </update>
+        update review set like_count = ${likeCount} where fr_toilet = ${frToilet} and fr_account = #{frAccount}
+    </update>
     <!--获取点赞数-->
     <select id="getLikeNumber" resultType="int" parameterType="string">
-    SELECT count(*) from (SELECT fr_toilet,fr_account from review where like_count = 1 and fr_toilet = ${frToilet} GROUP BY fr_account) as a
-  </select>
+        SELECT count(*) from (SELECT fr_toilet,fr_account from review where like_count = 1 and fr_toilet = ${frToilet}
+        GROUP BY fr_account) as a
+    </select>
     <!--给厕所打分-->
     <update id="updateScore">
-    update review set score = ${score} where fr_toilet = ${frToilet} and fr_account = #{frAccount}
-  </update>
+        update review set score = ${score} where fr_toilet = ${frToilet} and fr_account = #{frAccount}
+    </update>
     <!--查找是否存在某用户已经对某厕所进行了评价-->
     <select id="isExistCmt" resultType="Integer">
-       select * from review where fr_toilet = ${frToilet} and fr_account = #{frAccount}
-   </select>
+        select * from review where fr_toilet = ${frToilet} and fr_account = #{frAccount}
+    </select>
     <!--检查用户是否对某厕所进行了打分操作-->
     <select id="isPublishScore" resultType="Integer">
         select score from review where fr_toilet = ${frToilet} and fr_account = #{frAccount}
@@ -259,7 +260,7 @@
     </select>
 
     <!-- 修改评论的删除状态-->
-    <update id="deleteById" >
+    <update id="deleteById">
         update review set delete_status = ${status} where pk_id = #{pkId}
     </update>
 </mapper>

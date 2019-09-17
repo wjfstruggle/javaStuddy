@@ -2,9 +2,9 @@ package cn.springboot.model.auth;
 
 import cn.springboot.model.BaseEntity;
 
-/** 
- * @Description 菜单对象
+/**
  * @author sh
+ * @Description 菜单对象
  * @date Apr 12, 2019 9:10:38 AM
  */
 public class Permission implements BaseEntity<String> {
@@ -13,28 +13,44 @@ public class Permission implements BaseEntity<String> {
 
     private String id;
 
-    /** 菜单名称 **/
+    /**
+     * 菜单名称
+     **/
     private String name;
 
-    /** 菜单样式图标名称 **/
+    /**
+     * 菜单样式图标名称
+     **/
     private String cssClass;
 
-    /** 菜单编码 **/
+    /**
+     * 菜单编码
+     **/
     private String key;
 
-    /** 菜单是否显示 **/
+    /**
+     * 菜单是否显示
+     **/
     private Integer hide;
-    
-    /** 菜单级别，最多三级 **/
+
+    /**
+     * 菜单级别，最多三级
+     **/
     private Integer lev;
 
-    /** URL **/
+    /**
+     * URL
+     **/
     private String url;
 
-    /** 显示顺序 **/
+    /**
+     * 显示顺序
+     **/
     private Integer sort;
 
-    /** 父菜单编码 **/
+    /**
+     * 父菜单编码
+     **/
     private String parentKey;
 
     public String getId() {
@@ -76,7 +92,7 @@ public class Permission implements BaseEntity<String> {
     public void setHide(Integer hide) {
         this.hide = hide;
     }
-    
+
     public Integer getLev() {
         return lev;
     }

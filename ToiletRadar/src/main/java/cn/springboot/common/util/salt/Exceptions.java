@@ -3,9 +3,9 @@ package cn.springboot.common.util.salt;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-/** 
- * @Description 关于异常的工具类
+/**
  * @author sh
+ * @Description 关于异常的工具类
  * @date Apr 12, 2019 9:39:38 AM
  */
 public class Exceptions {

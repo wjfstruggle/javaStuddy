@@ -80,7 +80,8 @@
                     <div class="ibox">
                         <div class="ibox-heading">
                             <div class="ibox-title p-l-slg">
-                                <label class="checkbox-inline p-l-n"><input id="checkAll" type="checkbox" class="i-checks" value=""> 全选 </label>
+                                <label class="checkbox-inline p-l-n"><input id="checkAll" type="checkbox"
+                                                                            class="i-checks" value=""> 全选 </label>
                                 <button type="button" class="btn btn-primary btn-xs m-b-none m-l-md">批量通过</button>
                                 <button type="button" class="btn btn-primary btn-xs m-b-none m-l-md">批量拒绝</button>
                             </div>
@@ -105,62 +106,91 @@
                                     <tbody>
 
                                     <tr>
-                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks" value="1"  title="" disabled></td>
+                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks"
+                                                                       value="1" title="" disabled></td>
                                         <td>张丽君</td>
                                         <td>13776365219</td>
                                         <td>类型：工商银行<br>
                                             开户行： 挂电话电话<br>
-                                            卡号： 622536522536582</td>
+                                            卡号： 622536522536582
+                                        </td>
                                         <td>张丽君 433130199112057122</td>
-                                        <td><img class="smallimg"  data-toggle="popover" data-trigger="hover" data-placement="left"   data-html="true" data-content="<img src='${ctx}/static/img/p_big2.jpg' style='max-width:400px' >" src="${ctx}/static/img/a2.jpg"> </td>
-                                        <td><img class="smallimg"  data-toggle="popover" data-trigger="hover" data-placement="left"   data-html="true" data-content="<img src='${ctx}/static/img/p_big1.jpg' style='max-width:400px' >" src="${ctx}/static/img/a1.jpg"></td>
+                                        <td><img class="smallimg" data-toggle="popover" data-trigger="hover"
+                                                 data-placement="left" data-html="true"
+                                                 data-content="<img src='${ctx}/static/img/p_big2.jpg' style='max-width:400px' >"
+                                                 src="${ctx}/static/img/a2.jpg"></td>
+                                        <td><img class="smallimg" data-toggle="popover" data-trigger="hover"
+                                                 data-placement="left" data-html="true"
+                                                 data-content="<img src='${ctx}/static/img/p_big1.jpg' style='max-width:400px' >"
+                                                 src="${ctx}/static/img/a1.jpg"></td>
                                         <td>2015-12-01 14:59:41</td>
                                         <td><span class="label label-danger">已拒绝</span></td>
                                         <td class="text-right">
                                             <div class="btn-group ">
-                                                <a class="btn btn-white btn-sm through" disabled="disabled"><i class="fa fa-check-circle-o"></i>  通过</a>
-                                                <a class="btn btn-white btn-sm refuse" disabled="disabled"><i class="fa fa-ban"></i>  拒绝</a>
+                                                <a class="btn btn-white btn-sm through" disabled="disabled"><i
+                                                            class="fa fa-check-circle-o"></i> 通过</a>
+                                                <a class="btn btn-white btn-sm refuse" disabled="disabled"><i
+                                                            class="fa fa-ban"></i> 拒绝</a>
                                             </div>
                                         </td>
                                     </tr>
 
 
                                     <tr>
-                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks" value="1"  title="" disabled></td>
+                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks"
+                                                                       value="1" title="" disabled></td>
                                         <td>张丽君</td>
                                         <td>13776365219</td>
                                         <td>类型：工商银行<br>
                                             开户行： 挂电话电话<br>
-                                            卡号： 622536522536582</td>
+                                            卡号： 622536522536582
+                                        </td>
                                         <td>张丽君 433130199112057122</td>
-                                        <td><img class="smallimg"  data-toggle="popover" data-trigger="hover" data-placement="left"   data-html="true" data-content="<img src='${ctx}/static/img/p_big2.jpg' style='max-width:400px' >" src="${ctx}/static/img/a2.jpg"> </td>
-                                        <td><img class="smallimg"  data-toggle="popover" data-trigger="hover" data-placement="left"   data-html="true" data-content="<img src='${ctx}/static/img/p_big1.jpg' style='max-width:400px' >" src="${ctx}/static/img/a1.jpg"></td>
+                                        <td><img class="smallimg" data-toggle="popover" data-trigger="hover"
+                                                 data-placement="left" data-html="true"
+                                                 data-content="<img src='${ctx}/static/img/p_big2.jpg' style='max-width:400px' >"
+                                                 src="${ctx}/static/img/a2.jpg"></td>
+                                        <td><img class="smallimg" data-toggle="popover" data-trigger="hover"
+                                                 data-placement="left" data-html="true"
+                                                 data-content="<img src='${ctx}/static/img/p_big1.jpg' style='max-width:400px' >"
+                                                 src="${ctx}/static/img/a1.jpg"></td>
                                         <td>2015-12-01 14:59:41</td>
                                         <td><span class="label label-success">已通过</span></td>
                                         <td class="text-right">
                                             <div class="btn-group ">
-                                                <a class="btn btn-white btn-sm through" disabled="disabled"><i class="fa fa-check-circle-o"></i>  通过</a>
-                                                <a class="btn btn-white btn-sm refuse" disabled="disabled"><i class="fa fa-ban"></i>  拒绝</a>
+                                                <a class="btn btn-white btn-sm through" disabled="disabled"><i
+                                                            class="fa fa-check-circle-o"></i> 通过</a>
+                                                <a class="btn btn-white btn-sm refuse" disabled="disabled"><i
+                                                            class="fa fa-ban"></i> 拒绝</a>
                                             </div>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks" value="1"  title=""></td>
+                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks"
+                                                                       value="1" title=""></td>
                                         <td>张丽君</td>
                                         <td>13776365219</td>
                                         <td>类型：工商银行<br>
                                             开户行： 挂电话电话<br>
-                                            卡号： 622536522536582</td>
+                                            卡号： 622536522536582
+                                        </td>
                                         <td>张丽君 433130199112057122</td>
-                                        <td><img class="smallimg"  data-toggle="popover" data-trigger="hover" data-placement="left"   data-html="true" data-content="<img src='${ctx}/static/img/p_big2.jpg' style='max-width:400px' >" src="${ctx}/static/img/a2.jpg"> </td>
-                                        <td><img class="smallimg"  data-toggle="popover" data-trigger="hover" data-placement="left"   data-html="true" data-content="<img src='${ctx}/static/img/p_big1.jpg' style='max-width:400px' >" src="${ctx}/static/img/a1.jpg"></td>
+                                        <td><img class="smallimg" data-toggle="popover" data-trigger="hover"
+                                                 data-placement="left" data-html="true"
+                                                 data-content="<img src='${ctx}/static/img/p_big2.jpg' style='max-width:400px' >"
+                                                 src="${ctx}/static/img/a2.jpg"></td>
+                                        <td><img class="smallimg" data-toggle="popover" data-trigger="hover"
+                                                 data-placement="left" data-html="true"
+                                                 data-content="<img src='${ctx}/static/img/p_big1.jpg' style='max-width:400px' >"
+                                                 src="${ctx}/static/img/a1.jpg"></td>
                                         <td>2015-12-01 14:59:41</td>
                                         <td><span class="label label-white">待审核</span></td>
                                         <td class="text-right">
                                             <div class="btn-group ">
-                                                <a class="btn btn-white btn-sm through"><i class="fa fa-check-circle-o"></i>  通过</a>
-                                                <a class="btn btn-white btn-sm refuse"><i class="fa fa-ban"></i>  拒绝</a>
+                                                <a class="btn btn-white btn-sm through"><i
+                                                            class="fa fa-check-circle-o"></i> 通过</a>
+                                                <a class="btn btn-white btn-sm refuse"><i class="fa fa-ban"></i> 拒绝</a>
                                             </div>
                                         </td>
                                     </tr>
@@ -170,9 +200,24 @@
                             </div>
                             <div class="pages border-top">
                                 <div class="row">
-                                    <div class="col-md-4"><div class="m-t-md">当前显示 1 到 20 条，共 57 条</div></div>
+                                    <div class="col-md-4">
+                                        <div class="m-t-md">当前显示 1 到 20 条，共 57 条</div>
+                                    </div>
                                     <div class="col-md-8 footable-visible">
-                                        <ul class="pagination pull-right">                                             <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li>                                             <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a></li>                                             <li class="footable-page active"><a data-page="0" href="#">2</a></li>                                             <li class="footable-page"><a data-page="1" href="#">3</a></li>                                             <li class="footable-page"><a data-page="1" href="#">4</a></li>                                             <li class="footable-page"><a data-page="1" href="#">5</a></li>                                             <li class="footable-page"><a data-page="1" href="#">6</a></li>                                             <li class="footable-page-arrow"><a data-page="next" href="#next">...</a></li>                                             <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>                                         </ul>
+                                        <ul class="pagination pull-right">
+                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a>
+                                            </li>
+                                            <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a>
+                                            </li>
+                                            <li class="footable-page active"><a data-page="0" href="#">2</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">3</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">4</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">5</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">6</a></li>
+                                            <li class="footable-page-arrow"><a data-page="next" href="#next">...</a>
+                                            </li>
+                                            <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -227,18 +272,18 @@
             $(".i-checks").iCheck('uncheck');
         });
 
-        $(document).on('click','#editable-sample a.through', function () {
-            var id=$(this).data("id");
+        $(document).on('click', '#editable-sample a.through', function () {
+            var id = $(this).data("id");
             $.ajax(
                 {
                     url: "?",
                     type: "post",
-                    data: {id:id},
+                    data: {id: id},
                     success: function (data) {
-                        toastr.success('用户张丽君实名认证已经通过审核！','操作成功！');
+                        toastr.success('用户张丽君实名认证已经通过审核！', '操作成功！');
                     },
-                    error:function(error){
-                        toastr.error('登陆超时，操作未成功！','操作失败！');
+                    error: function (error) {
+                        toastr.error('登陆超时，操作未成功！', '操作失败！');
                     }
                 }
             );

@@ -81,53 +81,66 @@
                     <div class="ibox">
                         <div class="ibox-content">
                             <div class="table-responsive ">
-                                <table class="footable table table-stripped toggle-arrow-tiny table-centerbody" data-page-size="15" id="editable-sample">
+                                <table class="footable table table-stripped toggle-arrow-tiny table-centerbody"
+                                       data-page-size="15" id="editable-sample">
                                     <thead>
-                                        <tr>
-                                            <th data-sort-ignore="true">类型</th>
-                                            <th data-sort-ignore="true">范围</th>
-                                            <th data-hide="all"><div class="hide sr-only">内容</div></th>
-                                            <th data-sort-ignore="true">时间</th>
-                                            <th data-sort-ignore="true">状态</th>
-                                            <th class="text-right" data-sort-ignore="true">操作</th>
-                                        </tr>
+                                    <tr>
+                                        <th data-sort-ignore="true">类型</th>
+                                        <th data-sort-ignore="true">范围</th>
+                                        <th data-hide="all">
+                                            <div class="hide sr-only">内容</div>
+                                        </th>
+                                        <th data-sort-ignore="true">时间</th>
+                                        <th data-sort-ignore="true">状态</th>
+                                        <th class="text-right" data-sort-ignore="true">操作</th>
+                                    </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td><span class="label label-success">通知</span></td>
-                                            <td>全体</td>
-                                            <td>
-                                                <p>石湖天玺 案场经理</p>
-                                            </td>
-                                            <td>2015-11-04 11:14</td>
-                                            <td>已推送</td>
-                                            <td class="text-right">
-                                                <div class="btn-group ">
-                                                    <button class="btn-white  btn btn-sm delete" data-userid="1"><i class="fa fa-trash"></i>  删除</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="label label-info">消息</span></td>
-                                            <td>全体</td>
-                                            <td>
-                                                <p>4日,中共中央台湾工作办公室、国务院台湾事务办公室主任张志军宣布,经两岸有关方面协商,两岸领导人习近平4日,中共中央台湾工作办公室、国务院台湾事务办公室主任张志军宣布,经两岸有关方面协商,两岸领导人习近平4日,中共中央台湾工作办公室、国务院台湾事务办公室主任张志军宣布,经两岸有关方面协商,两岸领导人习近平</p>
-                                            </td>
-                                            <td>2015-11-04 11:14</td>
-                                            <td>未推送</td>
-                                            <td class="text-right">
-                                                <div class="btn-group ">
-                                                    <button class="btn-white  btn btn-sm rset" data-userid="1" data-toggle="modal" data-target="#modal-form"><i class="fa fa-pencil"></i>  修改</button>
-                                                    <button class="btn-white  btn btn-sm delete" data-userid="1"><i class="fa fa-trash"></i>  删除</button>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                    <tr>
+                                        <td><span class="label label-success">通知</span></td>
+                                        <td>全体</td>
+                                        <td>
+                                            <p>石湖天玺 案场经理</p>
+                                        </td>
+                                        <td>2015-11-04 11:14</td>
+                                        <td>已推送</td>
+                                        <td class="text-right">
+                                            <div class="btn-group ">
+                                                <button class="btn-white  btn btn-sm delete" data-userid="1"><i
+                                                            class="fa fa-trash"></i> 删除
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="label label-info">消息</span></td>
+                                        <td>全体</td>
+                                        <td>
+                                            <p>
+                                                4日,中共中央台湾工作办公室、国务院台湾事务办公室主任张志军宣布,经两岸有关方面协商,两岸领导人习近平4日,中共中央台湾工作办公室、国务院台湾事务办公室主任张志军宣布,经两岸有关方面协商,两岸领导人习近平4日,中共中央台湾工作办公室、国务院台湾事务办公室主任张志军宣布,经两岸有关方面协商,两岸领导人习近平</p>
+                                        </td>
+                                        <td>2015-11-04 11:14</td>
+                                        <td>未推送</td>
+                                        <td class="text-right">
+                                            <div class="btn-group ">
+                                                <button class="btn-white  btn btn-sm rset" data-userid="1"
+                                                        data-toggle="modal" data-target="#modal-form"><i
+                                                            class="fa fa-pencil"></i> 修改
+                                                </button>
+                                                <button class="btn-white  btn btn-sm delete" data-userid="1"><i
+                                                            class="fa fa-trash"></i> 删除
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="pages border-top">
                                 <div class="row">
-                                    <div class="col-md-4"><div class="m-t-md">当前显示 1 到 10 条，共 57 条</div></div>
+                                    <div class="col-md-4">
+                                        <div class="m-t-md">当前显示 1 到 10 条，共 57 条</div>
+                                    </div>
                                     <div class="col-md-8 ">
                                         <ul class="pagination pull-right">
                                             <li class="disabled"><a data-page="first" href="#first">«</a></li>
@@ -190,8 +203,8 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">时间类型</label>
                         <div class="col-sm-8">
-                            <select name="jiaos" class="form-control input-s-sm inline"  data-toggle-name="#jiaosbox">
-                                <option value="" >请选择</option>
+                            <select name="jiaos" class="form-control input-s-sm inline" data-toggle-name="#jiaosbox">
+                                <option value="">请选择</option>
                                 <option value="1" data-box-name="lianjia">即时</option>
                                 <option value="2" data-box-name="fangdd">自定义</option>
                             </select>
@@ -202,7 +215,7 @@
                         <div class="col-sm-8">
                             <div class="input-group date">
                                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                <input type="text" value="" placeholder="请选择开盘时间"  class="form-control">
+                                <input type="text" value="" placeholder="请选择开盘时间" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -210,8 +223,8 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">推送范围</label>
                         <div class="col-sm-8">
-                            <select name="tuisong" class="form-control input-s-sm inline"  data-toggle-name="#jiaosbox">
-                                <option value="" >请选择</option>
+                            <select name="tuisong" class="form-control input-s-sm inline" data-toggle-name="#jiaosbox">
+                                <option value="">请选择</option>
                                 <option value="1" data-box-name="lianjia">部分</option>
                                 <option value="2" data-box-name="fangdd">全部</option>
                             </select>
@@ -221,7 +234,8 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">部分置业顾问</label>
                         <div class="col-sm-8">
-                            <select  data-placeholder="-- 请选择 --"  name="round" multiple class="chosen-select" tabindex="4" required>
+                            <select data-placeholder="-- 请选择 --" name="round" multiple class="chosen-select"
+                                    tabindex="4" required>
                                 <option value=""></option>
                                 <option value="1">下拉一</option>
                                 <option value="2">下拉二</option>
@@ -245,7 +259,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group m-t-sm" >
+                    <div class="form-group m-t-sm">
                         <div class="col-sm-6 col-sm-push-3">
                             <button class="btn btn-md btn-primary " type="submit"><strong>创建用户</strong></button>
                             <button type="button" class="btn btn-white m-l-sm" data-dismiss="modal">取消</button>
@@ -273,19 +287,24 @@
 <script src="${ctx}/static/js/plugins/chosen/chosen.jquery.js"></script>
 <script src="${ctx}/static/js/plugins/sweetalert/sweetalert.min.js" async></script><!---对话框 alert--->
 <script src="${ctx}/static/js/plugins/validate/jquery.validate.min.js"></script>  <!---表单验证--->
-<script src="${ctx}/static/js/plugins/validate/validate-cn.js" ></script> <!---validate 自定义方法--->
+<script src="${ctx}/static/js/plugins/validate/validate-cn.js"></script> <!---validate 自定义方法--->
 <script src="${ctx}/static/js/plugins/datapicker/bootstrap-datepicker.js"></script>
 
 <!-- Page-Level Scripts -->
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.footable').footable();
     });
 </script>
 <script>
 
     //下拉框组件
-    $(".chosen-select").chosen({no_results_text:'未找到此项',width:"100%",allow_single_deselect:true,disable_search_threshold:10});
+    $(".chosen-select").chosen({
+        no_results_text: '未找到此项',
+        width: "100%",
+        allow_single_deselect: true,
+        disable_search_threshold: 10
+    });
     $(document).ready(function () {
         //添加用户表单验证
         $("#add").validate({
@@ -309,15 +328,15 @@
 
         function addform(form) {
             $.ajax(
-                    {
-                        url: "?",
-                        type: "post",
-                        data: $(form).serialize(),
-                        success: function (data) {
-                            swal("用户添加成功!", "", "success");
-                            //alert($(form).serialize())
-                        }
+                {
+                    url: "?",
+                    type: "post",
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        swal("用户添加成功!", "", "success");
+                        //alert($(form).serialize())
                     }
+                }
             );
             return false;
         }
@@ -366,26 +385,26 @@
 
         function setform(form) {
             $.ajax(
-                    {
-                        url: "?",
-                        type: "post",
-                        data: $(form).serialize(),
-                        success: function (data) {
-                            toastr.success('密码已发送到用户手机！','密码重置成功！');
-                            $("#myModa-reset").modal("hide");
-                        }
+                {
+                    url: "?",
+                    type: "post",
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        toastr.success('密码已发送到用户手机！', '密码重置成功！');
+                        $("#myModa-reset").modal("hide");
                     }
+                }
             );
             return false;
         }
 
         //验证码在模态框出现前加载
         $("#myModa-reset").on('show.bs.modal', function (event) {
-            var button=$(event.relatedTarget );
-            var userid=button.data("userid");
+            var button = $(event.relatedTarget);
+            var userid = button.data("userid");
             $("#userid").val(userid);
-            $('#codeimg').attr("src","http://www.wulingtest.com:8780/jcaptcha")
-            alert("userid = "+ userid);
+            $('#codeimg').attr("src", "http://www.wulingtest.com:8780/jcaptcha")
+            alert("userid = " + userid);
         });
         //关闭模态框清空表单值
         $("#myModa-reset").on('hidden.bs.modal', function (event) {
@@ -393,8 +412,8 @@
         });
         //删除数据
         $('#editable-sample button.delete').on('click', function () {
-            var row=$(this).parents("tr")[0];
-            var userid=$(this).data("userid");
+            var row = $(this).parents("tr")[0];
+            var userid = $(this).data("userid");
             swal({
                 title: "您确定要删除吗?",
                 text: "用户账户删除后将不可恢复!",
@@ -404,16 +423,16 @@
                 confirmButtonText: "确定删除！",
                 closeOnConfirm: false
             }, function () {
-                row.className="animated bounceOut";
-                setTimeout(function(){
-                            //请求成功返回
-                            // row.parentNode.removeChild(row);
-                            //swal("删除成功!", "用户 “香溢紫郡－案场经历” 删除成功！","success");
+                row.className = "animated bounceOut";
+                setTimeout(function () {
+                        //请求成功返回
+                        // row.parentNode.removeChild(row);
+                        //swal("删除成功!", "用户 “香溢紫郡－案场经历” 删除成功！","success");
 
-                            //失败
-                            row.className="animated fadeInLeft";
-                            swal("删除失败!", "用户userid="+userid+" “香溢紫郡－案场经历” 删除失败！","error");
-                        },1000
+                        //失败
+                        row.className = "animated fadeInLeft";
+                        swal("删除失败!", "用户userid=" + userid + " “香溢紫郡－案场经历” 删除失败！", "error");
+                    }, 1000
                 )
             });
         });

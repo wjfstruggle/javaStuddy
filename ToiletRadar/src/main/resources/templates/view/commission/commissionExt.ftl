@@ -58,7 +58,7 @@
             <div class="ibox-content ibox-content-t m-b-sm border-bottom">
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <a href="#" class="btn btn-primary"  data-title="添加广告">申请 <i class="fa fa-plus"></i></a>
+                        <a href="#" class="btn btn-primary" data-title="添加广告">申请 <i class="fa fa-plus"></i></a>
                     </div>
 
                     <div class="form-group col-md-2 m-t-xs ">
@@ -76,7 +76,8 @@
                                 <option value="1">报备</option>
                                 <option value="2">抢客</option>
                             </select>
-                            <span class="input-group-btn"><i class="fa fa-search"></i> <button class="btn btn-primary btn-sm m-b-none"><i class="fa fa-search"></i> 搜索</button></span>
+                            <span class="input-group-btn"><i class="fa fa-search"></i> <button
+                                        class="btn btn-primary btn-sm m-b-none"><i class="fa fa-search"></i> 搜索</button></span>
                         </div>
                     </div>
                 </div>
@@ -84,13 +85,13 @@
             <!--当前位置结束-->
 
 
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ibox">
                         <div class="ibox-content">
                             <div class="table-responsive">
-                                <table class="table table-centerbody table-mail table-striped table-condensed text-nowrap" id="editable-sample">
+                                <table class="table table-centerbody table-mail table-striped table-condensed text-nowrap"
+                                       id="editable-sample">
                                     <thead>
                                     <tr>
                                         <th>经纪公司</th>
@@ -103,56 +104,77 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>大宁房产</td>
-                                            <td>大宁大厦</td>
-                                            <td>喵喵</td>
-                                            <td class="text-price">10099.18</td>
-                                            <td><span class="label label-success">审核通过</span> </td>
-                                            <td>2015-09-21 10:48:55</td>
-                                            <td class="text-right">
-                                                <div class="btn-group">
-                                                    <a href="#" class="btn-white  btn btn-sm through" data-userid="1"><i class="fa fa-check-circle-o"></i>  通过</a>
-                                                    <a href="#" class="btn-white  btn btn-sm refuse" data-userid="1"><i class="fa fa-ban"></i>  拒绝</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>大宁房产</td>
-                                            <td>大宁大厦</td>
-                                            <td>喵喵</td>
-                                            <td class="text-price">10099.18</td>
-                                            <td><span class="label label-success">审核通过</span> </td>
-                                            <td>2015-09-21 10:48:55</td>
-                                            <td class="text-right">
-                                                <div class="btn-group">
-                                                    <a href="#" class="btn-white  btn btn-sm through" data-userid="1"><i class="fa fa-check-circle-o"></i>  通过</a>
-                                                    <a href="#" class="btn-white  btn btn-sm refuse" data-userid="1"><i class="fa fa-ban"></i>  拒绝</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>大宁房产</td>
-                                            <td>大宁大厦</td>
-                                            <td>喵喵</td>
-                                            <td class="text-price">10099.18</td>
-                                            <td><span class="label label-success">审核通过</span> </td>
-                                            <td>2015-09-21 10:48:55</td>
-                                            <td class="text-right">
-                                                <div class="btn-group">
-                                                    <a class="btn-white  btn btn-sm through" data-userid="1"><i class="fa fa-check-circle-o"></i>  通过</a>
-                                                    <a href="#" class="btn-white  btn btn-sm refuse" data-userid="1"><i class="fa fa-ban"></i>  拒绝</a>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                    <tr>
+                                        <td>大宁房产</td>
+                                        <td>大宁大厦</td>
+                                        <td>喵喵</td>
+                                        <td class="text-price">10099.18</td>
+                                        <td><span class="label label-success">审核通过</span></td>
+                                        <td>2015-09-21 10:48:55</td>
+                                        <td class="text-right">
+                                            <div class="btn-group">
+                                                <a href="#" class="btn-white  btn btn-sm through" data-userid="1"><i
+                                                            class="fa fa-check-circle-o"></i> 通过</a>
+                                                <a href="#" class="btn-white  btn btn-sm refuse" data-userid="1"><i
+                                                            class="fa fa-ban"></i> 拒绝</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>大宁房产</td>
+                                        <td>大宁大厦</td>
+                                        <td>喵喵</td>
+                                        <td class="text-price">10099.18</td>
+                                        <td><span class="label label-success">审核通过</span></td>
+                                        <td>2015-09-21 10:48:55</td>
+                                        <td class="text-right">
+                                            <div class="btn-group">
+                                                <a href="#" class="btn-white  btn btn-sm through" data-userid="1"><i
+                                                            class="fa fa-check-circle-o"></i> 通过</a>
+                                                <a href="#" class="btn-white  btn btn-sm refuse" data-userid="1"><i
+                                                            class="fa fa-ban"></i> 拒绝</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>大宁房产</td>
+                                        <td>大宁大厦</td>
+                                        <td>喵喵</td>
+                                        <td class="text-price">10099.18</td>
+                                        <td><span class="label label-success">审核通过</span></td>
+                                        <td>2015-09-21 10:48:55</td>
+                                        <td class="text-right">
+                                            <div class="btn-group">
+                                                <a class="btn-white  btn btn-sm through" data-userid="1"><i
+                                                            class="fa fa-check-circle-o"></i> 通过</a>
+                                                <a href="#" class="btn-white  btn btn-sm refuse" data-userid="1"><i
+                                                            class="fa fa-ban"></i> 拒绝</a>
+                                            </div>
+                                        </td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="pages border-top">
                                 <div class="row">
-                                    <div class="col-md-4"><div class="m-t-md">当前显示 1 到 10 条，共 57 条</div></div>
+                                    <div class="col-md-4">
+                                        <div class="m-t-md">当前显示 1 到 10 条，共 57 条</div>
+                                    </div>
                                     <div class="col-md-8 footable-visible">
-                                        <ul class="pagination pull-right">                                             <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li>                                             <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a></li>                                             <li class="footable-page active"><a data-page="0" href="#">2</a></li>                                             <li class="footable-page"><a data-page="1" href="#">3</a></li>                                             <li class="footable-page"><a data-page="1" href="#">4</a></li>                                             <li class="footable-page"><a data-page="1" href="#">5</a></li>                                             <li class="footable-page"><a data-page="1" href="#">6</a></li>                                             <li class="footable-page-arrow"><a data-page="next" href="#next">...</a></li>                                             <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>                                         </ul>
+                                        <ul class="pagination pull-right">
+                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a>
+                                            </li>
+                                            <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a>
+                                            </li>
+                                            <li class="footable-page active"><a data-page="0" href="#">2</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">3</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">4</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">5</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">6</a></li>
+                                            <li class="footable-page-arrow"><a data-page="next" href="#next">...</a>
+                                            </li>
+                                            <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -198,7 +220,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group m-t-sm" >
+                    <div class="form-group m-t-sm">
                         <div class="col-sm-6 col-sm-push-3">
                             <button class="btn btn-md btn-primary " type="submit"><strong>确认</strong></button>
                             <button type="button" class="btn btn-white m-l-sm" data-dismiss="modal">取消</button>
@@ -226,24 +248,23 @@
 <script src="${ctx}/static/js/plugins/validate/validate-cn.js"></script> <!---validate 自定义方法--->
 
 
-
 <script>
     $(document).ready(function () {
 
-        $(document).on('click','#editable-sample a.through', function () {
-            var id=$(this).data("id");
+        $(document).on('click', '#editable-sample a.through', function () {
+            var id = $(this).data("id");
             $.ajax(
-                    {
-                        url: "?",
-                        type: "post",
-                        data: {id:id},
-                        success: function (data) {
-                            toastr.success('用户张丽君实名认证已经通过审核！','操作成功！');
-                        },
-                        error:function(error){
-                            toastr.error('登陆超时，操作未成功！','操作失败！');
-                        }
+                {
+                    url: "?",
+                    type: "post",
+                    data: {id: id},
+                    success: function (data) {
+                        toastr.success('用户张丽君实名认证已经通过审核！', '操作成功！');
+                    },
+                    error: function (error) {
+                        toastr.error('登陆超时，操作未成功！', '操作失败！');
                     }
+                }
             );
         });
 

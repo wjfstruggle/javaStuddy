@@ -18,15 +18,16 @@ public class ToiletServiceImpl implements ToiletService {
 
     @Autowired
     private ToiletMapper toiletMapper;
+
     @Override
     public boolean addToilet(Toilet toilet) {
-        if (toilet!=null){
+        if (toilet != null) {
             toilet.setCheckStatus(false);
             toilet.setCreateTime(new Date());
             toilet.setDeleteStatus(false);
             toilet.setFixStatus(false);
             toilet.setModifyTime(new Date());
-            if (toiletMapper.insert(toilet)>0){
+            if (toiletMapper.insert(toilet) > 0) {
                 return true;
             }
         }
@@ -36,9 +37,9 @@ public class ToiletServiceImpl implements ToiletService {
 
     @Override
     public boolean deleteToiletById(String id) {
-        Long tid =Long.parseLong(id);
+        Long tid = Long.parseLong(id);
         int i = toiletMapper.deleteByPrimaryKey(tid);
-        if (i>0){
+        if (i > 0) {
             return true;
         }
         return false;
@@ -47,7 +48,7 @@ public class ToiletServiceImpl implements ToiletService {
     @Override
     public boolean editToilet(Toilet toilet) {
         toilet.setModifyTime(new Date());
-        if (toiletMapper.updateByPrimaryKey(toilet)>0){
+        if (toiletMapper.updateByPrimaryKey(toilet) > 0) {
             return true;
         }
         return false;
@@ -55,13 +56,13 @@ public class ToiletServiceImpl implements ToiletService {
 
     @Override
     public Toilet findToiletById(Integer id) {
-        long tid = (long)id;
+        long tid = (long) id;
         return toiletMapper.selectByPrimaryKey(tid);
     }
 
     @Override
     public PageInfo<Toilet> findToiletsByPage(Integer pageNum, String keywords) {
-        if(pageNum == null) {
+        if (pageNum == null) {
             pageNum = 1;
         }
         PageHelper.startPage(pageNum, Constants.PAGE_SIZE);
@@ -69,7 +70,7 @@ public class ToiletServiceImpl implements ToiletService {
         if (list != null) {
             PageInfo<Toilet> page = new PageInfo<>(list);
             return page;
-        }else {
+        } else {
             return null;
         }
 
@@ -83,7 +84,7 @@ public class ToiletServiceImpl implements ToiletService {
 
     @Override
     public int updateCheckStatus(Long pkId, byte checkStatus) {
-        return toiletMapper.updateCheckStatus(pkId,checkStatus);
+        return toiletMapper.updateCheckStatus(pkId, checkStatus);
     }
 }
 

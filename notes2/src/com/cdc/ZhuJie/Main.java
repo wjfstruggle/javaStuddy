@@ -6,84 +6,91 @@ package com.cdc.ZhuJie;
  * @author: wujf
  * @create: 2019-08-21 10:55
  **/
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 /**
  * 常用注解
- *元注解：@Retention，@Documented、@Target、@Inherited、@Repeatable 5 种。
- * @Retention
- * Retention 的英文意为保留期的意思。当 @Retention 应用到一个注解上的时候，它解释说明了这个注解的的存活时间。
- * @Documented
- * 它的作用是能够将注解中的元素包含到 Javadoc 中去。
+ * 元注解：@Retention，@Documented、@Target、@Inherited、@Repeatable 5 种。
+ *
+ * @Retention Retention 的英文意为保留期的意思。当 @Retention 应用到一个注解上的时候，它解释说明了这个注解的的存活时间。
+ * @Documented 它的作用是能够将注解中的元素包含到 Javadoc 中去。
  * @Target
  * @Deprecated 标记过时的元素
  * @SuppressWarnings 警告的意思
  */
 //  TestAnnotation 这个注解中拥有 age 和 name 两个属性。在使用的时候，我们应该给它们进行赋值。
-@TestAnnotation(age=3,name="hello")
+@TestAnnotation(age = 3, name = "hello")
 public class Main {
-  @Check(value="hi")
-  int f;
-  @Perform
-  public void testMethod() {}
-  public static void main(String[] args) throws Exception{
-    Hero hero = new Hero();
-    hero.say(); // 过时了
-    hero.speak();
-    // 通过反射调用属性的方法
-    boolean hasAnnotation = Main.class.isAnnotationPresent(TestAnnotation.class);
-    if ( hasAnnotation ) {
-      TestAnnotation testAnnotation = Main.class.getAnnotation(TestAnnotation.class);
-      System.out.println("age:"+testAnnotation.age()); // 3
-      System.out.println("name:"+testAnnotation.name()); // hello
+    @Check(value = "hi")
+    int f;
+
+    @Perform
+    public void testMethod() {
     }
-    try {
-      Field f = Main.class.getDeclaredField("f");
-      f.setAccessible(true);
-      Check check = f.getAnnotation(Check.class);
-      if (check != null) {
-        System.out.println("check.value"+ check.value());
-      }
-      Method testMethod = Main.class.getDeclaredMethod("testMethod");
-      if (testMethod != null) {
-        Annotation[] ans = testMethod.getAnnotations();
-        for (int i = 0; i <ans.length ; i++) {
-          System.out.println(ans[i].annotationType().getSimpleName());
+
+    public static void main(String[] args) throws Exception {
+        Hero hero = new Hero();
+        hero.say(); // 过时了
+        hero.speak();
+        // 通过反射调用属性的方法
+        boolean hasAnnotation = Main.class.isAnnotationPresent(TestAnnotation.class);
+        if (hasAnnotation) {
+            TestAnnotation testAnnotation = Main.class.getAnnotation(TestAnnotation.class);
+            System.out.println("age:" + testAnnotation.age()); // 3
+            System.out.println("name:" + testAnnotation.name()); // hello
         }
-      }
-    } catch (NoSuchFieldException e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
-      System.out.println(e.getMessage());
-    } catch (SecurityException e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
-      System.out.println(e.getMessage());
+        try {
+            Field f = Main.class.getDeclaredField("f");
+            f.setAccessible(true);
+            Check check = f.getAnnotation(Check.class);
+            if (check != null) {
+                System.out.println("check.value" + check.value());
+            }
+            Method testMethod = Main.class.getDeclaredMethod("testMethod");
+            if (testMethod != null) {
+                Annotation[] ans = testMethod.getAnnotations();
+                for (int i = 0; i < ans.length; i++) {
+                    System.out.println(ans[i].annotationType().getSimpleName());
+                }
+            }
+        } catch (NoSuchFieldException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+        } catch (SecurityException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+        }
     }
-  }
-  @SuppressWarnings("deprecation")
-  public void test1(){
-    Hero hero = new Hero();
-    hero.say();
-    hero.speak();
-  }
+
+    @SuppressWarnings("deprecation")
+    public void test1() {
+        Hero hero = new Hero();
+        hero.say();
+        hero.speak();
+    }
 }
+
 class Hero {
-  @Deprecated // 标记过时的元素
-  public void say() {
-    System.out.println("Nothing has to say");
-  }
-  public void speak() {
-    System.out.println("i am have dream");
-  }
-  @SuppressWarnings("deprecation")
-  public void test1 () {
-    Hero hero = new Hero();
-    hero.say();
-    hero.speak();
-  }
+    @Deprecated // 标记过时的元素
+    public void say() {
+        System.out.println("Nothing has to say");
+    }
+
+    public void speak() {
+        System.out.println("i am have dream");
+    }
+
+    @SuppressWarnings("deprecation")
+    public void test1() {
+        Hero hero = new Hero();
+        hero.say();
+        hero.speak();
+    }
 }
 /***
  * @Target 目标注解

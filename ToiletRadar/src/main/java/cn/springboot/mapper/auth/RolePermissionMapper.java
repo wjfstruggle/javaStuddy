@@ -5,9 +5,9 @@ import org.apache.ibatis.annotations.Mapper;
 import cn.springboot.mapper.BaseMapper;
 import cn.springboot.model.auth.RolePermission;
 
-/** 
- * @Description 角色与菜单关系Mapper
+/**
  * @author sh
+ * @Description 角色与菜单关系Mapper
  * @date Apr 12, 2019 9:13:04 AM
  */
 @Mapper

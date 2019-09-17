@@ -12,20 +12,22 @@ import java.lang.reflect.Field;
  **/
 
 public class GetField {
-  public static void main(String[] args) throws Exception {
-    Class stdClass = Student.class;
-    // 获取public字段“score”
-    System.out.println(stdClass.getField("score"));
-    System.out.println(stdClass.getField("name"));
-    System.out.println(stdClass.getDeclaredField("grade"));
-    Field f = String.class.getDeclaredField("value");
-    System.out.println(f.getName()+f.getType());
-  }
+    public static void main(String[] args) throws Exception {
+        Class stdClass = Student.class;
+        // 获取public字段“score”
+        System.out.println(stdClass.getField("score"));
+        System.out.println(stdClass.getField("name"));
+        System.out.println(stdClass.getDeclaredField("grade"));
+        Field f = String.class.getDeclaredField("value");
+        System.out.println(f.getName() + f.getType());
+    }
 }
+
 class Person {
-  public String name;
+    public String name;
 }
+
 class Student extends Person {
-  public int score;
-  private int grade;
+    public int score;
+    private int grade;
 }

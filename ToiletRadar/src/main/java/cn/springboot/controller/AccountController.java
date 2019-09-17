@@ -19,7 +19,7 @@ import java.util.Map;
  * @date 2019/7/31 16:37
  * @Description
  */
-@Api(value = "用户Controller",tags = {"用户操作接口"})
+@Api(value = "用户Controller", tags = {"用户操作接口"})
 @Controller
 public class AccountController {
 
@@ -27,11 +27,11 @@ public class AccountController {
     private AccountService accountService;
 
     @ApiOperation(value = "添加用户")
-    @RequestMapping(value = "/account/add",method = RequestMethod.POST)
+    @RequestMapping(value = "/account/add", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String,String> add(@ApiParam(name = "用户对象",value = "传入json格式,只需传入wxName，wxPhoto，identity微信唯一标识")@RequestBody Account account) {
+    public Map<String, String> add(@ApiParam(name = "用户对象", value = "传入json格式,只需传入wxName，wxPhoto，identity微信唯一标识") @RequestBody Account account) {
         boolean flag = accountService.addAccount(account);
-        Map<String ,String > result = new HashMap<>();
+        Map<String, String> result = new HashMap<>();
         if (flag) {
             result.put("status", "1");
             result.put("msg", "发布成功");
@@ -43,11 +43,11 @@ public class AccountController {
     }
 
     @ApiOperation(value = "根据ID删除用户")
-    @RequestMapping(value = "/account/{id}",method = RequestMethod.DELETE)
+    @RequestMapping(value = "/account/{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public Map<String,String> delete(@PathVariable Long id) {
+    public Map<String, String> delete(@PathVariable Long id) {
         boolean flag = accountService.deleteAccountById(id);
-        Map<String ,String > result = new HashMap<>();
+        Map<String, String> result = new HashMap<>();
         if (flag) {
             result.put("status", "1");
             result.put("msg", "删除成功");
@@ -59,12 +59,12 @@ public class AccountController {
     }
 
     @ApiOperation(value = "根据ID修改用户")
-    @RequestMapping(value = "/account/{id}",method = RequestMethod.PUT)
+    @RequestMapping(value = "/account/{id}", method = RequestMethod.PUT)
     @ResponseBody
-    public Map<String,String> edit(@ApiParam(name = "id",value = "用户id",required = true) @PathVariable Long id, @RequestBody Account account) {
+    public Map<String, String> edit(@ApiParam(name = "id", value = "用户id", required = true) @PathVariable Long id, @RequestBody Account account) {
         account.setPkId(id);
         boolean flag = accountService.editAccount(account);
-        Map<String ,String > result = new HashMap<>();
+        Map<String, String> result = new HashMap<>();
         if (flag) {
             result.put("status", "1");
             result.put("msg", "修改成功");
@@ -76,22 +76,22 @@ public class AccountController {
     }
 
     @ApiOperation(value = "根据ID查询用户")
-    @RequestMapping(value = "/account/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/account/{id}", method = RequestMethod.GET)
     @ResponseBody
     public Account selectById(@PathVariable Long id) {
         Account account = accountService.findAccountById(id);
         if (account != null) {
             return account;
-        }else {
+        } else {
             return null;
         }
     }
 
     @ApiOperation(value = "分页查询用户列表")
-    @RequestMapping(value = {"/account/list/{pageNum}","/account/list"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/account/list/{pageNum}", "/account/list"}, method = RequestMethod.GET)
     @ResponseBody
     public PageInfo<Account> list(@PathVariable(required = false) Integer pageNum) {
-        PageInfo<Account> page = accountService.findAccountByPage(pageNum,null);
+        PageInfo<Account> page = accountService.findAccountByPage(pageNum, null);
         return page;
     }
 

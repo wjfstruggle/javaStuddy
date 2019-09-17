@@ -67,11 +67,11 @@ public class RoleServiceImpl implements RoleService {
     public void addRolePermission(String roleCode, String permissionKey) {
         Role role = findRoleByCode(roleCode);
         if (role == null) {
-            throw new BusinessException("role-fail","## 给角色授权失败， 角色编码错误");
+            throw new BusinessException("role-fail", "## 给角色授权失败， 角色编码错误");
         }
         Permission permis = permissionMapper.findPermissionByKey(permissionKey);
         if (permis == null) {
-            throw new BusinessException("role-fail","## 给角色授权失败， 菜单KEY不存在，key="+permissionKey);
+            throw new BusinessException("role-fail", "## 给角色授权失败， 菜单KEY不存在，key=" + permissionKey);
         }
 
         RolePermission rolePermission = new RolePermission();

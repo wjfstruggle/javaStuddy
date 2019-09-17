@@ -79,13 +79,14 @@
                             <input type="text" class="input-sm form-control" name="start" value="09/07/2015">
                             <span class="input-group-addon">至</span>
                             <input type="text" class="input-sm form-control" name="end" value="10/07/2015">
-                            <span class="input-group-btn"><button type="button" class="btn btn-sm btn-primary no-margins"><i class="fa fa-search"></i> 查询</button> </span>
+                            <span class="input-group-btn"><button type="button"
+                                                                  class="btn btn-sm btn-primary no-margins"><i
+                                            class="fa fa-search"></i> 查询</button> </span>
                         </div>
                     </div>
                 </div>
             </div>
             <!--当前位置结束-->
-
 
 
             <div class="row">
@@ -109,47 +110,62 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>小正太</td>
-                                            <td>13668951765</td>
-                                            <td>多媒体门店</td>
-                                            <td>测试多媒体大厦全称</td>
-                                            <td>住宅</td>
-                                            <td>99 号楼 999 单元 999 室 </td>
-                                            <td class="text-price">9999.00</td>
-                                            <td><span class="label label-success">已结佣</span></td>
-                                            <td class="text-right text-nowrap">2015-09-21 10:48:55</td>
-                                        </tr>
-                                        <tr>
-                                            <td>小正太</td>
-                                            <td>13668951765</td>
-                                            <td>多媒体门店</td>
-                                            <td>测试多媒体大厦全称</td>
-                                            <td>住宅</td>
-                                            <td>99 号楼 999 单元 999 室 </td>
-                                            <td class="text-price">9999.00</td>
-                                            <td><span class="label label-white">待结拥</span></td>
-                                            <td class="text-right text-nowrap">2015-09-21 10:48:55</td>
-                                        </tr>
-                                        <tr>
-                                            <td>小正太</td>
-                                            <td>13668951765</td>
-                                            <td>多媒体门店</td>
-                                            <td>测试多媒体大厦全称</td>
-                                            <td>住宅</td>
-                                            <td>99 号楼 999 单元 999 室 </td>
-                                            <td class="text-price">9999.00</td>
-                                            <td><span class="label label-danger">已退款</span></td>
-                                            <td class="text-right text-nowrap">2015-09-21 10:48:55</td>
-                                        </tr>
+                                    <tr>
+                                        <td>小正太</td>
+                                        <td>13668951765</td>
+                                        <td>多媒体门店</td>
+                                        <td>测试多媒体大厦全称</td>
+                                        <td>住宅</td>
+                                        <td>99 号楼 999 单元 999 室</td>
+                                        <td class="text-price">9999.00</td>
+                                        <td><span class="label label-success">已结佣</span></td>
+                                        <td class="text-right text-nowrap">2015-09-21 10:48:55</td>
+                                    </tr>
+                                    <tr>
+                                        <td>小正太</td>
+                                        <td>13668951765</td>
+                                        <td>多媒体门店</td>
+                                        <td>测试多媒体大厦全称</td>
+                                        <td>住宅</td>
+                                        <td>99 号楼 999 单元 999 室</td>
+                                        <td class="text-price">9999.00</td>
+                                        <td><span class="label label-white">待结拥</span></td>
+                                        <td class="text-right text-nowrap">2015-09-21 10:48:55</td>
+                                    </tr>
+                                    <tr>
+                                        <td>小正太</td>
+                                        <td>13668951765</td>
+                                        <td>多媒体门店</td>
+                                        <td>测试多媒体大厦全称</td>
+                                        <td>住宅</td>
+                                        <td>99 号楼 999 单元 999 室</td>
+                                        <td class="text-price">9999.00</td>
+                                        <td><span class="label label-danger">已退款</span></td>
+                                        <td class="text-right text-nowrap">2015-09-21 10:48:55</td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="pages border-top">
                                 <div class="row">
-                                    <div class="col-md-4"><div class="m-t-md">当前显示 1 到 10 条，共 57 条</div></div>
+                                    <div class="col-md-4">
+                                        <div class="m-t-md">当前显示 1 到 10 条，共 57 条</div>
+                                    </div>
                                     <div class="col-md-8 footable-visible">
-                                        <ul class="pagination pull-right">                                             <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li>                                             <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a></li>                                             <li class="footable-page active"><a data-page="0" href="#">2</a></li>                                             <li class="footable-page"><a data-page="1" href="#">3</a></li>                                             <li class="footable-page"><a data-page="1" href="#">4</a></li>                                             <li class="footable-page"><a data-page="1" href="#">5</a></li>                                             <li class="footable-page"><a data-page="1" href="#">6</a></li>                                             <li class="footable-page-arrow"><a data-page="next" href="#next">...</a></li>                                             <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>                                         </ul>
+                                        <ul class="pagination pull-right">
+                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a>
+                                            </li>
+                                            <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">...</a>
+                                            </li>
+                                            <li class="footable-page active"><a data-page="0" href="#">2</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">3</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">4</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">5</a></li>
+                                            <li class="footable-page"><a data-page="1" href="#">6</a></li>
+                                            <li class="footable-page-arrow"><a data-page="next" href="#next">...</a>
+                                            </li>
+                                            <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -195,7 +211,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group m-t-sm" >
+                    <div class="form-group m-t-sm">
                         <div class="col-sm-6 col-sm-push-3">
                             <button class="btn btn-md btn-primary " type="submit"><strong>确认</strong></button>
                             <button type="button" class="btn btn-white m-l-sm" data-dismiss="modal">取消</button>

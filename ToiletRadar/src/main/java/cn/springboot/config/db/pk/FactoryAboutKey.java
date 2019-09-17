@@ -26,8 +26,8 @@ public class FactoryAboutKey {
     }
 
     /**
-     * 
      * 根据表名从本地内存读取所对应的id
+     *
      * @param pk 表枚举配置项
      * @return 表新产生的ID
      */

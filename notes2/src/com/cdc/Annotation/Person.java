@@ -1,5 +1,5 @@
 package com.cdc.Annotation;
 
 public enum Person {
-  P1,P2
+    P1, P2
 }

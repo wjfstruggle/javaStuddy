@@ -14,9 +14,9 @@ import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreato
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/** 
- * @Description Shiro 配置
+/**
  * @author sh
+ * @Description Shiro 配置
  * @date Apr 12, 2019 3:51:55 PM
  */
 @SuppressWarnings("all")
@@ -57,7 +57,6 @@ public class ShiroConfiguration {
     // filterRegistration.addUrlPatterns("/*");// 可以自己灵活的定义很多，避免一些根本不需要被Shiro处理的请求被包含进来
     // return filterRegistration;
     // }
-
     @Bean(name = "lifecycleBeanPostProcessor")
     public LifecycleBeanPostProcessor getLifecycleBeanPostProcessor() {
         return new LifecycleBeanPostProcessor();

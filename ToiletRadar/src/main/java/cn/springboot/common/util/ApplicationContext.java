@@ -10,9 +10,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.ServletContextAware;
 
 /**
- * 
- * @Description 将version版本号写入application中，给css,js引用时用
  * @author sh
+ * @Description 将version版本号写入application中，给css,js引用时用
  * @date Oct 9, 2016 8:39:46 PM
  */
 @Component
@@ -21,9 +20,9 @@ public class ApplicationContext implements ServletContextAware {
     private static final Logger log = LoggerFactory.getLogger(ApplicationContext.class);
 
     /**
-     * 
-     * <p>初始化到Application作用域当中</p> 
-     * @param context 
+     * <p>初始化到Application作用域当中</p>
+     *
+     * @param context
      * @see org.springframework.web.context.ServletContextAware#setServletContext(javax.servlet.ServletContext)
      */
     @Override

@@ -20,9 +20,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.util.ResourceUtils;
 
-/** 
- * @Description 安全过滤配置管理类
+/**
  * @author sh
+ * @Description 安全过滤配置管理类
  * @date Mar 24, 2019 7:45:22 PM
  */
 @SuppressWarnings("all")
@@ -54,8 +54,7 @@ public class XSSSecurityManager {
     /**
      * 初始化
      *
-     * @param config
-     *            配置参数
+     * @param config 配置参数
      */
     public static void init(FilterConfig config) {
 
@@ -93,8 +92,7 @@ public class XSSSecurityManager {
     /**
      * 读取安全审核配置文件xss_security_config.xml 设置XSSSecurityConfig配置信息
      *
-     * @param path
-     *            过滤配置文件路径
+     * @param path 过滤配置文件路径
      * @return ture or false
      * @throws DocumentException
      */
@@ -185,11 +183,9 @@ public class XSSSecurityManager {
 
     /**
      * 从目标element中获取指定标签信息，若找不到该标签，记录错误日志
-     * 
-     * @param element
-     *            目标节点
-     * @param tagName
-     *            制定标签
+     *
+     * @param element 目标节点
+     * @param tagName 制定标签
      * @return
      */
     private static String getEleValue(Element element, String tagName) {
@@ -215,7 +211,7 @@ public class XSSSecurityManager {
 
     /**
      * 匹配字符是否含特殊字符
-     * 
+     *
      * @param text
      * @return
      */
@@ -238,7 +234,7 @@ public class XSSSecurityManager {
 
     /**
      * 判断是否为空串，建议放到某个工具类中
-     * 
+     *
      * @param value
      * @return
      */

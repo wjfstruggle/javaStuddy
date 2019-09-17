@@ -65,7 +65,8 @@
                             <input type="text" class="input-sm form-control" name="start" value="09/07/2015">
                             <span class="input-group-addon">至</span>
                             <input type="text" class="input-sm form-control" name="end" value="10/07/2015">
-                            <span class="input-group-btn"><button type="button" class="btn btn-sm btn-primary no-margins"> 查询</button> </span>
+                            <span class="input-group-btn"><button type="button"
+                                                                  class="btn btn-sm btn-primary no-margins"> 查询</button> </span>
                         </div>
                     </div>
                 </div>
@@ -73,13 +74,13 @@
             <!--当前位置结束-->
 
 
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ibox">
                         <div class="ibox-heading">
                             <div class="ibox-title p-l-32">
-                                <label class="checkbox-inline p-l-n"><input id="checkAll" type="checkbox" class="i-checks" value=""> 全选  </label>
+                                <label class="checkbox-inline p-l-n"><input id="checkAll" type="checkbox"
+                                                                            class="i-checks" value=""> 全选 </label>
                                 <button type="button" class="btn btn-primary btn-xs m-l">批量通过</button>
                                 <button type="button" class="btn btn-primary btn-xs m-l">批量拒绝</button>
                             </div>
@@ -100,61 +101,77 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks" value="1"  title="" ></td>
-                                            <td>小正太</td>
-                                            <td>陈小林</td>
-                                            <td>13668951765</td>
-                                            <td>2015-09-21 10:48:55</td>
-                                            <td><span class="label label-success">审核通过</span> </td>
-                                            <td>测试楼盘</td>
-                                            <td class="text-right text-nowrap">
-                                                <div class="btn-group">
-                                                <button class="btn-white  btn btn-sm delete" data-userid="1">  通过</button>
-                                                <button class="btn-white  btn btn-sm delete" data-userid="1" data-toggle="modal" data-target="#modal-form">  拒绝</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks" value="1"  title="" ></td>
-                                            <td>小正太</td>
-                                            <td>陈小林</td>
-                                            <td>13668951765</td>
-                                            <td>2015-09-21 10:48:55</td>
-                                            <td><span class="label label-danger">审核拒绝</span> </td>
-                                            <td>测试楼盘</td>
-                                            <td class="text-right text-nowrap">
-                                                <div class="btn-group">
-                                                    <button class="btn-white  btn btn-sm delete" data-userid="1">  通过</button>
-                                                    <button class="btn-white  btn btn-sm delete" data-userid="1" data-toggle="modal" data-target="#modal-form">  拒绝</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks" value="1"  title="" ></td>
-                                            <td>小正太</td>
-                                            <td>陈小林</td>
-                                            <td>13668951765</td>
-                                            <td>2015-09-21 10:48:55</td>
-                                            <td><span class="label label-white">等待审核</span> </td>
-                                            <td>测试楼盘</td>
-                                            <td class="text-right text-nowrap">
-                                                <div class="btn-group">
-                                                    <button class="btn-white  btn btn-sm delete" data-userid="1">  通过</button>
-                                                    <button class="btn-white  btn btn-sm delete" data-userid="1" data-toggle="modal" data-target="#modal-form">  拒绝</button>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                    <tr>
+                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks"
+                                                                       value="1" title=""></td>
+                                        <td>小正太</td>
+                                        <td>陈小林</td>
+                                        <td>13668951765</td>
+                                        <td>2015-09-21 10:48:55</td>
+                                        <td><span class="label label-success">审核通过</span></td>
+                                        <td>测试楼盘</td>
+                                        <td class="text-right text-nowrap">
+                                            <div class="btn-group">
+                                                <button class="btn-white  btn btn-sm delete" data-userid="1"> 通过
+                                                </button>
+                                                <button class="btn-white  btn btn-sm delete" data-userid="1"
+                                                        data-toggle="modal" data-target="#modal-form"> 拒绝
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks"
+                                                                       value="1" title=""></td>
+                                        <td>小正太</td>
+                                        <td>陈小林</td>
+                                        <td>13668951765</td>
+                                        <td>2015-09-21 10:48:55</td>
+                                        <td><span class="label label-danger">审核拒绝</span></td>
+                                        <td>测试楼盘</td>
+                                        <td class="text-right text-nowrap">
+                                            <div class="btn-group">
+                                                <button class="btn-white  btn btn-sm delete" data-userid="1"> 通过
+                                                </button>
+                                                <button class="btn-white  btn btn-sm delete" data-userid="1"
+                                                        data-toggle="modal" data-target="#modal-form"> 拒绝
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 30px"><input name="subBox" type="checkbox" class="i-checks"
+                                                                       value="1" title=""></td>
+                                        <td>小正太</td>
+                                        <td>陈小林</td>
+                                        <td>13668951765</td>
+                                        <td>2015-09-21 10:48:55</td>
+                                        <td><span class="label label-white">等待审核</span></td>
+                                        <td>测试楼盘</td>
+                                        <td class="text-right text-nowrap">
+                                            <div class="btn-group">
+                                                <button class="btn-white  btn btn-sm delete" data-userid="1"> 通过
+                                                </button>
+                                                <button class="btn-white  btn btn-sm delete" data-userid="1"
+                                                        data-toggle="modal" data-target="#modal-form"> 拒绝
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="pages border-top">
                                 <div class="row">
-                                    <div class="col-md-4"><div class="m-t-md">当前显示 1 到 10 条，共 57 条</div></div>
+                                    <div class="col-md-4">
+                                        <div class="m-t-md">当前显示 1 到 10 条，共 57 条</div>
+                                    </div>
                                     <div class="col-md-8 footable-visible">
                                         <ul class="pagination pull-right">
-                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li>
-                                            <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">‹</a></li>
+                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a>
+                                            </li>
+                                            <li class="footable-page-arrow disabled"><a data-page="prev"
+                                                                                        href="#prev">‹</a></li>
                                             <li class="footable-page active"><a data-page="0" href="#">1</a></li>
                                             <li class="footable-page"><a data-page="1" href="#">2</a></li>
                                             <li class="footable-page"><a data-page="1" href="#">3</a></li>
@@ -209,7 +226,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group m-t-sm" >
+                    <div class="form-group m-t-sm">
                         <div class="col-sm-6 col-sm-push-3">
                             <button class="btn btn-md btn-primary " type="submit"><strong>确认</strong></button>
                             <button type="button" class="btn btn-white m-l-sm" data-dismiss="modal">取消</button>

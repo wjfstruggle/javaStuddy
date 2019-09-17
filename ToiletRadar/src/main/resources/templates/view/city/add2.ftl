@@ -69,50 +69,56 @@
                         <div class="col-md-6">
                             <h5>请选择城市 </h5>
                         </div>
-                        
+
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                        <div class="form-group last">
-                            <form>
+                            <div class="form-group last">
+                                <form>
                                     <select id="demo1" multiple="multiple">
-                                        <option value="0" data-section="直辖市" >上海</option>
-                                        <option value="01" data-section="直辖市" >北京</option>
-                                        <option value="02" data-section="直辖市" >深圳</option>
-                                        <option value="03" data-section="直辖市" >上海</option>
-                                        <option value="1" data-section="河南省" selected="selected" >郑州</option>
-                                        <option value="2" data-section="河南省" selected="selected" >开封</option>
-                                        <option value="3" data-section="河南省" selected="selected" data-description="这是一个神奇的地方！">洛阳</option>
+                                        <option value="0" data-section="直辖市">上海</option>
+                                        <option value="01" data-section="直辖市">北京</option>
+                                        <option value="02" data-section="直辖市">深圳</option>
+                                        <option value="03" data-section="直辖市">上海</option>
+                                        <option value="1" data-section="河南省" selected="selected">郑州</option>
+                                        <option value="2" data-section="河南省" selected="selected">开封</option>
+                                        <option value="3" data-section="河南省" selected="selected"
+                                                data-description="这是一个神奇的地方！">洛阳
+                                        </option>
                                         <option value="4" data-section="河南省">周口</option>
                                         <option value="5" data-section="河南省">驻马店</option>
 
-                                        <option value="6" data-section="山东省" selected="selected" >济南</option>
-                                        <option value="7" data-section="山东省" selected="selected" >青岛</option>
-                                        <option value="8" data-section="山东省" selected="selected" >大连</option>
+                                        <option value="6" data-section="山东省" selected="selected">济南</option>
+                                        <option value="7" data-section="山东省" selected="selected">青岛</option>
+                                        <option value="8" data-section="山东省" selected="selected">大连</option>
                                         <option value="9" data-section="山东省">大别山</option>
                                         <option value="10" data-section="山东省">太行山</option>
 
-                                        <option value="11" data-section="苏州省" selected="selected" >苏洲市</option>
-                                        <option value="12" data-section="苏州省" selected="selected" >南京市</option>
-                                        <option value="13" data-section="苏州省" selected="selected" data-description="我们一起看日出！">南通市</option>
+                                        <option value="11" data-section="苏州省" selected="selected">苏洲市</option>
+                                        <option value="12" data-section="苏州省" selected="selected">南京市</option>
+                                        <option value="13" data-section="苏州省" selected="selected"
+                                                data-description="我们一起看日出！">南通市
+                                        </option>
                                         <option value="14" data-section="苏州省">常熟市</option>
                                         <option value="15" data-section="苏州省">阳橙湖</option>
-                                        <option value="1" data-section="河南省" selected="selected" >郑州</option>
-                                        <option value="2" data-section="河南省" selected="selected" >开封</option>
-                                        <option value="3" data-section="河南省" selected="selected" data-description="这是一个神奇的地方！">洛阳</option>
+                                        <option value="1" data-section="河南省" selected="selected">郑州</option>
+                                        <option value="2" data-section="河南省" selected="selected">开封</option>
+                                        <option value="3" data-section="河南省" selected="selected"
+                                                data-description="这是一个神奇的地方！">洛阳
+                                        </option>
                                         <option value="4" data-section="河南省">周口</option>
                                         <option value="5" data-section="河南省">驻马店</option>
 
-                                        <option value="6" data-section="山东省" selected="selected" >济南</option>
-                                        <option value="7" data-section="山东省" selected="selected" >青岛</option>
-                                        <option value="8" data-section="山东省" selected="selected" >大连</option>
+                                        <option value="6" data-section="山东省" selected="selected">济南</option>
+                                        <option value="7" data-section="山东省" selected="selected">青岛</option>
+                                        <option value="8" data-section="山东省" selected="selected">大连</option>
                                         <option value="9" data-section="山东省">大别山</option>
                                         <option value="10" data-section="山东省">太行山</option>
 
                                     </select>
 
-                            </form>
-                        </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,13 +159,13 @@
         }
 
         var c = {
-            sortable:false,
-            allowBatchSelection:true,
-            collapsible:true,
-            hideSidePanel:false, //Hide the right panel showing all the selected items
-            sectionDelimiter:'/',	//Separator between sections in the select option data-section attribute
-            showSectionOnSelected:true,//Show section name on the selected items
-            startCollapsed:true
+            sortable: false,
+            allowBatchSelection: true,
+            collapsible: true,
+            hideSidePanel: false, //Hide the right panel showing all the selected items
+            sectionDelimiter: '/',	//Separator between sections in the select option data-section attribute
+            showSectionOnSelected: true,//Show section name on the selected items
+            startCollapsed: true
         };
         a()
     });

@@ -8,10 +8,11 @@ package obj.cdc.dome;
  **/
 public class StateCouncilSpecialAllowance extends Income {
     public StateCouncilSpecialAllowance(double income) {
-      super(income);
+        super(income);
     }
+
     @Override
-    public double getIncome () {
-      return 0;
+    public double getIncome() {
+        return 0;
     }
 }

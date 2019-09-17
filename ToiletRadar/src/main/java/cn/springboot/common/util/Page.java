@@ -7,35 +7,49 @@ import java.util.Map;
 
 import cn.springboot.common.constants.Constants;
 
-/** 
- * @Description 分页对象
+/**
+ * @param <T>
  * @author sh
+ * @Description 分页对象
  * @date Mar 16, 2019 5:20:25 PM
- * @param <T> 
  */
 public class Page<T> implements Serializable {
 
     private static final long serialVersionUID = -3323321457300243220L;
 
-    /** 每页显示记录数(默认为10) */
+    /**
+     * 每页显示记录数(默认为10)
+     */
     private int pageSize;
 
-    /** 当前页数(默认为1) */
+    /**
+     * 当前页数(默认为1)
+     */
     private int currentPage;
 
-    /** 总页数 */
+    /**
+     * 总页数
+     */
     private long totalPage;
 
-    /** 总记录数 */
+    /**
+     * 总记录数
+     */
     private long totalCount;
 
-    /** 当前页对应的记录列表 */
+    /**
+     * 当前页对应的记录列表
+     */
     private List<T> resultList;
 
-    /** 分页查询条件对应的参数Map */
+    /**
+     * 分页查询条件对应的参数Map
+     */
     private Map<String, Object> paramMap;
 
-    /** 排序字符串 */
+    /**
+     * 排序字符串
+     */
     private String orderBy;
 
     public Page() {
@@ -44,11 +58,9 @@ public class Page<T> implements Serializable {
 
     /**
      * 计算总页数
-     * 
-     * @param totalCount
-     *            总记录数
-     * @param pageSize
-     *            每页显示记录数
+     *
+     * @param totalCount 总记录数
+     * @param pageSize   每页显示记录数
      * @return int 总页数
      */
     public static long computeTotalPage(final long totalCount, final int pageSize) {
@@ -57,11 +69,9 @@ public class Page<T> implements Serializable {
 
     /**
      * 计算开始页
-     * 
-     * @param currentPage
-     *            当前页数
-     * @param pageSize
-     *            每页显示记录数
+     *
+     * @param currentPage 当前页数
+     * @param pageSize    每页显示记录数
      * @return int 开始页
      */
     public static int computeStartPage(final int currentPage, final int pageSize) {
@@ -70,11 +80,9 @@ public class Page<T> implements Serializable {
 
     /**
      * 计算结束页
-     * 
-     * @param currentPage
-     *            当前页数
-     * @param pageSize
-     *            每页显示记录数
+     *
+     * @param currentPage 当前页数
+     * @param pageSize    每页显示记录数
      * @return int 结束页
      */
     public static int computeEndPage(final int currentPage, final int pageSize) {

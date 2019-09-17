@@ -54,10 +54,12 @@
             <div class="ibox-content m-b-sm ibox-content-t border-bottom" id="ibox-content">
                 <div class="row">
                     <div class="form-group col-md-3">
-                        <a href="#add_rslide" class="btn btn-primary"  data-title="添加广告">新增经济公司 <i class="fa fa-plus"></i></a>
+                        <a href="#add_rslide" class="btn btn-primary" data-title="添加广告">新增经济公司 <i
+                                    class="fa fa-plus"></i></a>
                     </div>
                     <div class="col-md-3 form-group  m-t-xs">
-                        <input type="text" class="input-sm form-control" name="end" value="" placeholder="公司名称、公司简称、联系人、公司地址">
+                        <input type="text" class="input-sm form-control" name="end" value=""
+                               placeholder="公司名称、公司简称、联系人、公司地址">
                     </div>
 
                     <div class="col-md-2  m-t-xs form-group">
@@ -68,10 +70,13 @@
 
                     <div class="form-group col-md-4 m-t-xs " id="data_5">
                         <div class="input-daterange input-group" id="datepicker">
-                            <input type="text" class="input-sm form-control" name="start" value="09/07/2015" placeholder="">
+                            <input type="text" class="input-sm form-control" name="start" value="09/07/2015"
+                                   placeholder="">
                             <span class="input-group-addon">至</span>
-                            <input type="text" class="input-sm form-control" name="end" value="10/07/2015" placeholder="">
-                            <span class="input-group-btn"><i class="fa fa-search"></i> <button class="btn btn-primary btn-sm m-b-none"><i class="fa fa-search"></i> 搜索</button></span>
+                            <input type="text" class="input-sm form-control" name="end" value="10/07/2015"
+                                   placeholder="">
+                            <span class="input-group-btn"><i class="fa fa-search"></i> <button
+                                        class="btn btn-primary btn-sm m-b-none"><i class="fa fa-search"></i> 搜索</button></span>
                         </div>
                     </div>
                 </div>
@@ -81,7 +86,8 @@
                     <div class="ibox">
                         <div class="ibox-content">
                             <div class="table-responsive ">
-                                <table class="table table-centerbody table-striped table-condensed text-nowrap" id="editable-sample">
+                                <table class="table table-centerbody table-striped table-condensed text-nowrap"
+                                       id="editable-sample">
                                     <thead>
                                     <tr>
                                         <th>公司全称</th>
@@ -101,7 +107,8 @@
                                         <td>通过</td>
                                         <td class="text-right text-nowrap">
                                             <div class="btn-group ">
-                                                <a href="edit.html" class="btn btn-white btn-sm edit" ><i class="fa fa-pencil"></i>  修改</a>
+                                                <a href="edit.html" class="btn btn-white btn-sm edit"><i
+                                                            class="fa fa-pencil"></i> 修改</a>
                                             </div>
                                         </td>
                                     </tr>
@@ -113,7 +120,8 @@
                                         <td>通过</td>
                                         <td class="text-right text-nowrap">
                                             <div class="btn-group ">
-                                                <a href="edit.html" class="btn btn-white btn-sm edit" ><i class="fa fa-pencil"></i>  修改</a>
+                                                <a href="edit.html" class="btn btn-white btn-sm edit"><i
+                                                            class="fa fa-pencil"></i> 修改</a>
                                             </div>
                                         </td>
                                     </tr>
@@ -125,7 +133,8 @@
                                         <td>通过</td>
                                         <td class="text-right text-nowrap">
                                             <div class="btn-group ">
-                                                <a href="edit.html" class="btn btn-white btn-sm edit" ><i class="fa fa-pencil"></i>  修改</a>
+                                                <a href="edit.html" class="btn btn-white btn-sm edit"><i
+                                                            class="fa fa-pencil"></i> 修改</a>
                                             </div>
                                         </td>
                                     </tr>
@@ -134,11 +143,15 @@
                             </div>
                             <div class="pages border-top">
                                 <div class="row">
-                                    <div class="col-md-4"><div class="m-t-md">当前显示 1 到 20 条，共 57 条</div></div>
+                                    <div class="col-md-4">
+                                        <div class="m-t-md">当前显示 1 到 20 条，共 57 条</div>
+                                    </div>
                                     <div class="col-md-8 footable-visible">
                                         <ul class="pagination pull-right">
-                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li>
-                                            <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">‹</a></li>
+                                            <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a>
+                                            </li>
+                                            <li class="footable-page-arrow disabled"><a data-page="prev"
+                                                                                        href="#prev">‹</a></li>
                                             <li class="footable-page active"><a data-page="0" href="#">1</a></li>
                                             <li class="footable-page"><a data-page="1" href="#">2</a></li>
                                             <li class="footable-page"><a data-page="1" href="#">3</a></li>
@@ -188,7 +201,7 @@
 <script src="${ctx}/static/js/plugins/toastr/toastr.min.js" async></script><!---顶部弹出提示--->
 <script src="${ctx}/static/js/plugins/sweetalert/sweetalert.min.js" async></script><!---对话框 alert--->
 <script src="${ctx}/static/js/plugins/validate/jquery.validate.min.js"></script>  <!---表单验证--->
-<script src="${ctx}/static/js/plugins/validate/validate-cn.js" ></script> <!---validate 自定义方法--->
+<script src="${ctx}/static/js/plugins/validate/validate-cn.js"></script> <!---validate 自定义方法--->
 
 <script src="${ctx}/static/js/plugins/datapicker/bootstrap-datepicker.js"></script>
 <script>

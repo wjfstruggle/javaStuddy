@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
-@Api(value = "厕所Controller",tags = "厕所操作接口")
+@Api(value = "厕所Controller", tags = "厕所操作接口")
 @Controller
 @RequestMapping("/toilet")
 public class ToiletController {
@@ -28,7 +28,7 @@ public class ToiletController {
     private ToiletService toiletService;
 
     @ApiOperation(value = "添加厕所")
-    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
     public ResponseData add(@RequestBody Toilet toilet) {
         boolean flag = toiletService.addToilet(toilet);
@@ -64,11 +64,11 @@ public class ToiletController {
     }*/
 
     @ApiOperation(value = "根据ID删除厕所")
-    @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public Map<String,String> delete(@PathVariable String id) {
+    public Map<String, String> delete(@PathVariable String id) {
         boolean flag = toiletService.deleteToiletById(id);
-        Map<String ,String > result = new HashMap<>();
+        Map<String, String> result = new HashMap<>();
         if (flag) {
             result.put("status", "1");
             result.put("msg", "删除成功");
@@ -80,12 +80,12 @@ public class ToiletController {
     }
 
     @ApiOperation(value = "根据ID修改厕所")
-    @RequestMapping(value = "/{id}",method = RequestMethod.PUT)
+    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     @ResponseBody
-    public Map<String,String> edit(@ApiParam(name = "id",value = "厕所id",required = true) @PathVariable Long id, @RequestBody Toilet toilet) {
+    public Map<String, String> edit(@ApiParam(name = "id", value = "厕所id", required = true) @PathVariable Long id, @RequestBody Toilet toilet) {
         toilet.setPkId(id);
         boolean flag = toiletService.editToilet(toilet);
-        Map<String ,String > result = new HashMap<>();
+        Map<String, String> result = new HashMap<>();
         if (flag) {
             result.put("status", "1");
             result.put("msg", "修改成功");
@@ -97,7 +97,7 @@ public class ToiletController {
     }
 
     @ApiOperation(value = "根据ID查询厕所")
-    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     @ResponseBody
     public Toilet selectById(@PathVariable String id) {
         if (StringUtil.isNotEmpty(id)) {
@@ -111,11 +111,11 @@ public class ToiletController {
     }
 
     @ApiOperation(value = "分页查询厕所列表")
-    @RequestMapping(value = {"/list/{pageNum}","/list"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/list/{pageNum}", "/list"}, method = RequestMethod.GET)
     @ResponseBody
     public PageInfo<Toilet> list(@PathVariable(required = false) Integer pageNum) {
-        System.out.println("id="+pageNum);
-        PageInfo<Toilet> page = toiletService.findToiletsByPage(pageNum,null);
+        System.out.println("id=" + pageNum);
+        PageInfo<Toilet> page = toiletService.findToiletsByPage(pageNum, null);
         return page;
     }
 
@@ -123,21 +123,21 @@ public class ToiletController {
     @ApiOperation(value = "修改厕所的审核状态")
     @RequestMapping(value = {"/updateCheckStatus/{pkId}/{checkStatus}"}, method = RequestMethod.GET)
     @ResponseBody
-    public Map<String,String> updateCheckStatus(@PathVariable("pkId") Long pkId, @PathVariable("checkStatus") String checkStatus){
-        Map<String ,String > result = new HashMap<>();
-        if(checkStatus.equals("true")){
-            if(toiletService.updateCheckStatus(pkId, (byte) 1)>0){
+    public Map<String, String> updateCheckStatus(@PathVariable("pkId") Long pkId, @PathVariable("checkStatus") String checkStatus) {
+        Map<String, String> result = new HashMap<>();
+        if (checkStatus.equals("true")) {
+            if (toiletService.updateCheckStatus(pkId, (byte) 1) > 0) {
                 result.put("status", "1");
                 result.put("msg", "审核通过");
-            }else{
+            } else {
                 result.put("status", "-1");
                 result.put("msg", "审核操作失败");
             }
-        }else if(checkStatus.equals("false")){
-            if(toiletService.updateCheckStatus(pkId, (byte) 0)>0){
+        } else if (checkStatus.equals("false")) {
+            if (toiletService.updateCheckStatus(pkId, (byte) 0) > 0) {
                 result.put("status", "0");
                 result.put("msg", "审核不通过");
-            }else{
+            } else {
                 result.put("status", "-1");
                 result.put("msg", "审核操作失败");
             }

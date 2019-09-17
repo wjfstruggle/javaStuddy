@@ -65,24 +65,33 @@
                         <div class="ibox-content p-t-md">
                             <div class="row">
                                 <div class="col-md-12 form-horizontal">
-                                    <div class="form-group"><label class="col-sm-4 col-md-3 control-label">对公开户号 <span class="text-danger">*</span></label>
+                                    <div class="form-group"><label class="col-sm-4 col-md-3 control-label">对公开户号 <span
+                                                    class="text-danger">*</span></label>
                                         <div class="col-sm-8"><p class="form-control-static">77667899877</p></div>
                                     </div>
 
-                                    <div class="form-group"><label class="col-sm-4 col-sm-3 control-label">对公开户银行卡号 <span class="text-danger">*</span></label>
+                                    <div class="form-group"><label class="col-sm-4 col-sm-3 control-label">对公开户银行卡号
+                                            <span class="text-danger">*</span></label>
                                         <div class="col-sm-8"><p class="form-control-static">62736738189101001</p></div>
                                     </div>
-                                    <div class="form-group"><label class="col-sm-4 col-sm-3 control-label">对公账号联系人手机 <span class="text-danger">*</span></label>
+                                    <div class="form-group"><label class="col-sm-4 col-sm-3 control-label">对公账号联系人手机
+                                            <span class="text-danger">*</span></label>
                                         <div class="col-sm-8"><p class="form-control-static">13915425536</p></div>
                                     </div>
-                                    <div class="form-group"><label class="col-sm-4 col-sm-3 control-label">开户许可证 <span class="text-danger">*</span></label>
-                                        <div class="col-sm-8"><a target="_blank" href="http://24.media.tumblr.com/20a9c501846f50c1271210639987000f/tumblr_n4vje69pJm1st5lhmo1_1280.jpg"> <img alt="image" class="feed-photo" src="${ctx}/static/img/p1.jpg"></a></div>
+                                    <div class="form-group"><label class="col-sm-4 col-sm-3 control-label">开户许可证 <span
+                                                    class="text-danger">*</span></label>
+                                        <div class="col-sm-8"><a target="_blank"
+                                                                 href="http://24.media.tumblr.com/20a9c501846f50c1271210639987000f/tumblr_n4vje69pJm1st5lhmo1_1280.jpg">
+                                                <img alt="image" class="feed-photo" src="${ctx}/static/img/p1.jpg"></a>
+                                        </div>
                                     </div>
 
-                                    <div class="form-group"><label class="col-sm-4 col-sm-3 control-label">备注说明 <span class="text-danger">*</span></label>
+                                    <div class="form-group"><label class="col-sm-4 col-sm-3 control-label">备注说明 <span
+                                                    class="text-danger">*</span></label>
                                         <div class="col-sm-8"><p class="form-control-static">签约审核通过</p></div>
                                     </div>
-                                    <div class="form-group"><label class="col-sm-4 col-sm-3 control-label">备注说明 <span class="text-danger">*</span></label>
+                                    <div class="form-group"><label class="col-sm-4 col-sm-3 control-label">备注说明 <span
+                                                    class="text-danger">*</span></label>
                                         <div class="col-sm-8"><span class="label label-success">审核通过</span></div>
                                     </div>
                                 </div>

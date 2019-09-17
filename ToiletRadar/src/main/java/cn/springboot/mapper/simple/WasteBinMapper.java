@@ -2,7 +2,9 @@ package cn.springboot.mapper.simple;
 
 import cn.springboot.model.simple.WasteBin;
 import cn.springboot.model.simple.WasteBinExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface WasteBinMapper {

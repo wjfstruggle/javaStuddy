@@ -12,14 +12,14 @@
 (function ($) {
     "use strict";
     // 使用方法 $('#f_logo').fileinput('getphoto','请先上传图片');   方法返回结果: true  false
-    $.fn.fileinput.Constructor.prototype.getphoto=function (msg) {
+    $.fn.fileinput.Constructor.prototype.getphoto = function (msg) {
         var self = this, $el = self.$element;
-        var uploadtype=!!self.ajaxRequests.length;
+        var uploadtype = !!self.ajaxRequests.length;
         !uploadtype && self._showUploadError(msg);
         self.$btnUpload.attr('disabled', false);
         return uploadtype
     };
-    
+
     $.fn.fileinputLocales['zh'] = {
         fileSingle: '文件',
         filePlural: '多个文件',
@@ -55,7 +55,7 @@
         msgImageResizeError: '无法获取的图像尺寸调整。',
         msgImageResizeException: '错误而调整图像大小。<pre>{errors}</pre>',
         dropZoneTitle: '拖拽文件到这里 &hellip;',
-        slugCallback: function(text) {
+        slugCallback: function (text) {
             return text ? text.split(/(\\|\/)/g).pop().replace(/[^\w\u4e00-\u9fa5\-.\\\/ ]+/g, '') : '';
         },
         fileActionSettings: {

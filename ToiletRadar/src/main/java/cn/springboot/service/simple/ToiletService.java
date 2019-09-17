@@ -22,6 +22,6 @@ public interface ToiletService {
 
     int updateByPrimaryKey(Toilet record);
 
-    int updateCheckStatus(Long pkId,byte checkStatus);//修改卫生间审核状态
+    int updateCheckStatus(Long pkId, byte checkStatus);//修改卫生间审核状态
 
 }

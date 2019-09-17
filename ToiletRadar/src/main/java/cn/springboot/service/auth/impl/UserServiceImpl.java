@@ -72,10 +72,10 @@ public class UserServiceImpl implements UserService {
         if (r == null) {
             throw new BusinessException("user.registr.error", "用户未指定所属组织或角色");
         }
-        
+
         User u = userMapper.findUserByName(user.getUsername());
-        if(u!=null){
-            throw new BusinessException("user.registr.error", "用户账号已经存在,username="+user.getUsername());
+        if (u != null) {
+            throw new BusinessException("user.registr.error", "用户账号已经存在,username=" + user.getUsername());
         }
 
         entryptPassword(user);

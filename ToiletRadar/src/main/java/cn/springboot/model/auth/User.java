@@ -4,9 +4,9 @@ import java.util.Date;
 
 import cn.springboot.model.BaseEntity;
 
-/** 
- * @Description 用户对象
+/**
  * @author sh
+ * @Description 用户对象
  * @date Apr 12, 2019 9:11:44 AM
  */
 public class User implements BaseEntity<String> {
@@ -15,34 +15,54 @@ public class User implements BaseEntity<String> {
 
     private String id;
 
-    /** email **/
+    /**
+     * email
+     **/
     private String email;
 
-    /** 用户名 **/
+    /**
+     * 用户名
+     **/
     private String username;
 
-    /** 真实名称 **/
+    /**
+     * 真实名称
+     **/
     private String trueName;
 
-    /** 密码 **/
+    /**
+     * 密码
+     **/
     private String password;
 
-    /** salt码 **/
+    /**
+     * salt码
+     **/
     private String salt;
 
-    /** 状态 **/
+    /**
+     * 状态
+     **/
     private Integer status;
 
-    /** 工作流审批的组织ID **/
+    /**
+     * 工作流审批的组织ID
+     **/
     private String organizeId;
 
-    /** 创建时间 **/
+    /**
+     * 创建时间
+     **/
     private Date createTime;
 
-    /** 最后登录时间 **/
+    /**
+     * 最后登录时间
+     **/
     private Date lastLoginTime;
 
-    /** 用户最后修改时间 **/
+    /**
+     * 用户最后修改时间
+     **/
     private Date modifyTime;
 
     public String getId() {

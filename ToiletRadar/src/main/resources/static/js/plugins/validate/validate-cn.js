@@ -4,14 +4,13 @@
 $.validator.setDefaults({
     ignore: ":hidden",
     success: function (span) {
-      if(span.prev().length!=0){
-        if (span.prev().is(":radio") || span.prev().is(":checkbox") || $(span).prev().prop("tagName").toLowerCase() == "select") {
-            $(span).addClass("hide")
+        if (span.prev().length != 0) {
+            if (span.prev().is(":radio") || span.prev().is(":checkbox") || $(span).prev().prop("tagName").toLowerCase() == "select") {
+                $(span).addClass("hide")
+            } else {
+                $(span).addClass("success fa fa-check");
+            }
         }
-        else {
-            $(span).addClass("success fa fa-check");
-        }
-      }
     },
     highlight: function (element, errorClass) {
         $(element).addClass("error");

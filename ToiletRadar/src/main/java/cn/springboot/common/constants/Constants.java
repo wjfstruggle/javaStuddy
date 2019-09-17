@@ -1,8 +1,8 @@
 package cn.springboot.common.constants;
 
-/** 
- * @Description 常量类
+/**
  * @author sh
+ * @Description 常量类
  * @date Apr 12, 2019 9:42:34 AM
  */
 public class Constants {

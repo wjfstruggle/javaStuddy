@@ -11,9 +11,9 @@ import java.util.SimpleTimeZone;
  * @create: 2019-08-19 16:40
  **/
 public class DateUse {
-  public static void main(String[] args) {
-    Date date = new Date();
-    SimpleDateFormat ft = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-    System.out.println(ft.format(date));
-  }
+    public static void main(String[] args) {
+        Date date = new Date();
+        SimpleDateFormat ft = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        System.out.println(ft.format(date));
+    }
 }

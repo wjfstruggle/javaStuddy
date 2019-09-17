@@ -18,9 +18,9 @@ import org.apache.shiro.web.mgt.WebSecurityManager;
 import org.apache.shiro.web.servlet.AbstractShiroFilter;
 import org.springframework.beans.factory.BeanInitializationException;
 
-/** 
- * @Description 继承 ShiroFilterFactoryBean 处理拦截资源文件问题
+/**
  * @author sh
+ * @Description 继承 ShiroFilterFactoryBean 处理拦截资源文件问题
  * @date Apr 12, 2019 10:32:28 AM
  */
 public class MShiroFilterFactoryBean extends ShiroFilterFactoryBean {

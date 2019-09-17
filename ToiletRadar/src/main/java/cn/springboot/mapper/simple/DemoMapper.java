@@ -2,7 +2,9 @@ package cn.springboot.mapper.simple;
 
 import cn.springboot.model.simple.Demo;
 import cn.springboot.model.simple.DemoExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface DemoMapper {

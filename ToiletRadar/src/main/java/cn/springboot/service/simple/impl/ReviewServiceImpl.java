@@ -75,17 +75,17 @@ public class ReviewServiceImpl implements ReviewService {
 
     @Override
     public int updateScore(String frToilet, String frAccount, int score) {
-        if(isPublishScore(frToilet,frAccount)>0){
+        if (isPublishScore(frToilet, frAccount) > 0) {
             return 0;//说明用户已经评过分，无法重复评分
-        }else{
-            if(reviewDao.updateScore(frToilet,frAccount,score)>0){//用户个人评分成功
+        } else {
+            if (reviewDao.updateScore(frToilet, frAccount, score) > 0) {//用户个人评分成功
                 float avgScore = getAverageScore(frToilet);//计算获得某厕所的综合平均分
                 BigDecimal bigDAvgScore = new BigDecimal(Float.toString(avgScore));
                 System.out.println(bigDAvgScore);
                 Toilet toilet = new Toilet();
                 toilet = toiletDao.selectByPrimaryKey(Long.parseLong(frToilet));
                 toilet.setScore(bigDAvgScore);
-                if(toiletDao.updateByPrimaryKey(toilet)>0){
+                if (toiletDao.updateByPrimaryKey(toilet) > 0) {
                     return 1;//厕所综合评分成功
                 }
             }
@@ -95,7 +95,7 @@ public class ReviewServiceImpl implements ReviewService {
 
     @Override
     public boolean isExistCmt(String frToilet, String frAccount) {
-        if (reviewDao.isExistCmt(frToilet, frAccount) !=null  ) {
+        if (reviewDao.isExistCmt(frToilet, frAccount) != null) {
             return true;
         }
         return false;
@@ -103,7 +103,7 @@ public class ReviewServiceImpl implements ReviewService {
 
     @Override
     public int isPublishScore(String frToilet, String frAccount) {
-        return reviewDao.isPublishScore(frToilet,frAccount);
+        return reviewDao.isPublishScore(frToilet, frAccount);
     }
 
     @Override
@@ -117,7 +117,7 @@ public class ReviewServiceImpl implements ReviewService {
     }
 
     @Override
-    public int deleteById(Long pkId,byte status) {
-        return reviewDao.deleteById(pkId,status);
+    public int deleteById(Long pkId, byte status) {
+        return reviewDao.deleteById(pkId, status);
     }
 }

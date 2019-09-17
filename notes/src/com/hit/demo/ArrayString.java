@@ -1,5 +1,7 @@
 package com.hit.demo;
+
 import java.util.Scanner;
+
 /**
  * @program: notes
  * @description: 引用类型的判断
@@ -15,7 +17,7 @@ public class ArrayString {
         double n = scanner.nextDouble();
         if (n < 18.5) {
             System.out.println("过轻");
-        } else if(n>=18.5 && n < 25) {
+        } else if (n >= 18.5 && n < 25) {
             System.out.println("正常");
         } else if (n >= 25 && n < 28) {
             System.out.println("过重");

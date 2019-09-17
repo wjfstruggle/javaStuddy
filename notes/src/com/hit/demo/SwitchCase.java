@@ -12,7 +12,7 @@ public class SwitchCase {
         switch (options) {
             case 1:
                 System.out.println("Selected 1");
-               break;
+                break;
             case 2:
                 System.out.println("Selected 2");
                 break;

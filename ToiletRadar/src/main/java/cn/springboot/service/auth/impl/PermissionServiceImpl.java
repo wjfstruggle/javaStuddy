@@ -120,11 +120,11 @@ public class PermissionServiceImpl implements PermissionService {
     @Override
     public void addPermission(Permission permission) {
         if (permission == null || StringUtils.isBlank(permission.getKey()) || StringUtils.isBlank(permission.getName())) {
-            throw new BusinessException("permission-fail","## 创建菜单出错；菜单项数据不完整，无法进行创建。");
+            throw new BusinessException("permission-fail", "## 创建菜单出错；菜单项数据不完整，无法进行创建。");
         }
         Permission p = permissionMapper.findPermissionByKey(permission.getKey());
-        if(p!=null)
-            throw new BusinessException("permission-fail","#创建菜单出错;菜单Key已经存在,key="+permission.getKey());
+        if (p != null)
+            throw new BusinessException("permission-fail", "#创建菜单出错;菜单Key已经存在,key=" + permission.getKey());
         permission.setId(FactoryAboutKey.getPK(TableEnum.T_SYS_PERMISSION));
         permissionMapper.insert(permission);
     }

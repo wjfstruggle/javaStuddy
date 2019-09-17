@@ -17,7 +17,7 @@ public class MainController {
 
     private static final Logger log = LoggerFactory.getLogger(MainController.class);
 
-    @RequestMapping(value = { "/", "index" })
+    @RequestMapping(value = {"/", "index"})
     String home() {
         log.info("# 进入默认首页");
         return "index";
@@ -33,7 +33,7 @@ public class MainController {
         return "topnav";
     }
 
-    @RequestMapping(value = "/error", method = { RequestMethod.POST, RequestMethod.GET })
+    @RequestMapping(value = "/error", method = {RequestMethod.POST, RequestMethod.GET})
     String error(HttpServletRequest request, ModelMap map) {
         Object err = request.getAttribute("err");
         if (err != null) {

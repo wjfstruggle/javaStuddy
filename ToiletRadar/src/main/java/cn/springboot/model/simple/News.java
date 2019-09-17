@@ -5,9 +5,9 @@ import java.util.Date;
 import cn.springboot.model.BaseEntity;
 
 
-/** 
- * @Description 新闻对象
+/**
  * @author sh
+ * @Description 新闻对象
  * @date Mar 16, 2019 3:25:39 PM
  */
 public class News implements BaseEntity<String> {

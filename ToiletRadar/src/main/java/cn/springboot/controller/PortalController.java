@@ -28,7 +28,7 @@ import java.util.UUID;
  * @date 2019/8/5 15:32
  * @Description
  */
-@Api(value = "通用Controller",tags = {"通用操作接口"})
+@Api(value = "通用Controller", tags = {"通用操作接口"})
 @Controller
 @RequestMapping("/portal")
 public class PortalController {
@@ -36,30 +36,30 @@ public class PortalController {
     private static final Logger logger = LoggerFactory.getLogger(NewsController.class);
 
     /**
-     * @createtime 2017年8月20日17:15:41
      * @param request
      * @param file
      * @return 上传成功返回“success”，上传失败返回“error”
      * @throws IOException
+     * @createtime 2017年8月20日17:15:41
      */
     @ApiOperation("file图片上传")
     @ResponseBody
-    @RequestMapping(value = "/upload",method = RequestMethod.POST)
+    @RequestMapping(value = "/upload", method = RequestMethod.POST)
     public String upload(HttpServletRequest request, @RequestParam(value = "file", required = false) MultipartFile file) throws IOException {
         System.out.println("执行upload");
         request.setCharacterEncoding("UTF-8");
         logger.info("执行图片上传");
         String user = request.getParameter("user");
-        logger.info("user:"+user);
+        logger.info("user:" + user);
         String path = null;
-        if(!file.isEmpty()) {
+        if (!file.isEmpty()) {
             logger.info("成功获取照片");
             String fileName = file.getOriginalFilename();
             String type = null;
             type = fileName.indexOf(".") != -1 ? fileName.substring(fileName.lastIndexOf(".") + 1, fileName.length()) : null;
             logger.info("图片初始名称为：" + fileName + " 类型为：" + type);
             if (type != null) {
-                if ("GIF".equals(type.toUpperCase())||"PNG".equals(type.toUpperCase())||"JPG".equals(type.toUpperCase())||"JPEG".equals(type.toUpperCase())) {
+                if ("GIF".equals(type.toUpperCase()) || "PNG".equals(type.toUpperCase()) || "JPG".equals(type.toUpperCase()) || "JPEG".equals(type.toUpperCase())) {
                     // 项目在容器中实际发布运行的根路径
                     String realPath = request.getSession().getServletContext().getRealPath("/");
                     // 自定义的文件名称
@@ -70,15 +70,15 @@ public class PortalController {
                     logger.info("存放图片文件的路径:" + path);
                     file.transferTo(new File(path));
                     logger.info("文件成功上传到指定目录下");
-                }else {
+                } else {
                     logger.info("不是我们想要的文件类型,请按要求重新上传");
                     return "error";
                 }
-            }else {
+            } else {
                 logger.info("文件类型为空");
                 return "error";
             }
-        }else {
+        } else {
             logger.info("没有找到相对应的文件");
             return "error";
         }
@@ -138,8 +138,8 @@ public class PortalController {
         }
     }*/
     @ApiOperation("服务器图片显示")
-    @RequestMapping(value = "showImg",method = RequestMethod.GET)
-    public void IoReadImage(String url,HttpServletResponse response) throws IOException {
-        UploadUtils.IoReadImage(url,response);
+    @RequestMapping(value = "showImg", method = RequestMethod.GET)
+    public void IoReadImage(String url, HttpServletResponse response) throws IOException {
+        UploadUtils.IoReadImage(url, response);
     }
 }

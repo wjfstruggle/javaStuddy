@@ -9,9 +9,9 @@ import cn.springboot.mapper.BaseMapper;
 import cn.springboot.model.simple.News;
 
 
-/** 
- * @Description 新闻mapper接口
+/**
  * @author sh
+ * @Description 新闻mapper接口
  * @date Mar 16, 2019 3:35:19 PM
  */
 @Mapper

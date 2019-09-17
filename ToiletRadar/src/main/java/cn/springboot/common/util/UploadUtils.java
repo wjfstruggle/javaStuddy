@@ -20,35 +20,35 @@ import java.util.UUID;
  * @Description
  */
 public class UploadUtils {
-    public static String base64UpLoad(String base64Data, HttpServletRequest request){
-        try{
+    public static String base64UpLoad(String base64Data, HttpServletRequest request) {
+        try {
             String dataPrix = "";
             String data = "";
             System.out.println(base64Data);
             /*JSONObject json = JSON.parseObject(base64Data);
             base64Data = json.getString("base64Data");
             System.out.println(base64Data);*/
-            if(base64Data == null || "".equals(base64Data)){
+            if (base64Data == null || "".equals(base64Data)) {
                 throw new Exception("上传失败，上传图片数据为空");
-            }else{
-                String [] d = base64Data.split("base64,");
-                if(d != null && d.length == 2){
+            } else {
+                String[] d = base64Data.split("base64,");
+                if (d != null && d.length == 2) {
                     dataPrix = d[0];
                     data = d[1];
-                }else{
+                } else {
                     throw new Exception("上传失败，数据不合法");
                 }
             }
             String suffix = "";
-            if("data:image/jpeg;".equalsIgnoreCase(dataPrix)){//data:image/jpeg;base64,base64编码的jpeg图片数据
+            if ("data:image/jpeg;".equalsIgnoreCase(dataPrix)) {//data:image/jpeg;base64,base64编码的jpeg图片数据
                 suffix = ".jpg";
-            } else if("data:image/x-icon;".equalsIgnoreCase(dataPrix)){//data:image/x-icon;base64,base64编码的icon图片数据
+            } else if ("data:image/x-icon;".equalsIgnoreCase(dataPrix)) {//data:image/x-icon;base64,base64编码的icon图片数据
                 suffix = ".ico";
-            } else if("data:image/gif;".equalsIgnoreCase(dataPrix)){//data:image/gif;base64,base64编码的gif图片数据
+            } else if ("data:image/gif;".equalsIgnoreCase(dataPrix)) {//data:image/gif;base64,base64编码的gif图片数据
                 suffix = ".gif";
-            } else if("data:image/png;".equalsIgnoreCase(dataPrix)){//data:image/png;base64,base64编码的png图片数据
+            } else if ("data:image/png;".equalsIgnoreCase(dataPrix)) {//data:image/png;base64,base64编码的png图片数据
                 suffix = ".png";
-            }else{
+            } else {
                 throw new Exception("上传图片格式不合法");
             }
             String tempFileName = UUID.randomUUID().toString() + suffix;
@@ -56,16 +56,16 @@ public class UploadUtils {
 
             //因为BASE64Decoder的jar问题，此处使用spring框架提供的工具包
             byte[] bs = Base64Utils.decodeFromString(data);
-            try{
+            try {
                 //使用apache提供的工具类操作流
 
                 System.out.println(request.getServletContext().getRealPath("/upload"));
                 FileUtils.writeByteArrayToFile(new File(request.getServletContext().getRealPath("/upload"), tempFileName), bs);
-            }catch(Exception ee){
-                throw new Exception("上传失败，写入文件失败，"+ee.getMessage());
+            } catch (Exception ee) {
+                throw new Exception("上传失败，写入文件失败，" + ee.getMessage());
             }
             return request.getServletContext().getRealPath("/upload/") + tempFileName;
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return "error";
         }
@@ -73,6 +73,7 @@ public class UploadUtils {
 
     /**
      * IO流读取图片
+     *
      * @param imgUrl 图片url，即图片保存在服务器上的名称
      */
     public static void IoReadImage(String imgUrl, HttpServletResponse response) throws IOException {
@@ -95,13 +96,13 @@ public class UploadUtils {
             //读取文件流
             int len = 0;
             byte[] buffer = new byte[1024 * 10];
-            while ((len = ips.read(buffer)) != -1){
-                out.write(buffer,0,len);
+            while ((len = ips.read(buffer)) != -1) {
+                out.write(buffer, 0, len);
             }
             out.flush();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             out.close();
             ips.close();
         }

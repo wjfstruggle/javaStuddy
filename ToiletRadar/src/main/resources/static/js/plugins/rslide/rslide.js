@@ -1,31 +1,31 @@
 /**
  * Created by zifan on 2015/11/5.
  */
-(function($){
-    var Rslide=function(ele,options){
+(function ($) {
+    var Rslide = function (ele, options) {
         this.$element = $(ele);
         this.options = options
         this.$body = $(document.body);
         this.isShown = null
-        this.defaults={
-            title:"添加信息",
-            content:"",
-            remote:""
+        this.defaults = {
+            title: "添加信息",
+            content: "",
+            remote: ""
         };
-        this.slimopton={
-            height:"100%",
+        this.slimopton = {
+            height: "100%",
             railVisible: true,
-            color:"#65cea7",
-            opacity:.8,
+            color: "#65cea7",
+            opacity: .8,
             size: '5px',
             borderRadius: '0', //滚动条圆角
             railBorderRadius: '0',//轨道圆角
-            distance:0,
+            distance: 0,
             allowPageScroll: true,
             alwaysVisible: false
         }
-       // console.log(this.options)
-        if(this.options.title){
+        // console.log(this.options)
+        if (this.options.title) {
             this.$element
                 .find('.rslide-title h4').text(this.options.title)
         }
@@ -38,9 +38,9 @@
         //        }, this))
         //        .slimScroll(this.slimopton)
         //}else{
-            this.$element
-                .find('.rslide-body')
-                .slimScroll(this.slimopton)
+        this.$element
+            .find('.rslide-body')
+            .slimScroll(this.slimopton)
         //}
     }
 
@@ -52,11 +52,11 @@
 
     Rslide.prototype.show = function (_relatedTarget) {
 
-        var e = $.Event('show.bs.rslide', { relatedTarget: _relatedTarget })
+        var e = $.Event('show.bs.rslide', {relatedTarget: _relatedTarget})
         this.$element.trigger(e);
         if (this.isShown || e.isDefaultPrevented()) return;
         this.isShown = true;
-        
+
         this.$element.removeClass('fadeOutRightBig').show();
         this.$element.addClass("fadeInRightBig");
         this.$body.addClass('modal-open');
@@ -67,17 +67,17 @@
     Rslide.prototype.hide = function (e) {
         if (e) e.preventDefault()
         e = $.Event('hide.bs.rslide')
-        var that=this
+        var that = this
         this.$element.trigger(e)
         if (!this.isShown || e.isDefaultPrevented()) return
         this.isShown = false
         this.$element.removeClass("fadeInRightBig");
         that.$body.removeClass('modal-open')
         this.$element.addClass('fadeOutRightBig').off('click.dismiss.bs.rslide')
-        setTimeout(function(){
+        setTimeout(function () {
             that.$element.hide()
             that.$element.trigger('hidden.bs.rslide')
-        },400)
+        }, 400)
 
     }
 
@@ -88,27 +88,27 @@
     function Plugin(option, _relatedTarget) {
 
         return this.each(function () {
-            var $this   = $(this)
-            var data    = $this.data('bs.rslide')
+            var $this = $(this)
+            var data = $this.data('bs.rslide')
 
             var options = $.extend({}, Rslide.DEFAULTS, $this.data(), typeof option == 'object' && option)
             if (!data) $this.data('bs.rslide', (data = new Rslide(this, options)))
 
-            if (typeof option == 'string')data[option](_relatedTarget)
+            if (typeof option == 'string') data[option](_relatedTarget)
             else if (options.show) data.show(_relatedTarget)
         })
     }
 
 
-    $.fn.rslide             = Plugin
+    $.fn.rslide = Plugin
     $.fn.rslide.Constructor = Rslide
 
     $(document).on('click.bs.rslide', '[data-toggle="rslide"]', function (e) {
-        var $this   = $(this)
-        var href    = $this.attr('href')
+        var $this = $(this)
+        var href = $this.attr('href')
         var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) // strip for ie7
 
-        var option  = $target.data('bs.rslide') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
+        var option = $target.data('bs.rslide') ? 'toggle' : $.extend({remote: !/#/.test(href) && href}, $target.data(), $this.data())
 
         if ($this.is('a')) e.preventDefault()
 

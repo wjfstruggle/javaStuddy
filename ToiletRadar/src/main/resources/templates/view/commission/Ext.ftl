@@ -86,7 +86,8 @@
                     <div class="ibox">
                         <div class="ibox-content">
                             <div class="table-responsive ">
-                                <table class="table table-centerbody table-mail table-striped table-condensed text-nowrap" id="editable-sample">
+                                <table class="table table-centerbody table-mail table-striped table-condensed text-nowrap"
+                                       id="editable-sample">
                                     <thead>
                                     <tr>
                                         <th>合同编号</th>
@@ -104,15 +105,16 @@
                                     <tr>
                                         <td>聂茂 13915425536</td>
                                         <td>测试多媒体大厦全称 --幢--单元--室</td>
-                                        <td>经:明明(18662184598)  店:多媒体门店<br>司:测试经纪公司</td>
+                                        <td>经:明明(18662184598) 店:多媒体门店<br>司:测试经纪公司</td>
                                         <td class="text-price">10000.00</td>
                                         <td>2015-12-01 14:59:41</td>
                                         <td><span class="label label-success">已退款</span></td>
                                         <td></td>
                                         <td class="text-right">
                                             <div class="btn-group ">
-                                                <a class="btn btn-white btn-sm through"><i class="fa fa-check-circle-o"></i>  审核</a>
-                                                <a class="btn btn-white btn-sm through"><i class="fa fa-eye"></i>  查看</a>
+                                                <a class="btn btn-white btn-sm through"><i
+                                                            class="fa fa-check-circle-o"></i> 审核</a>
+                                                <a class="btn btn-white btn-sm through"><i class="fa fa-eye"></i> 查看</a>
                                             </div>
                                         </td>
                                     </tr>
@@ -120,15 +122,16 @@
                                     <tr>
                                         <td>聂茂 13915425536</td>
                                         <td>测试多媒体大厦全称 --幢--单元--室</td>
-                                        <td>经:明明(18662184598)  店:多媒体门店<br>司:测试经纪公司</td>
+                                        <td>经:明明(18662184598) 店:多媒体门店<br>司:测试经纪公司</td>
                                         <td class="text-price">10000.00</td>
                                         <td>2015-12-01 14:59:41</td>
                                         <td><span class="label label-success">已退款</span></td>
                                         <td></td>
                                         <td class="text-right">
                                             <div class="btn-group ">
-                                                <a class="btn btn-white btn-sm through"><i class="fa fa-check-circle-o"></i>  审核</a>
-                                                <a class="btn btn-white btn-sm through"><i class="fa fa-eye"></i>  查看</a>
+                                                <a class="btn btn-white btn-sm through"><i
+                                                            class="fa fa-check-circle-o"></i> 审核</a>
+                                                <a class="btn btn-white btn-sm through"><i class="fa fa-eye"></i> 查看</a>
                                             </div>
                                         </td>
                                     </tr>

@@ -61,39 +61,41 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">城市  <span class="text-danger">*</span></label>
+                            <label class="col-sm-2 control-label">城市 <span class="text-danger">*</span></label>
                             <div class="col-sm-10"><p class="form-control-static">上海</p></div>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">简称  <span class="text-danger">*</span></label>
+                            <label class="col-sm-2 control-label">简称 <span class="text-danger">*</span></label>
                             <div class="col-sm-10">
-                                <input type="text" name="" value="" placeholder="测试经纪"  class="form-control" required>
+                                <input type="text" name="" value="" placeholder="测试经纪" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">联系人姓名  <span class="text-danger">*</span></label>
+                            <label class="col-sm-2 control-label">联系人姓名 <span class="text-danger">*</span></label>
                             <div class="col-sm-10">
-                                <input type="text" name="" value="" placeholder="聂"  class="form-control" required>
+                                <input type="text" name="" value="" placeholder="聂" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">联系人手机  <span class="text-danger">*</span></label>
+                            <label class="col-sm-2 control-label">联系人手机 <span class="text-danger">*</span></label>
                             <div class="col-sm-10">
-                                <input type="text" name="" value="" placeholder="13915425536"  class="form-control" required>
+                                <input type="text" name="" value="" placeholder="13915425536" class="form-control"
+                                       required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">公司地址  <span class="text-danger">*</span></label>
+                            <label class="col-sm-2 control-label">公司地址 <span class="text-danger">*</span></label>
                             <div class="col-sm-10">
-                                <input type="text" name="" value="" placeholder="上海市多媒体大厦"  class="form-control" required>
+                                <input type="text" name="" value="" placeholder="上海市多媒体大厦" class="form-control"
+                                       required>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">公司证明图片  <span class="text-danger">*</span></label>
+                            <label class="col-sm-2 control-label">公司证明图片 <span class="text-danger">*</span></label>
                             <div class="col-sm-10">
-                                <input type="file" class="file-loading" id="addFile" name="logoFile" multiple >
+                                <input type="file" class="file-loading" id="addFile" name="logoFile" multiple>
                                 <span class="col-md-6 help-block m-b-none">为了清晰美观请上传 长：200px  宽：200px 的正方形公司标志.</span>
                             </div>
                         </div>
@@ -139,8 +141,8 @@
 <!-- 插件 scripts -->
 <script src="${ctx}/static/js/plugins/chosen/chosen.jquery.js"></script><!---下拉菜单--->
 <script src="${ctx}/static/js/plugins/toastr/toastr.min.js" async></script><!---顶部弹出提示--->
-<script src="${ctx}/static/js/plugins/fileinput/fileinput.min.js" ></script><!---文件上传--->
-<script src="${ctx}/static/js/plugins/fileinput/fileinput_locale_zh.js" ></script><!---文件上传中文配置--->
+<script src="${ctx}/static/js/plugins/fileinput/fileinput.min.js"></script><!---文件上传--->
+<script src="${ctx}/static/js/plugins/fileinput/fileinput_locale_zh.js"></script><!---文件上传中文配置--->
 
 
 <script>
@@ -150,12 +152,12 @@
 
         $("#addFile").fileinput({
             uploadUrl: '#',    //服务端上传地址
-            showCaption:false,     //是否显示按钮前的INPUT
-            dropZoneEnabled:true,  //是否启动拖拽
+            showCaption: false,     //是否显示按钮前的INPUT
+            dropZoneEnabled: true,  //是否启动拖拽
             uploadAsync: true,  //true异步上传
             //autoReplace: false,  // 替换预览文件maxFileCount达到极限，
             validateInitialCount: true, //是否包括已有的文件数，新加文件个数和现有文件相加的判断
-            overwriteInitial:false,  //是否要覆盖已有的缩略图列表。
+            overwriteInitial: false,  //是否要覆盖已有的缩略图列表。
             minFileCount: 0,  //最小文件数，为0可选
             maxFileCount: 1,    //最大文件数，为0无限
             maxFileSize: 2048,   //文件大小限制
@@ -165,11 +167,11 @@
             msgFilesTooLess: '必须上传 <b>{n}</b>个{files}，您可以选择新的文件进行替换. ',
             initialPreview: [],//编辑页面初始化数据
             initialPreviewConfig: [],//通过此方法可以删除服务端上传的图片
-            uploadExtraData: function(previewId, index) {
-                if (previewId!=undefined && index!=undefined){
-                    alert(previewId+","+index)
+            uploadExtraData: function (previewId, index) {
+                if (previewId != undefined && index != undefined) {
+                    alert(previewId + "," + index)
                 }
-                return{
+                return {
                     userid: "10000",
                     username: "zifan",
                     key: index

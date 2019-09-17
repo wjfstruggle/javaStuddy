@@ -25,12 +25,12 @@ import cn.springboot.common.authority.service.xss.XSSSecurityConfig;
 import cn.springboot.common.authority.service.xss.XSSSecurityConstants;
 import cn.springboot.common.authority.service.xss.XSSSecurityManager;
 
-/** 
- * @Description xss攻击脚本过滤器
+/**
  * @author sh
+ * @Description xss攻击脚本过滤器
  * @date Mar 24, 2019 7:43:01 PM
  */
-@WebFilter(urlPatterns = "/*", filterName = "XSSCheck", initParams = { @WebInitParam(name = "securityconfig", value = "classpath:conf/xss_security_config.xml") })
+@WebFilter(urlPatterns = "/*", filterName = "XSSCheck", initParams = {@WebInitParam(name = "securityconfig", value = "classpath:conf/xss_security_config.xml")})
 public class XSSSecurityFilter implements Filter {
 
     private static final Logger log = LoggerFactory.getLogger(XSSSecurityFilter.class);
@@ -84,7 +84,7 @@ public class XSSSecurityFilter implements Filter {
             // 是否中断操作
             if (XSSSecurityConfig.IS_CHAIN) {
                 request.setAttribute("err", "您输入的参数有非法字符，请输入正确的参数！");
-                request.setAttribute("pageUrl",httpRequest.getRequestURI());
+                request.setAttribute("pageUrl", httpRequest.getRequestURI());
                 request.getRequestDispatcher(request.getServletContext().getContextPath() + XSSSecurityConstants.FILTER_ERROR_PAGE).forward(request, response);
                 return;
             }
@@ -96,10 +96,8 @@ public class XSSSecurityFilter implements Filter {
     /**
      * 判断Request ,Response 类型
      *
-     * @param request
-     *            ServletRequest
-     * @param response
-     *            ServletResponse
+     * @param request  ServletRequest
+     * @param response ServletResponse
      * @throws javax.servlet.ServletException
      */
     private void checkRequestResponse(ServletRequest request, ServletResponse response) throws ServletException {

@@ -8,10 +8,10 @@ import java.security.SecureRandom;
 
 import org.apache.commons.lang3.Validate;
 
-/** 
+/**
+ * @author sh
  * @Description 支持SHA-1/MD5消息摘要的工具类<br>
  * 返回ByteSource，可进一步被编码为Hex, Base64或UrlSafeBase64
- * @author sh
  * @date Apr 12, 2019 9:36:27 AM
  */
 public class Digests {
@@ -62,8 +62,7 @@ public class Digests {
     /**
      * 生成随机的Byte[]作为salt.
      *
-     * @param numBytes
-     *            byte数组的大小
+     * @param numBytes byte数组的大小
      */
     public static byte[] generateSalt(int numBytes) {
         Validate.isTrue(numBytes > 0, "numBytes argument must be a positive integer (1 or larger)", numBytes);
