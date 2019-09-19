@@ -14,12 +14,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import cn.springboot.config.db.database.DynamicDataSourceRegister;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Import({DynamicDataSourceRegister.class})
 @EnableTransactionManagement
 @ServletComponentScan
 @SpringBootApplication
 @MapperScan("cn.springboot.mapper")
+@EnableSwagger2
 public class Application extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
