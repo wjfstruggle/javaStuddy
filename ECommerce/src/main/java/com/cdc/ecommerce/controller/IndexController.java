@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Param $
  * @return $
  **/
-@Api(value = "用户controller", tags = {"用户操作接口"})
+@Api(value = "首页展示", tags = {"用户访问首页"})
 @RestController
 public class IndexController {
     @RequestMapping(value = "/")
