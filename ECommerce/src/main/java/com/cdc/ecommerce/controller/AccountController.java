@@ -30,12 +30,10 @@ public class AccountController {
     @RequestMapping(value = "/account/add", method = RequestMethod.POST)
     public Map<String, String> add(@ApiParam(name = "用户对象", value = "传入json格式,只需传入wxName，wxPhoto，identity微信唯一标识")
                                    @RequestParam(name = "wxName") String wxName,
-                                   @RequestParam(name = "wxPhoto") String wxPhoto,
-                                   @RequestParam(name = "identity") String identity) {
+                                   @RequestParam(name = "wxPhoto") String wxPhoto) {
         Account account = new Account();
         account.setWxName(wxName);
         account.setWxPhoto(wxPhoto);
-        account.setIdentity(identity);
         boolean flag = accountService.addAccount(account);
         Map<String, String> result = new HashMap<>();
         if (flag) {

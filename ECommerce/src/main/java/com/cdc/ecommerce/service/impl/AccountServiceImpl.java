@@ -1,6 +1,7 @@
 package com.cdc.ecommerce.service.impl;
 
 import com.cdc.ecommerce.common.Constants;
+import com.cdc.ecommerce.common.utils.StringRandom;
 import com.cdc.ecommerce.mapper.AccountMapper;
 import com.cdc.ecommerce.model.Account;
 import com.cdc.ecommerce.service.AccountService;
@@ -27,11 +28,13 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public boolean addAccount(Account account) {
+        StringRandom stringRandom = new StringRandom();
         if (account != null) {
             account.setCreateTime(new Date());
             account.setModifyTime(new Date());
             account.setDeleteStatus(false);
             account.setPassword("123456");
+            account.setIdentity(stringRandom.getStringRandom(20));
             int flag = accountMapper.insertSelective(account);
             if (flag == 1) {
                 return true;
