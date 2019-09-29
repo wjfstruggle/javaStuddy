@@ -427,4 +427,16 @@
       publisher = #{publisher,jdbcType=VARCHAR}
     where pk_id = #{pkId,jdbcType=BIGINT}
   </update>
+<!--  分页查询-->
+  <select id="findToiletPage" parameterType="com.cdc.ecommerce.model.ToiletExample" resultMap="BaseResultMap">
+    select * from toilet
+    <where>
+      <if test="keywords != null and keywords != ''">like '%${keywords}%'</if>
+    </where>
+    order by pk_id
+  </select>
+<!--  更改信息状态-->
+  <update id="updateCheckStatus" parameterType="com.cdc.ecommerce.model.Toilet">
+    update toilet set check_status = #{checkStatus} where pk_id = #{pkId}
+  </update>
 </mapper>

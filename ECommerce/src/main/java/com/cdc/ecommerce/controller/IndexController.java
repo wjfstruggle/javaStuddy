@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(value = "首页展示", tags = {"用户访问首页"})
 @RestController
 public class IndexController {
-    @RequestMapping(value = "/")
+    @RequestMapping(value = "/index")
     public String index() {
         return "index";
     }

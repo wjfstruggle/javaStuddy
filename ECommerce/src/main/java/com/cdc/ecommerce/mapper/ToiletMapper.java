@@ -93,4 +93,8 @@ public interface ToiletMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Toilet record);
+
+    List<Toilet> findToiletPage(String keywords);
+
+    int updateCheckStatus(Long id, byte checkStatus);
 }
