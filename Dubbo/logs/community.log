@@ -1,0 +1,8 @@
+2019-10-08 11:49:38.703  INFO 17424 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-06VQAL4 with PID 17424 (D:\Download\community-master\target\classes started by 伍剑锋 in D:\view\javaStuddy\Dubbo)
+2019-10-08 11:49:38.705  INFO 17424 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-10-08 11:49:38.753  INFO 17424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-08 11:49:38.753  INFO 17424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-08 11:53:41.995  INFO 11868 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-06VQAL4 with PID 11868 (D:\Download\community-master\target\classes started by 伍剑锋 in D:\view\javaStuddy\Dubbo)
+2019-10-08 11:53:41.997  INFO 11868 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-10-08 11:53:42.045  INFO 11868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-08 11:53:42.046  INFO 11868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
