@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @Author wujf
  * @ClassName IndexController
- * @Description 首页
+ * @Description 登录页
  * @Date $ $
  * @Param $
  * @return $
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(value = "首页展示", tags = {"用户访问首页"})
 @RestController
 public class IndexController {
-    @RequestMapping(value = "/index")
+    @RequestMapping(value = "/login")
     public String index() {
         return "index";
     }

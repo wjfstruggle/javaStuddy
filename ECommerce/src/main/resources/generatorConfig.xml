@@ -61,5 +61,7 @@
         <!-- 指定数据库表 -->
         <table  tableName="account" domainObjectName="Account" ></table>
         <table  tableName="toilet" domainObjectName="Toilet" ></table>
+        <table  tableName="user" domainObjectName="User" ></table>
+        <table  tableName="roles" domainObjectName="Roles" ></table>
     </context>
 </generatorConfiguration>
